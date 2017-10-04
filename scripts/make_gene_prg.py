@@ -10,13 +10,12 @@ import numpy as np
 
 
 class AlignedSeq(object):
-    """
-    Object based on a set of aligned sequences.
-    """
+    """Object based on a set of aligned sequences."""
     def __init__(self, msa_file, file_format='fasta', max_nesting=2,
                  nesting_level=1, min_match_length=3, site=5, alignment=None,
                  interval=None, prg_file=None):
-        """
+        """Initialise AlignedSeq class object.
+
         Args:
             msa_file (str): File path for MSA. Such as my.fasta
             file_format (str): The format of the MSA file.
@@ -436,6 +435,11 @@ class AlignedSeq(object):
         return sub_alignment
 
     def get_prg(self):
+        """Produces the population reference graph (PRG) for this object.
+
+        Returns:
+            prg (str): A string containing the PRG.
+        """
         prg = ""
         # last_char = None
         # skip_char = False
@@ -740,7 +744,7 @@ def remove_duplicates(seqs):
 
 
 def main():
-
+    """Code that is run when user executes script"""
     parser = argparse.ArgumentParser()
     parser.add_argument("MSA", action="store", type=str,
                         help='Input file: a multiple sequence alignment in \
