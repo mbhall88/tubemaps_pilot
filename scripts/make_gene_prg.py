@@ -73,7 +73,7 @@ class AlignedSeq(object):
             with open(prg_file) as f:
                 self.prg = f.read()
         else:
-            self.prg = self.get_prg()#
+            self.prg = self.get_prg()
 
     def get_consensus(self):
         """Given a set of alignment records from AlignIO, creates
@@ -170,8 +170,7 @@ class AlignedSeq(object):
                          for record in interval_alignment]
                     )
                 )
-                if (non_match_start < match_start and
-                            len(interval_seqs) > 1):
+                if non_match_start < match_start and len(interval_seqs) > 1:
                     non_match_intervals.append([non_match_start,
                                                 match_start - 1])
                 elif non_match_start < match_start:
@@ -212,7 +211,8 @@ class AlignedSeq(object):
             the alignment to run kmeans on.
 
         Returns:
-
+            list[list[str]]: a nested list of sample ids in the groups they
+            are clustered into.
         """
         if interval[1] - interval[0] <= self.min_match_length:
             logging.info("Small variation site in interval %s \n", interval)
@@ -269,7 +269,7 @@ class AlignedSeq(object):
             logging.debug("Add classes corresponding to {} small sequences"
                           .format(len(small_interval_seq_dict.keys())))
 
-            small_return_id_lists = small_interval_seq_dict.values() #            ????
+            small_return_id_lists = small_interval_seq_dict.values()  # ????
 
             logging.debug("Now add classes corresponding to {} longer sequences"
                           .format(len(interval_seq_dict.keys())))
@@ -287,10 +287,10 @@ class AlignedSeq(object):
                         if seq not in self.kmer_dict.keys():
                             self.kmer_dict[seq[i:i+self.min_match_length]] = n
                             n += 1
-                logging.debug("These vectors have length %d" %n)
+                logging.debug("These vectors have length %d" % n)
 
                 # transform to vectors using dict
-                seq_kmer_counts = np.zeros(shape=(len(interval_seqs),n))
+                seq_kmer_counts = np.zeros(shape=(len(interval_seqs), n))
                 for j, seq in enumerate(interval_seqs):
                     counts = np.zeros(n)
                     for i in range(len(seq) - self.min_match_length + 1):
@@ -411,10 +411,25 @@ class AlignedSeq(object):
         assert len(return_id_lists) > 1, "should have some alternate alleles," \
                                          " not only one sequence, this is a " \
                                          "non-match interval"
+
+        logging.debug(return_id_lists)
         return return_id_lists
 
     def get_sub_alignment_by_list_id(self, list_of_id, interval=None):
-        list_records = [record for record in self.alignment if record.id in list_of_id]
+        """Returns a MSA of the ids provided, over a specified interval.
+
+        Args:
+            list_of_id (list[str]): List of sample ids to create MSA from.
+            interval (list[int, int]): Interval over which to produce a
+            sub-alignment. OPTIONAL
+
+        Returns:
+            Bio.AlignIO.MultipleSeqAlignment: A sub-alignment of the required
+            samples over the requested interval.
+        """
+        list_records = [record
+                        for record in self.alignment
+                        if record.id in list_of_id]
         sub_alignment = MultipleSeqAlignment(list_records)
         if interval:
             sub_alignment = sub_alignment[:, interval[0]:interval[1]+1]
@@ -454,159 +469,252 @@ class AlignedSeq(object):
                     variant_seqs = [record.replace('-', '')
                                     for record in variant_seqs]
                     logging.debug("Which is equivalent to: %s" % variant_seqs)
+
                 else:
                     # divide seqs into subgroups and define prg for each
                     logging.debug("Divide sequences into subgroups and define "
                                   "prg for each subgroup.")
                     recur = True
 
-                    list_list_id = self.kmeans_cluster_seqs_in_interval(interval)
-                    list_sub_alignments = [self.get_sub_alignment_by_list_id(list_id, interval) for list_id in list_list_id]
+                    list_list_id = \
+                        self.kmeans_cluster_seqs_in_interval(interval)
+
+                    list_sub_alignments = \
+                        [self.get_sub_alignment_by_list_id(list_id, interval)
+                         for list_id in list_list_id]
+
                     num_classes_in_partition = len(list_list_id)
 
-                    if (len(list_sub_alignments) == self.num_seqs):
-                        logging.debug("Partition does not group any sequences together, all seqs get unique class in partition")
+                    if len(list_sub_alignments) == self.num_seqs:
+                        logging.debug("Partition does not group any sequences "
+                                      "together, all seqs get unique class in "
+                                      "partition")
                         recur = False
-                    elif (interval[0] not in self.subAlignedSeqs.keys()):
+                    elif interval[0] not in self.subAlignedSeqs.keys():
                         self.subAlignedSeqs[interval[0]] = []
-                        logging.debug("subAlignedSeqs now has keys: %s", self.subAlignedSeqs.keys())
+                        logging.debug("subAlignedSeqs now has keys: {}"
+                                      .format(self.subAlignedSeqs.keys()))
                     else:
-                        logging.debug("subAlignedSeqs already had key %d in keys: %s. This shouldn't happen.", interval[0], self.subAlignedSeqs.keys())
+                        logging.debug("subAlignedSeqs already had key {} in "
+                                      "keys: {}. This shouldn't happen."
+                                      .format(interval[0],
+                                              self.subAlignedSeqs.keys()))
 
                     while len(list_sub_alignments) > 0:
                         sub_alignment = list_sub_alignments.pop(0)
-                        sub_AlignedSeq = AlignedSeq(msa_file=self.msa_file,
-                                                    file_format=self.format,
-                                                    max_nesting=self.max_nesting,
-                                                    nesting_level=self.nesting_level+1,
-                                                    min_match_length=self.min_match_length,
-                                                    site=self.site,
-                                                    alignment=sub_alignment,
-                                                    interval=interval)
-                        variant_seqs.append(sub_AlignedSeq.prg)
-                        self.site = sub_AlignedSeq.site
+                        sub_aligned_seq = \
+                            AlignedSeq(msa_file=self.msa_file,
+                                       file_format=self.format,
+                                       max_nesting=self.max_nesting,
+                                       nesting_level=self.nesting_level+1,
+                                       min_match_length=self.min_match_length,
+                                       site=self.site,
+                                       alignment=sub_alignment,
+                                       interval=interval)
+
+                        # add the prg for the partition and update the current
+                        # site number to ensure there are no overlaps between
+                        # recursive iterations.
+                        variant_seqs.append(sub_aligned_seq.prg)
+                        self.site = sub_aligned_seq.site
 
                         if recur:
-                            #logging.debug("None not in snp_scores - try to add sub_AlignedSeq to list in dictionary")
-                            self.subAlignedSeqs[interval[0]].append(sub_AlignedSeq)
-                            #logging.debug("Length of subAlignedSeqs[%d] is %d", interval[0], len(self.subAlignedSeqs[interval[0]]))
-                    assert num_classes_in_partition==len(variant_seqs), "I don't seem to have a sub-prg sequence for all parts of the partition - there are %d classes in partition, and %d variant seqs" %(num_classes_in_partition,len(variant_seqs))
+                            self.subAlignedSeqs[interval[0]]\
+                                .append(sub_aligned_seq)
+
+                    assert num_classes_in_partition == len(variant_seqs), \
+                        "I don't seem to have a sub-prg sequence for all " \
+                        "parts of the partition - there are {} classes in " \
+                        "partition, and {} variant seqs"\
+                            .format(num_classes_in_partition, len(variant_seqs))
+
                 assert len(variant_seqs) > 1, "Only have one variant seq"
 
-                if len(variant_seqs)!=len(list(remove_duplicates(variant_seqs))):
-                    print "variant_seqs: "
+                length_variant_seqs = len(list(remove_duplicates(variant_seqs)))
+                if len(variant_seqs) != length_variant_seqs:
+                    print("variant_seqs: ")
                     for s in variant_seqs:
-                        print s
-                        print ", "
+                        print(s)
+                        print(", ")
 
-                assert len(variant_seqs) == len(list(remove_duplicates(variant_seqs))), "have repeat variant seqs"
+                assert len(variant_seqs) == length_variant_seqs, \
+                    "have repeat variant seqs"
 
                 # Add the variant seqs to the prg
-                prg += "%s%d%s" %(self.delim_char, site_num, self.delim_char) # considered making it so start of prg was not delim_char, but that would defeat the point if it
+                # considered making it so start of prg was not delim_char,
+                # but that would defeat the point if it
+                prg += "{0}{1}{0}".format(self.delim_char, site_num)
+
                 while len(variant_seqs) > 1:
                     prg += variant_seqs.pop(0)
-                    prg += "%s%d%s" %(self.delim_char, site_num + 1, self.delim_char)
+                    prg += "{0}{1}{0}".format(self.delim_char, site_num + 1)
                 prg += variant_seqs.pop()
-                prg += "%s%d%s" %(self.delim_char, site_num, self.delim_char)
+                prg += "{0}{1}{0}".format(self.delim_char, site_num)
 
         return prg
 
     def split_on_site(self, prg_string, site_num):
-        site_coords = [(a.start(), a.end()) for a in list(re.finditer('%s%d%s' %(self.delim_char, site_num, self.delim_char), prg_string))]
+        """Splits a PRG string on a given site number.
+
+        Args:
+            prg_string (str): PRG
+            site_num: The site number to split PRG on
+
+        Returns:
+            list[str, str, str]: A list which should have three elements. The
+            first element is the pre-site sequence, the second element is the
+            site to excise, and the last element is the post-site sequence.
+
+        Examples:
+            >>> prg = ' 3 GAGAGAGAG 3  5 GAGAGAGAG 5 15 GAGAG 15 '
+            >>> split_on_site(prg, 5)
+            [' 3 GAGAGAGAG 3 ', 'GAGAGAGAG', '15 GAGAG 15 ']
+
+        """
+        site_matches = re.finditer(
+            '{0}{1}{0}'.format(self.delim_char, site_num), prg_string)
+        # todo: change below to a.span() instead of start and end
+        site_coords = [(a.start(), a.end()) for a in list(site_matches)]
         last_pos = None
         split_strings = []
-        for (start,end) in site_coords:
+        for start, end in site_coords:
             split_strings.append(prg_string[last_pos:start])
             last_pos = end
         split_strings.append(prg_string[last_pos:])
         delim = "%s%d%s" %(self.delim_char, site_num, self.delim_char)
         check_string = delim.join(split_strings)
-        assert check_string == prg_string, "Something has gone wrong with the string split for site %d\nsplit_strings: %s" %(site_num, split_strings)
+        assert check_string == prg_string, \
+            "Something has gone wrong with the string split " \
+            "for site %d\nsplit_strings: %s" % (site_num, split_strings)
         return split_strings
 
     def get_gfa_string(self, prg_string, pre_var_id=None):
-        '''Takes prg_string and updates the self.gfa_string with fragments
-           from the prg_string.'''
+        """Produces a GFA string based on a given PRG string.
+
+        Args:
+            prg_string (str): PRG
+            pre_var_id (int): This variable is never directly used...
+
+        Returns:
+            The GFA id for the portion of the gfa string that the call to this
+            function generated.
+        """
         end_ids = []
         # iterate through sites present, updating gfa_string with each in turn
+        # todo: this while condition needs to be changed to regex match as
+        # currently if your site is 5, it will find 15, 25 etc.
         while str(self.gfa_site) in prg_string:
-            logging.debug("gfa_site: %d", self.gfa_site)
+            logging.debug("gfa_site: {}".format(self.gfa_site))
             prgs = self.split_on_site(prg_string, self.gfa_site)
             logging.debug("prgs: %s", prgs)
-            assert len(prgs)==3, "Invalid prg sequence %s for site %d and id %d" %(prg_string, self.gfa_site, self.gfa_id)
+            assert len(prgs) == 3, "Invalid prg sequence {0} for site " \
+                                   "{1} and id {2}".format(prg_string,
+                                                           self.gfa_site,
+                                                           self.gfa_id)
 
             # add pre-var site string and links from previous seq fragments
             if prgs[0] != '':
-                self.gfa_string += "S\t%d\t%s\tRC:i:0\n" %(self.gfa_id, prgs[0])
+                self.gfa_string += "S\t{}\t{}\tRC:i:0\n".format(self.gfa_id,
+                                                                prgs[0])
             else:
                 # adds an empty node for empty pre var site seqs
-                self.gfa_string += "S\t%d\t%s\tRC:i:0\n" %(self.gfa_id, "*")
+                self.gfa_string += "S\t{}\t{}\tRC:i:0\n".format(self.gfa_id,
+                                                                "*")
             pre_var_id = self.gfa_id
             self.gfa_id += 1
-            for id in end_ids:
-                    self.gfa_string += "L\t%d\t+\t%d\t+\t0M\n" %(id, pre_var_id)
+            for _id in end_ids:
+                    self.gfa_string += "L\t{}\t+\t{}\t+\t0M\n"\
+                        .format(_id, pre_var_id)
                     end_ids = []
 
             # recursively add segments for each of the variant haplotypes at
             # this site, saving the end id for each haplotype
-            vars = self.split_on_site(prgs[1], self.gfa_site+1)
-            assert len(vars)>1, "Invalid prg sequence %s for site %d and id %d" %(prg_string, self.gfa_site+1, self.gfa_id)
-            logging.debug("vars: %s", vars)
+            variants = self.split_on_site(prgs[1], self.gfa_site+1)
+            assert len(variants) > 1, "Invalid prg sequence {0} for site " \
+                                      "{1} and id {2}".format(prg_string,
+                                                              self.gfa_site+1,
+                                                              self.gfa_id)
+            logging.debug("vars: %s", variants)
+
             self.gfa_site += 2
             logging.debug("gfa_site: %d", self.gfa_site)
-            for var_string in vars:
-                if pre_var_id != None:
-                    self.gfa_string += "L\t%d\t+\t%d\t+\t0M\n" %(pre_var_id, self.gfa_id)
-                var_end_ids = self.get_gfa_string(prg_string=var_string,pre_var_id=pre_var_id)
+            for var_string in variants:
+                if pre_var_id:
+                    self.gfa_string += "L\t%d\t+\t%d\t+\t0M\n" % (pre_var_id,
+                                                                  self.gfa_id)
+                var_end_ids = self.get_gfa_string(prg_string=var_string,
+                                                  pre_var_id=pre_var_id)
                 end_ids.extend(var_end_ids)
 
-            prg_string=prgs[2]
-            pre_var_id = None
+            prg_string = prgs[2]
+            # pre_var_id = None
 
         # finally add the final bit of sequence after variant site
         if prg_string != '':
-            self.gfa_string += "S\t%d\t%s\tRC:i:0\n" %(self.gfa_id, prg_string)
+            self.gfa_string += "S\t%d\t%s\tRC:i:0\n" % (self.gfa_id, prg_string)
         else:
-            self.gfa_string += "S\t%d\t%s\tRC:i:0\n" %(self.gfa_id, "*")
-        for id in end_ids:
-            self.gfa_string += "L\t%d\t+\t%d\t+\t0M\n" %(id, self.gfa_id)
-        end_ids = []
+            self.gfa_string += "S\t%d\t%s\tRC:i:0\n" % (self.gfa_id, "*")
+        for _id in end_ids:
+            self.gfa_string += "L\t%d\t+\t%d\t+\t0M\n" % (_id, self.gfa_id)
+        # end_ids = []
         return_id = [self.gfa_id]
         self.gfa_id += 1
         return return_id
 
     def write_gfa(self, outfile):
-        '''Creates a gfa file from the prg.'''
-        with open(outfile, 'w') as f:
-            # initialize gfa_string, id and site, then update string with the prg
+        """Creates a gfa file from the prg and writes it to file.
+
+        Args:
+            outfile (str): Filepath to save file as.
+
+        """
+        with open(outfile, 'w') as gfa_out_file:
+            # initialize gfa_string, id and site, then update string with prg
             self.gfa_string = "H\tVN:Z:1.0\tbn:Z:--linear --singlearr\n"
             self.gfa_id = 0
             self.gfa_site = 5
             self.get_gfa_string(prg_string=self.prg)
-            f.write(self.gfa_string)
-        return
+            gfa_out_file.write(self.gfa_string)
 
     def write_prg(self, outfile):
-        '''Writes the prg to outfile.'''
-        with open(outfile,'w') as f:
-            f.write(self.prg)
-        return
+        """Writes the prg to outfile."""
+        with open(outfile, 'w') as prg_out_file:
+            prg_out_file.write(self.prg)
 
     @property
     def max_nesting_level_reached(self):
+        """Finds the maximum level of nesting that was reached by the alignment.
+
+        Returns:
+            int: Maximum nesting level as an integer.
+        """
         max_nesting = []
         if self.subAlignedSeqs == {}:
-            logging.debug("self.subAlignedSeqs == {} at nesting level %d for interval %s", self.nesting_level, self.interval)
+            logging.debug("self.subAlignedSeqs == {} at nesting level "
+                          "%d for interval %s",
+                          self.nesting_level, self.interval)
+
             max_nesting.append(self.nesting_level)
         else:
-            logging.debug("self.subAlignedSeqs.keys(): %s", self.subAlignedSeqs.keys())
-            logging.debug("self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]]: %s", self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]])
+            logging.debug(
+                "self.subAlignedSeqs.keys(): %s", self.subAlignedSeqs.keys())
+
+            logging.debug(
+                "self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]]: %s",
+                self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]])
+
             for interval_start in self.subAlignedSeqs.keys():
                 logging.debug("interval start: %d", interval_start)
                 for subaseq in self.subAlignedSeqs[interval_start]:
-                    logging.debug ("type of subAlignedSeqs object in list: %s", type(subaseq))
+                    logging.debug(
+                        "type of subAlignedSeqs object in list: %s",
+                        type(subaseq))
+
                     recur = subaseq.max_nesting_level_reached
-                    logging.debug("recur max level nesting returned: %d, which has type %s", recur, type(recur))
+                    logging.debug(
+                        "recur max level nesting returned: %d, "
+                        "which has type %s", recur, type(recur))
+
                     max_nesting.append(recur)
         m = max(max_nesting)
         logging.debug("found the max of %s is %d", max_nesting, m)
@@ -666,7 +774,7 @@ def main():
     prefix += ".max_nest{}.min_match{}".format(args.max_nesting,
                                                args.min_match_length)
 
-    if args.verbosity == True:
+    if args.verbosity:
         logging.basicConfig(filename='{}.log'.format(prefix),
                             level=logging.DEBUG,
                             format='%(asctime)s %(message)s',
@@ -696,10 +804,13 @@ def main():
         m = aseq.max_nesting_level_reached
         logging.info("Max_nesting_reached\t%d", m)
     logging.info("Write GFA file to %s.gfa", prefix)
-    aseq.write_gfa('%s.gfa' %prefix)
+    aseq.write_gfa('%s.gfa' % prefix)
 
     with open("summary.tsv", 'a') as s:
-        s.write("%s\t%d\t%d\t%f\n" %(args.MSA, aseq.site - 2, aseq.max_nesting_level_reached, aseq.prop_in_match_intervals))
+        s.write("%s\t%d\t%d\t%f\n" % (args.MSA, aseq.site - 2,
+                                      aseq.max_nesting_level_reached,
+                                      aseq.prop_in_match_intervals))
+
 
 if __name__ == "__main__":
     main()
