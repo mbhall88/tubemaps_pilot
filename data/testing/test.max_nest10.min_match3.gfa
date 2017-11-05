@@ -1,0 +1,16 @@
+H	VN:Z:1.0	bn:Z:--linear --singlearr
+S	0	*	RC:i:0
+S	1	AG	RC:i:0
+S	2	AC	RC:i:0
+S	3	TC	RC:i:0
+S	4	GAGC	RC:i:0
+L	1	+	4	+	0M
+L	2	+	4	+	0M
+L	3	+	4	+	0M
+L	4	+	5	+	0M
+S	5	TTA	RC:i:0
+L	4	+	6	+	0M
+S	6	ATA	RC:i:0
+S	7	*	RC:i:0
+L	5	+	7	+	0M
+L	6	+	7	+	0M

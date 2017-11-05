@@ -1,0 +1,1 @@
+ 5 AG 6 AC 6 TC 5 GAGC 7 TTA 8 ATA 7 
