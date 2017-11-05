@@ -1,0 +1,25 @@
+04/10/2017 02:12:25 Using debug logging
+04/10/2017 02:12:25 Input parameters max_nesting: 10, min_match_length: 3
+04/10/2017 02:12:25 Read from MSA file test.fasta
+04/10/2017 02:12:25 Non match intervals: [[0, 1], [6, 8]]
+04/10/2017 02:12:25 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+04/10/2017 02:12:25 Variant seqs found: ['AG', 'AC', 'TC']
+04/10/2017 02:12:25 Which is equivalent to: ['AG', 'AC', 'TC']
+04/10/2017 02:12:25 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+04/10/2017 02:12:25 Variant seqs found: ['TTA', 'ATA']
+04/10/2017 02:12:25 Which is equivalent to: ['TTA', 'ATA']
+04/10/2017 02:12:25 Write PRG file to test.max_nest10.min_match3.prg
+04/10/2017 02:12:25 self.subAlignedSeqs == {} at nesting level 1 for interval None
+04/10/2017 02:12:25 found the max of [1] is 1
+04/10/2017 02:12:25 Max_nesting_reached	1
+04/10/2017 02:12:25 Write GFA file to test.max_nest10.min_match3.gfa
+04/10/2017 02:12:25 gfa_site: 5
+04/10/2017 02:12:25 prgs: ['', 'AG 6 AC 6 TC', 'GAGC 7 TTA 8 ATA 7 ']
+04/10/2017 02:12:25 vars: ['AG', 'AC', 'TC']
+04/10/2017 02:12:25 gfa_site: 7
+04/10/2017 02:12:25 gfa_site: 7
+04/10/2017 02:12:25 prgs: ['GAGC', 'TTA 8 ATA', '']
+04/10/2017 02:12:25 vars: ['TTA', 'ATA']
+04/10/2017 02:12:25 gfa_site: 9
+04/10/2017 02:12:25 self.subAlignedSeqs == {} at nesting level 1 for interval None
+04/10/2017 02:12:25 found the max of [1] is 1
