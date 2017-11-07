@@ -13,18 +13,7 @@ import * as tubeMap from '../src/tubemap.js';
 // ];
 // let data = require('../data/testing/test.json');
 let data = require('../data/HIV1_ALL_2016_pol_DNA_5_samples.json');
-// add paths for each sample to paths object
-// for (const [sampleId, path] of Object.entries(data)) {
-//     paths.push({
-//         id: pathIdCounter,
-//         name: sampleId,
-//         sequence: path
-//     });
-//     pathIdCounter++
-// }
 
-// d3.json('../data/testing/test.json', function(data) {
-//     console.log(data);
 const nodes = data.nodes,
    paths = data.paths;
 
@@ -37,4 +26,3 @@ tubeMap.create({
 tubeMap.useColorScheme(0);
 // });
 //
-
