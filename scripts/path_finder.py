@@ -6,13 +6,22 @@ import os
 from Bio import SeqIO
 
 class Node(object):
+    """Class object to hold nodes, which in this context is the sequence."""
     def __init__(self, sequence=None, in_edges=None, out_edges=None, name=None):
+        """Initialisation of the graph object.
+        Args:
+            sequence (str): A DNA sequence of the node.
+            in_edges (list[str]): A list of the node ids coming into this node.
+            out_edges (list[str]): As above for the nodes going out of node.
+            
+        """
         self.sequence = sequence
         self.in_edges = in_edges if in_edges else []
         self.out_edges = out_edges if out_edges else []
         self.name = name
 
     def __repr__(self):
+        """Function that dictates the material printed for this class."""
         return "Node ID: {}\nNode Sequence: {}\nNodes coming in: {}\nNodes " \
                "going out: {}\n".format(self.name, self.sequence, self.in_edges,
                                         self.out_edges)
@@ -28,11 +37,19 @@ class Node(object):
 
 
 class Edge(object):
+    """An object holding the edges between nodes."""
     def __init__(self, to_node=None, from_node=None):
+        """Initialisation function for the edge class.
+        Args:
+            to_node (str): The node id this edge connects to.
+            from_node (str): The node id this edge comes from.
+        
+        """
         self.to_node = to_node
         self.from_node = from_node
 
     def __repr__(self):
+        """Function that dictates the material printed for this class."""
         return "To: {}\nFrom: {}".format(self.to_node, self.from_node)
 
     def create_from_line(self, line_str):
@@ -45,7 +62,15 @@ class Edge(object):
 
 
 class Graph(object):
+    """Class that contains all the information for the PRG."""
     def __init__(self, nodes=None, edges=None, from_gfa=None):
+        """Initialisation function for the Graph class.
+        Args:
+            nodes (dict[Node]): A dictionary of all the nodes in the graph.
+            edges (list[Edge]): A list of edges within the graph.
+            from_gfa (str): Path to GFA file to load graph from.
+            
+        """
         self.nodes = nodes if nodes else {}  # create getter/setter functions
         self.add_edges(edges)
         # only allow for loading from GFA if no edges/nodes given
@@ -57,6 +82,12 @@ class Graph(object):
             # self.all_paths = [self.find_all_paths()]
 
     def load_from_gfa(self, filename):
+        """Generate all components of graph from a given GFA file.
+        
+        Args:
+            filename (str): Path to the GFA file to load from.
+            
+        """
         with open(filename, 'r') as gfa:
             # add nodes as they're created. add their edges at the end
             edges = []
@@ -73,9 +104,15 @@ class Graph(object):
         self.add_edges(edges)
 
     def add_node(self, node):
+        """Add node into graph."""
         self.nodes[node.name] = node
 
     def add_edges(self, edges):
+        """Add edges into graph. This is best done once all of the nodes are 
+        in the graph, otherwise there is no nodes to connect.
+        
+        Args:
+            edges (list[Edge] | Edge): A list of edges or a single instance."""
         if isinstance(edges, list):
             for edge in edges:
                 self.add_edges(edge)
@@ -100,12 +137,27 @@ class Graph(object):
         return all_seqs
 
     def sequence_of_path(self, path):
+        """Given a path, this function will return the DNA sequence of it.
+        Args:
+            path (list[str]): A list of node ids which is a path.
+            
+        Returns:
+            sequence (str): The DNA sequence corresponding to the path.
+            
+        """
         sequence = ""
         for node_id in path:
             sequence += self.nodes[node_id].sequence
         return sequence
 
     def generate_all_paths(self):
+        """Generate all possible paths through the graph.
+
+        Returns:
+            list[list[str]]: List of all paths through graph. Each path is a 
+            list of node ids.
+
+        """
         start_nodes = self.find_all_start_nodes()
         end_nodes = self.find_all_end_nodes()
         # get all permutations of the two lists
@@ -117,6 +169,17 @@ class Graph(object):
         return list(itertools.chain(*all_paths))
 
     def find_all_paths(self, start, end, path=[]):
+        """Find all paths between two points in the graph.
+        
+        Args:
+            start (str): The node id to start the path from.
+            end (str): The node id for the end of the path.
+            
+        Returns:
+            list[list[str]]: List of all paths between the specified points in 
+            the graph. Each path is a list of node ids.
+            
+        """
         path = path + [start]
         if start == end:
             return [path]
@@ -131,17 +194,40 @@ class Graph(object):
         return paths
 
     def find_all_start_nodes(self):
+        """Find all the possible start points within the graph.
+        
+        Returns:
+            list[str]: List of node ids.
+            
+        """
         return [node.name
                 for node in self.nodes.values()
                 if not node.in_edges]
 
     def find_all_end_nodes(self):
+        """Find all possible ending points within the graph.
+        
+        Returns:
+            list[str]: List of node ids.
+            
+        """
         return [node.name
                 for node in self.nodes.values()
                 if not node.out_edges]
 
     def find_seq_path(self, seq):
-        """Find the most likely path for a sequence through a given graph."""
+        """Find the path for a sequence through a given graph.
+        At the moment this will only find an exact match. Therefore the 
+        sequence must have been involved in the construction of the PRG.
+
+        Args:
+            seq (str): The sequence you want to find a path for.
+        
+        Returns:
+            list[str]: A list of node ids in the order that the sequence 
+            follows through the graph.
+            
+        """
         seq = seq.replace('-', '')
         path = []
         #  returns list of node ids and create list of those nodes
@@ -164,8 +250,21 @@ class Graph(object):
                     raise err
 
     def _helper(self, seq, start_from, paths_acc):
-        """Helper function for path finder that recursively finds the correct path
-        through the graph and will end once we hit the end of the sequence/graph."""
+        """Helper function for path finder that recursively finds the correct 
+        path through the graph and will end once we hit the end of the 
+        sequence/graph.
+        
+        Args:
+            seq (str): Sequence to search for path.
+            start_from (str): Node id to start search from.
+            paths_acc (list[str]): A list of node ids followed through the 
+            graph up to the current point in the search. This list accumulates 
+            throughout the recursion.
+            
+        Returns:
+            list[str]: A list of node ids.
+            
+        """
         if not start_from or not seq:
             return paths_acc
         nodes_to_try = [self.nodes[key] for key in self.nodes[start_from].out_edges]
@@ -206,6 +305,16 @@ def find_match(seq, nodes):
 
 
 def fasta_parser(filename):
+    """Parse a fasta file and withdraw the sequences and their sequence/read id
+    
+    Args:
+        filename (str): Path for the fasta file.
+        
+    Returns:
+        fasta (dict[str]): A dictionary where the keys are the sequence/read
+        id and the value is the sequence for that sequence/read.
+        
+    """
     fasta = {}
     with open(filename, 'r') as f:
         contents = f.read()[1:].split('\n>')
