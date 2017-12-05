@@ -1,0 +1,18 @@
+##sequence-region NC_000962.3 1 4411532
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=83332
+NC_000962.3	RefSeq	gene	7302	9818	.	+	.	ID=gene5;Dbxref=GeneID:887105;Name=gyrA;experiment=DESCRIPTION:Mutation analysis[PMID:8031045];gbkey=Gene;gene=gyrA;gene_biotype=protein_coding;locus_tag=Rv0006
+NC_000962.3	RefSeq	gene	759807	763325	.	+	.	ID=gene687;Dbxref=GeneID:888164;Name=rpoB;gbkey=Gene;gene=rpoB;gene_biotype=protein_coding;locus_tag=Rv0667
+NC_000962.3	RefSeq	gene	781560	781934	.	+	.	ID=gene702;Dbxref=GeneID:888259;Name=rpsL;gbkey=Gene;gene=rpsL;gene_biotype=protein_coding;locus_tag=Rv0682
+NC_000962.3	RefSeq	gene	1471846	1473382	.	+	.	ID=gene1344;Dbxref=GeneID:2700429;Name=rrs;gbkey=Gene;gene=rrs;gene_biotype=rRNA;locus_tag=Rvnr01
+NC_000962.3	RefSeq	gene	1673440	1674183	.	+	.	ID=gene1518;Dbxref=GeneID:886551;Name=fabG1;gbkey=Gene;gene=fabG1;gene_biotype=protein_coding;gene_synonym=mabA;locus_tag=Rv1483
+NC_000962.3	RefSeq	gene	1674202	1675011	.	+	.	ID=gene1519;Dbxref=GeneID:886523;Name=inhA;gbkey=Gene;gene=inhA;gene_biotype=protein_coding;locus_tag=Rv1484
+NC_000962.3	RefSeq	gene	1833542	1834987	.	+	.	ID=gene1667;Dbxref=GeneID:885188;Name=rpsA;gbkey=Gene;gene=rpsA;gene_biotype=protein_coding;locus_tag=Rv1630
+NC_000962.3	RefSeq	gene	1917940	1918746	.	+	.	ID=gene1732;Dbxref=GeneID:885396;Name=tlyA;gbkey=Gene;gene=tlyA;gene_biotype=protein_coding;locus_tag=Rv1694
+NC_000962.3	RefSeq	gene	2101651	2103042	.	-	.	ID=gene1890;Dbxref=GeneID:885746;Name=ndh;gbkey=Gene;gene=ndh;gene_biotype=protein_coding;locus_tag=Rv1854c
+NC_000962.3	RefSeq	gene	2153889	2156111	.	-	.	ID=gene1945;Dbxref=GeneID:885638;Name=katG;gbkey=Gene;gene=katG;gene_biotype=protein_coding;locus_tag=Rv1908c
+NC_000962.3	RefSeq	gene	2288681	2289241	.	-	.	ID=gene2081;Dbxref=GeneID:888260;Name=pncA;gbkey=Gene;gene=pncA;gene_biotype=protein_coding;locus_tag=Rv2043c
+NC_000962.3	RefSeq	gene	2714124	2715332	.	-	.	ID=gene2467;Dbxref=GeneID:885903;Name=eis;gbkey=Gene;gene=eis;gene_biotype=protein_coding;locus_tag=Rv2416c
+NC_000962.3	RefSeq	gene	2726193	2726780	.	+	.	ID=gene2480;Dbxref=GeneID:885717;Name=ahpC;gbkey=Gene;gene=ahpC;gene_biotype=protein_coding;locus_tag=Rv2428
+NC_000962.3	RefSeq	gene	4243233	4246517	.	+	.	ID=gene3876;Dbxref=GeneID:886123;Name=embA;gbkey=Gene;gene=embA;gene_biotype=protein_coding;locus_tag=Rv3794
+NC_000962.3	RefSeq	gene	4246514	4249810	.	+	.	ID=gene3877;Dbxref=GeneID:886126;Name=embB;gbkey=Gene;gene=embB;gene_biotype=protein_coding;locus_tag=Rv3795
+NC_000962.3	RefSeq	gene	4407528	4408202	.	-	.	ID=gene4002;Dbxref=GeneID:886243;Name=gid;gbkey=Gene;gene=gid;gene_biotype=protein_coding;gene_synonym=gidB;locus_tag=Rv3919c
