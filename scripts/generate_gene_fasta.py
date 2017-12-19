@@ -43,6 +43,7 @@ ref = fasta_parser(sys.argv[1])
 ref_genome = list(ref.values())[0]
 gff_filename = sys.argv[2]
 output_dir = os.path.realpath(sys.argv[3])
+offset = 100
 
 with open(gff_filename, 'r') as gff:
     for row in gff:
@@ -54,8 +55,8 @@ with open(gff_filename, 'r') as gff:
         start = int(elements[3]) - 1
         end = int(elements[4])
         with open(os.path.join(output_dir, gene + '.fa'), 'w') as fout:
-            seq = ref_genome[start: end]
-            header = '>{0}|gene={1}'.format(list(ref.keys())[0], gene)
+            seq = ref_genome[start-offset: end+offset]
+            header = '>{0}|gene_start={2}|offset={3}|gene={1}'\
+            .format(list(ref.keys())[0], gene, start, offset)
             # write fasta file
             fasta_writer(fout, header, seq)
-
