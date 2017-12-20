@@ -24,34 +24,6 @@ def extract_from_header(header, left, right):
     return re.search(r'{}(.*?){}'.format(left, right), header).group(1)
 
 
-# def extract_var_name(header):
-#     """Function to extract the variant information from a fasta header.
-#     Args:
-#         header (str): fasta header.
-#
-#     Returns:
-#         (str): The variant information. i.e C45T
-#
-#     Example header is >alt-C-57T?var_name=C2726136T&enum=4&gene=ahpC&mut=C-57T
-#     In this case the function would return C2726136T
-#     """
-#     return re.search(r'var_name=(.*?)&', header).group(1)
-#
-#
-# def extract_gene_name(header):
-#     """Function to extract the gene name from a fasta header.
-#     Args:
-#         header (str): fasta header.
-#
-#     Returns:
-#         (str): The gene name
-#
-#     Example header is >alt-C-57T?var_name=C2726136T&enum=4&gene=ahpC&mut=C-57T
-#     In this case the function would return ahpC
-#     """
-#     return re.search(r'gene=(.*?)&', header).group(1)
-
-
 def extract_header_info_from_probes(filename):
     """Extracts all of the header information from the given probe fasta.
 
@@ -64,7 +36,7 @@ def extract_header_info_from_probes(filename):
 
     """
     header_info = {}
-    with open(filename, 'r') as probe_fasta:
+    with open(filename) as probe_fasta:
         for line in probe_fasta:
             if line.startswith('>'):  # if line is fasta header
                 gene_name = extract_from_header(line, 'gene=', '\&')
@@ -89,7 +61,7 @@ def fasta_parser(filename):
 
     """
     fasta = {}
-    with open(filename, 'r') as f:
+    with open(filename) as f:
         contents = f.read()[1:].split('\n>')
         for section in contents:
             sample = section.split('\n')
@@ -97,6 +69,7 @@ def fasta_parser(filename):
             seq = ''.join(sample[1:]).strip()
             fasta[sample_id] = seq
     return fasta
+
 
 def fasta_writer(file_obj, header, seq, wrap=60):
     """Write a fasta header and sequence to an open file.
@@ -138,17 +111,36 @@ def extract_variant_info(variant):
     return reference, position, alternate
 
 
-def _generic_extract(line, split_on):
-    """Generic function to split on a given pattern."""
-    return line.split('{}='.format(split_on))[-1].split('|')[0]
+def generate_variant_sequence(seq, variant, start=0, offset=0):
+    """Generates a copy of a given sequence altered by a variant.
 
+    Args:
+        seq (str): Reference sequence to alter.
+        variant (str): The variant to change by.
+        start (int): If the position in the variant is relative to the whole
+        genome and the seq given is just the gene, where does the gene start
+        relative to the whole genome.
+        offset (int): Padding added to the start/end of gene seq.
 
-def extract_start(header):
-    """Extracts the start parameter from a fasta header."""
-    offset = 0
-    if 'offset' in header:
-        offset = int(header.split())
-    return int(header.split('start=')[-1].split('|')[0])
+    Returns:
+        (str): A copy of seq, altered by the variant.
+
+    Examples:
+        >>> generate_variant_sequence('ATGATG', 'A500T', 499, 3)
+        'ATGTTG'
+    """
+    ref, position, alt = extract_variant_info(variant)
+
+    # make sure ref and alt have the same number of characters
+    assert len(ref) == len(alt), "Variants have different length."
+
+    # calculate position relative to gene ref sequence instead of genome
+    relative_start = position - start + offset - 1
+    relative_end = relative_start + len(ref)
+
+    # change the reference sequence to the alternate seq
+    return seq[:relative_start] + alt + seq[relative_end:]
+
 
 
 def setup_args():
@@ -198,13 +190,16 @@ def main():
         gene_ref_fasta = fasta_parser(gene_ref)
         # make sure there is only one sequence in gene reference fasta
         assert len(gene_ref_fasta.keys()) == 1, \
-        "Too many sequences in reference"
+            "Too many sequences in reference"
 
         # extract the reference sequence for gene from the dictionary.
         gene_ref_seq = list(gene_ref_fasta.values())[0]
 
         # get the reference genome start coordinate for the gene.
-        gene_ref_start = extract_start(list(gene_ref_fasta.keys())[0])
+        gene_header = list(gene_ref_fasta.keys())[0]
+        gene_ref_start = int(extract_from_header(gene_header,
+                                                 'gene_start=', '\|'))
+        gene_ref_offset = int(extract_from_header(gene_header, 'offset=', '\|'))
 
         # check there is a folder for gene, else create it
         gene_out_dir = os.path.join(args.output_path, gene)
@@ -212,16 +207,11 @@ def main():
             os.mkdir(gene_out_dir)
 
         for variant in header_info[gene]:
-            ref, position, alt = extract_variant_info(variant)
-            # print("{}\t{}\t{}\t{}".format(gene, ref, position, alt))
 
-            #position is the position within the whole genome. need to get the
-            #start coordinate for each gene.
-            upstream_start = position - gene_ref_start
-            downstream_end = position - (len(gene_ref_seq) + gene_ref_start)
-            print(upstream_start)
+            new_seq = generate_variant_sequence(gene_ref_seq, variant,
+                                                gene_ref_start, gene_ref_offset)
 
-            #TODO: update all header extractions to the generic method
+
 
 
         # gene_msa_fname = os.path.join(gene_out_dir, '{}_msa.fa'.format(gene))
