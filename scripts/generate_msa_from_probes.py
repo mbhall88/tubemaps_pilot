@@ -5,6 +5,7 @@ based on the reference fasta for that gene.
 import re
 import argparse
 import os
+import sys
 
 
 def extract_from_header(header, left, right):
@@ -142,6 +143,70 @@ def generate_variant_sequence(seq, variant, start=0, offset=0):
     return seq[:relative_start] + alt + seq[relative_end:]
 
 
+def generate_header(gene, variant):
+    """Generate fasta header from gene name and variant information.
+    Note: Does not include newline character.
+
+    Args:
+        gene (str): Name of the gene
+        variant (str): Variant information. i.e GA45TT
+
+    Returns:
+         (str): The header to be inserted into a fasta file.
+
+    Examples:
+        >>> generate_header('brca1', 'C77G')
+        '>brca1_C77G'
+
+    """
+    return '>{}_{}'.format(gene, variant)
+
+
+def generate_msa_for_gene(gene, variant_set, gene_path, msa_path):
+    """Generate a multiple sequence alignment of a gene with all it's variants.
+    2. store all information in a dictionary where the key is the gene and the
+    value is a set of the variants for that gene.
+    3. for each key in the dictionary:
+        - open gene reference
+        - loop through variants
+        - for each variant, create altered version of gene reference
+        - add to growing MSA for that gene.
+    4. Write MSA to file
+    Args:
+        gene (str): The name of the gene to write MSA for.
+        variant_set (set[str]): A set of all the gene's variants that require
+        and entry in the MSA.
+        gene_path (str): Path to gene reference fasta.
+        msa_path (str): Path to write MSA to.
+    """
+    gene_ref_fasta = fasta_parser(gene_path)
+    # make sure there is only one sequence in gene reference fasta
+    assert len(gene_ref_fasta.keys()) == 1, \
+        "Too many sequences in reference"
+
+    # extract the reference sequence for gene from the dictionary.
+    gene_ref_seq = list(gene_ref_fasta.values())[0]
+
+    # get the reference genome start coordinate for the gene.
+    gene_header = list(gene_ref_fasta.keys())[0]
+    gene_ref_start = int(extract_from_header(gene_header, 'gene_start=', '\|'))
+    gene_ref_offset = int(extract_from_header(gene_header, 'offset=', '\|'))
+
+    # open fasta file for writing MSA for gene
+    with open(msa_path, 'w') as gene_msa:
+        # write the reference version of the gene first
+        ref_header = generate_header(gene, 'reference')
+        fasta_writer(gene_msa, ref_header, gene_ref_seq)
+
+        # add an entry in msa for each variant
+        for variant in variant_set:
+            header_string = generate_header(gene, variant)
+            new_seq = generate_variant_sequence(gene_ref_seq, variant,
+                                                gene_ref_start,
+                                                gene_ref_offset)
+            fasta_writer(gene_msa, header_string, new_seq)
+    sys.stderr.write('MSA for {} written\n'.format(gene))
+
 
 def setup_args():
     """Sets up the args for running script from command line."""
@@ -186,39 +251,14 @@ def main():
     header_info = extract_header_info_from_probes(args.probe)
 
     for gene in header_info.keys():
-        gene_ref = os.path.join(os.path.abspath(args.gene_refs), gene + '.fa')
-        gene_ref_fasta = fasta_parser(gene_ref)
-        # make sure there is only one sequence in gene reference fasta
-        assert len(gene_ref_fasta.keys()) == 1, \
-            "Too many sequences in reference"
-
-        # extract the reference sequence for gene from the dictionary.
-        gene_ref_seq = list(gene_ref_fasta.values())[0]
-
-        # get the reference genome start coordinate for the gene.
-        gene_header = list(gene_ref_fasta.keys())[0]
-        gene_ref_start = int(extract_from_header(gene_header,
-                                                 'gene_start=', '\|'))
-        gene_ref_offset = int(extract_from_header(gene_header, 'offset=', '\|'))
-
         # check there is a folder for gene, else create it
         gene_out_dir = os.path.join(args.output_path, gene)
         if not os.path.exists(gene_out_dir):
             os.mkdir(gene_out_dir)
 
-        for variant in header_info[gene]:
-
-            new_seq = generate_variant_sequence(gene_ref_seq, variant,
-                                                gene_ref_start, gene_ref_offset)
-
-
-
-
-        # gene_msa_fname = os.path.join(gene_out_dir, '{}_msa.fa'.format(gene))
-        # with open(gene_msa_fname, 'w') as msa_file:
-
-
-
+        gene_msa_fname = os.path.join(gene_out_dir, '{}_msa.fa'.format(gene))
+        gene_ref = os.path.join(os.path.abspath(args.gene_refs), gene + '.fa')
+        generate_msa_for_gene(gene, header_info[gene], gene_ref, gene_msa_fname)
 
 
 if __name__ == '__main__':
