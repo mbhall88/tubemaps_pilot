@@ -1,0 +1,55 @@
+09/01/2018 11:54:37 Using debug logging
+09/01/2018 11:54:37 Input parameters max_nesting: 10, min_match_length: 5
+09/01/2018 11:54:37 Read from MSA file /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/rpoB/rpoB_msa.fa
+09/01/2018 11:54:44 Non match intervals: [[607, 609], [1175, 1176], [1372, 1455], [1570, 1572], [2125, 2127], [3041, 3042]]
+09/01/2018 11:54:44 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:44 Variant seqs found: ['GTC', 'TTT', 'TTC']
+09/01/2018 11:54:44 Which is equivalent to: ['GTC', 'TTT', 'TTC']
+09/01/2018 11:54:44 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:44 Variant seqs found: ['TG', 'CG', 'CT', 'CA', 'CC']
+09/01/2018 11:54:44 Which is equivalent to: ['TG', 'CG', 'CT', 'CA', 'CC']
+09/01/2018 11:54:44 Divide sequences into subgroups and define prg for each subgroup.
+09/01/2018 11:54:44 Get kmeans partition of interval [1372, 1455]
+09/01/2018 11:54:44 Add classes corresponding to 0 small sequences
+09/01/2018 11:54:44 Now add classes corresponding to 1543 longer sequences
+09/01/2018 11:54:44 Transform sequences into kmer occurrence vectors
+09/01/2018 11:54:44 These vectors have length 123440
+09/01/2018 11:54:45 Now cluster:
+09/01/2018 11:55:04 number of clusters: 1, inertia: 18111.37005832792
+09/01/2018 11:56:10 number of clusters: 2, inertia: 17317.396343036613
+09/01/2018 11:57:28 number of clusters: 3, inertia: 16589.08510230094
+09/01/2018 11:58:52 number of clusters: 4, inertia: 16047.921910174027
+09/01/2018 12:00:27 number of clusters: 5, inertia: 15422.932110689664
+09/01/2018 12:02:15 number of clusters: 6, inertia: 14837.682151107976
+09/01/2018 12:04:08 number of clusters: 7, inertia: 14090.96365063707
+09/01/2018 12:06:07 number of clusters: 8, inertia: 13788.88224852697
+09/01/2018 12:08:13 number of clusters: 9, inertia: 13178.50374554064
+09/01/2018 12:10:27 number of clusters: 10, inertia: 12925.58248273166
+09/01/2018 12:12:48 number of clusters: 11, inertia: 12496.12100487524
+09/01/2018 12:15:15 number of clusters: 12, inertia: 12072.460808964555
+09/01/2018 12:17:50 number of clusters: 13, inertia: 11875.408093842283
+09/01/2018 12:20:30 number of clusters: 14, inertia: 11602.033727060692
+09/01/2018 12:23:21 number of clusters: 15, inertia: 11483.273584235747
+09/01/2018 12:26:21 number of clusters: 16, inertia: 11232.414414923736
+09/01/2018 12:29:28 number of clusters: 17, inertia: 10903.289352626649
+09/01/2018 12:32:38 number of clusters: 18, inertia: 10804.416088080352
+09/01/2018 12:35:56 number of clusters: 19, inertia: 10539.964229251402
+09/01/2018 12:39:13 number of clusters: 20, inertia: 10285.430542403532
+09/01/2018 12:42:41 number of clusters: 21, inertia: 10176.735963709114
+09/01/2018 12:46:06 number of clusters: 22, inertia: 9943.151773164573
+09/01/2018 12:49:34 number of clusters: 23, inertia: 9904.793810412566
+09/01/2018 12:53:23 number of clusters: 24, inertia: 9602.221457177342
+09/01/2018 12:57:16 number of clusters: 25, inertia: 9569.27195662808
+09/01/2018 01:01:15 number of clusters: 26, inertia: 9406.208045164905
+09/01/2018 01:05:18 number of clusters: 27, inertia: 9387.266987317227
+09/01/2018 01:09:26 number of clusters: 28, inertia: 9294.331755649982
+09/01/2018 01:13:43 number of clusters: 29, inertia: 9277.505164150592
+09/01/2018 01:19:01 number of clusters: 30, inertia: 9184.159839119846
+09/01/2018 01:23:50 number of clusters: 31, inertia: 9167.777220367476
+09/01/2018 01:28:48 number of clusters: 32, inertia: 9147.003843612689
+09/01/2018 01:33:37 number of clusters: 33, inertia: 9209.868623095936
+09/01/2018 01:38:33 number of clusters: 34, inertia: 9101.88690788397
+09/01/2018 01:43:32 number of clusters: 35, inertia: 9090.876615921243
+09/01/2018 01:48:50 number of clusters: 36, inertia: 9069.200399600368
+09/01/2018 01:54:34 number of clusters: 37, inertia: 9042.01088337883
+09/01/2018 01:54:34 Extract equivalence classes from this partition

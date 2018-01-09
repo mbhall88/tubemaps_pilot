@@ -1,0 +1,15 @@
+09/01/2018 11:51:46 Using debug logging
+09/01/2018 11:51:46 Input parameters max_nesting: 10, min_match_length: 5
+09/01/2018 11:51:46 Read from MSA file /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/gid/gid_msa.fa
+09/01/2018 11:51:47 Non match intervals: [[160, 168], [175, 176], [190, 192], [256, 258], [289, 291], [328, 330], [361, 374], [400, 402], [421, 425], [496, 503], [511, 512], [520, 527], [535, 540], [550, 557], [565, 569], [580, 585], [619, 620], [631, 636], [652, 654], [673, 674], [685, 686], [697, 697], [718, 720], [742, 743]]
+09/01/2018 11:51:47 Divide sequences into subgroups and define prg for each subgroup.
+09/01/2018 11:51:47 Get kmeans partition of interval [160, 168]
+09/01/2018 11:51:47 Add classes corresponding to 0 small sequences
+09/01/2018 11:51:47 Now add classes corresponding to 9 longer sequences
+09/01/2018 11:51:47 Transform sequences into kmer occurrence vectors
+09/01/2018 11:51:47 These vectors have length 45
+09/01/2018 11:51:47 Now cluster:
+09/01/2018 11:51:47 number of clusters: 1, inertia: 24.888888888888893
+09/01/2018 11:51:47 number of clusters: 2, inertia: 16.0
+09/01/2018 11:51:47 number of clusters: 3, inertia: 11.0
+09/01/2018 11:51:47 Extract equivalence classes from this partition

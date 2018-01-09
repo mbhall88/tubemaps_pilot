@@ -386,7 +386,8 @@ def main():
     # of each node in the graph.
     paths_and_nodes_obj = json_formatter(graph, fasta)
 
-    json_fname = os.path.basename(args.fasta)[:-5] + 'json'
+    basename = os.path.basename(args.fasta)
+    json_fname = os.path.splitext(basename)[0] + '.json'
     json_path = os.path.join(args.output_path, json_fname)
 
     # write dictionary out to json file.

@@ -1,0 +1,26 @@
+Creating PRG for katG
+Traceback (most recent call last):
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/make_gene_prg.py", line 820, in <module>
+    main()
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/make_gene_prg.py", line 805, in main
+    min_match_length=args.min_match_length)
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/make_gene_prg.py", line 75, in __init__
+    self.prg = self.get_prg()
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/make_gene_prg.py", line 484, in get_prg
+    self.kmeans_cluster_seqs_in_interval(interval)
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/make_gene_prg.py", line 359, in kmeans_cluster_seqs_in_interval
+    .extend(interval_seq_dict[interval_seqs[i]])
+TypeError: 'dict_keys' object does not support indexing
+PRG complete for katG
+Finding paths for katG
+Traceback (most recent call last):
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/path_finder.py", line 398, in <module>
+    main()
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/path_finder.py", line 382, in main
+    graph = Graph(from_gfa=args.gfa_file)
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/path_finder.py", line 78, in __init__
+    self.load_from_gfa(from_gfa)
+  File "/Users/mbhall88/Dropbox/PhD/prg_tubemaps/scripts/path_finder.py", line 91, in load_from_gfa
+    with open(filename, 'r') as gfa:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/katG/katG*.gfa'
+Path finding complete for katG

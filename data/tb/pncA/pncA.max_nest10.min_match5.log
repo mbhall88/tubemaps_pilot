@@ -1,0 +1,38 @@
+09/01/2018 11:54:35 Using debug logging
+09/01/2018 11:54:35 Input parameters max_nesting: 10, min_match_length: 5
+09/01/2018 11:54:35 Read from MSA file /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/pncA/pncA_msa.fa
+09/01/2018 11:54:35 Non match intervals: [[121, 123], [136, 138], [145, 146], [175, 176], [184, 186], [208, 210], [238, 266], [286, 287], [319, 321], [349, 351], [364, 374], [418, 420], [427, 429], [448, 450], [457, 459], [490, 492], [499, 501], [508, 508], [514, 522], [565, 566], [580, 581], [598, 599], [619, 642], [649, 651], [671, 672]]
+09/01/2018 11:54:35 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:35 Variant seqs found: ['GAC', 'CCC', 'ACC', 'TCC', 'AAA', 'GCC', 'GAA']
+09/01/2018 11:54:35 Which is equivalent to: ['GAC', 'CCC', 'ACC', 'TCC', 'AAA', 'GCC', 'GAA']
+09/01/2018 11:54:35 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:35 Variant seqs found: ['CAT', 'CAC', 'AAC', 'GAC', 'TAC']
+09/01/2018 11:54:35 Which is equivalent to: ['CAT', 'CAC', 'AAC', 'GAC', 'TAC']
+09/01/2018 11:54:35 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:35 Variant seqs found: ['CA', 'AG', 'GG', 'CG', 'TG']
+09/01/2018 11:54:35 Which is equivalent to: ['CA', 'AG', 'GG', 'CG', 'TG']
+09/01/2018 11:54:35 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:35 Variant seqs found: ['AC', 'AT', 'GT']
+09/01/2018 11:54:35 Which is equivalent to: ['AC', 'AT', 'GT']
+09/01/2018 11:54:35 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:35 Variant seqs found: ['CAG', 'GAC', 'AAC', 'TAC', 'CAC']
+09/01/2018 11:54:35 Which is equivalent to: ['CAG', 'GAC', 'AAC', 'TAC', 'CAC']
+09/01/2018 11:54:35 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:35 Variant seqs found: ['CAA', 'GCT', 'CGA', 'AGA', 'ACT', 'TGA', 'GGA']
+09/01/2018 11:54:35 Which is equivalent to: ['CAA', 'GCT', 'CGA', 'AGA', 'ACT', 'TGA', 'GGA']
+09/01/2018 11:54:35 Divide sequences into subgroups and define prg for each subgroup.
+09/01/2018 11:54:35 Get kmeans partition of interval [238, 266]
+09/01/2018 11:54:35 Add classes corresponding to 0 small sequences
+09/01/2018 11:54:35 Now add classes corresponding to 90 longer sequences
+09/01/2018 11:54:35 Transform sequences into kmer occurrence vectors
+09/01/2018 11:54:35 These vectors have length 2250
+09/01/2018 11:54:35 Now cluster:
+09/01/2018 11:54:35 number of clusters: 1, inertia: 540.3555555555554
+09/01/2018 11:54:35 number of clusters: 2, inertia: 446.8059048660471
+09/01/2018 11:54:35 number of clusters: 3, inertia: 409.30351537978663
+09/01/2018 11:54:36 number of clusters: 4, inertia: 375.74308652988407
+09/01/2018 11:54:36 number of clusters: 5, inertia: 345.5037037037037
+09/01/2018 11:54:36 number of clusters: 6, inertia: 315.6715506715507
+09/01/2018 11:54:36 number of clusters: 7, inertia: 289.7545454545455
+09/01/2018 11:54:36 number of clusters: 8, inertia: 268.11954022988505
+09/01/2018 11:54:36 Extract equivalence classes from this partition

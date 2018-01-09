@@ -627,9 +627,9 @@ class AlignedSeq(object):
             pre_var_id = self.gfa_id
             self.gfa_id += 1
             for _id in end_ids:
-                    self.gfa_string += "L\t{}\t+\t{}\t+\t0M\n"\
+                self.gfa_string += "L\t{}\t+\t{}\t+\t0M\n"\
                         .format(_id, pre_var_id)
-                    end_ids = []
+                end_ids = []
 
             # recursively add segments for each of the variant haplotypes at
             # this site, saving the end id for each haplotype
@@ -643,7 +643,7 @@ class AlignedSeq(object):
             self.gfa_site += 2
             logging.debug("gfa_site: %d", self.gfa_site)
             for var_string in variants:
-                if pre_var_id:
+                if isinstance(pre_var_id, int):
                     self.gfa_string += "L\t%d\t+\t%d\t+\t0M\n" % (pre_var_id,
                                                                   self.gfa_id)
                 var_end_ids = self.get_gfa_string(prg_string=var_string,

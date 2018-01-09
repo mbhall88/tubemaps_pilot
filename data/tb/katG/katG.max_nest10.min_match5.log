@@ -1,0 +1,51 @@
+09/01/2018 11:54:31 Using debug logging
+09/01/2018 11:54:31 Input parameters max_nesting: 10, min_match_length: 5
+09/01/2018 11:54:31 Read from MSA file /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/katG/katG_msa.fa
+09/01/2018 11:54:32 Non match intervals: [[211, 213], [223, 225], [424, 425], [442, 443], [481, 482], [808, 810], [1339, 1341], [1378, 1380], [1423, 1425], [1432, 1433], [1627, 1629], [1750, 1752], [1777, 1784], [1846, 1847], [1897, 1900], [1948, 1949], [1996, 1997], [2011, 2012], [2053, 2055]]
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CAA', 'ACT', 'GCT', 'TGA', 'GGA', 'CGA', 'AGA']
+09/01/2018 11:54:32 Which is equivalent to: ['CAA', 'ACT', 'GCT', 'TGA', 'GGA', 'CGA', 'AGA']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['GGA', 'AGG', 'TGG', 'GGG', 'CGG']
+09/01/2018 11:54:32 Which is equivalent to: ['GGA', 'AGG', 'TGG', 'GGG', 'CGG']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['GA', 'GG', 'AG', 'TG', 'CG']
+09/01/2018 11:54:32 Which is equivalent to: ['GA', 'GG', 'AG', 'TG', 'CG']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CA', 'AG', 'CG', 'TG', 'GG']
+09/01/2018 11:54:32 Which is equivalent to: ['CA', 'AG', 'CG', 'TG', 'GG']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CG', 'TT', 'CT']
+09/01/2018 11:54:32 Which is equivalent to: ['CG', 'TT', 'CT']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CCA', 'TAC', 'GCG', 'AAA', 'AAC', 'ACT', 'CGT', 'TGA', 'GGA', 'CGG', 'ACA', 'CAG', 'TAA', 'ACG', 'AGT', 'GCC', 'GCT', 'GAA', 'AAT', 'TTT', 'TCC', 'CCT', 'CAT', 'TTG', 'AGC', 'AAG', 'CTG', 'CGA', 'ATC', 'GTC', 'GAG', 'AGA', 'CAA', 'CAC', 'GAT', 'ACC', 'GAC', 'AGG', 'GCA', 'GGG', 'TCT', 'GTG', 'CCC', 'TGT', 'CCG', 'GGC', 'TAT', 'TTC', 'TGC', 'TGG', 'TCG', 'GTT', 'CGC', 'GGT', 'CTT', 'ATT', 'ATG', 'ATA', 'TAG', 'CTC', 'GTA']
+09/01/2018 11:54:32 Which is equivalent to: ['CCA', 'TAC', 'GCG', 'AAA', 'AAC', 'ACT', 'CGT', 'TGA', 'GGA', 'CGG', 'ACA', 'CAG', 'TAA', 'ACG', 'AGT', 'GCC', 'GCT', 'GAA', 'AAT', 'TTT', 'TCC', 'CCT', 'CAT', 'TTG', 'AGC', 'AAG', 'CTG', 'CGA', 'ATC', 'GTC', 'GAG', 'AGA', 'CAA', 'CAC', 'GAT', 'ACC', 'GAC', 'AGG', 'GCA', 'GGG', 'TCT', 'GTG', 'CCC', 'TGT', 'CCG', 'GGC', 'TAT', 'TTC', 'TGC', 'TGG', 'TCG', 'GTT', 'CGC', 'GGT', 'CTT', 'ATT', 'ATG', 'ATA', 'TAG', 'CTC', 'GTA']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CCA', 'TAA', 'TAG', 'AAG', 'CAG', 'GAG', 'CAA']
+09/01/2018 11:54:32 Which is equivalent to: ['CCA', 'TAA', 'TAG', 'AAG', 'CAG', 'GAG', 'CAA']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['GCT', 'GAG', 'AGC', 'AAC', 'CTG', 'TGC', 'TAA', 'GGG', 'CGT', 'TGT', 'GGT', 'CAC', 'TCC', 'CCC', 'GCG', 'AGG', 'CGC', 'ACA', 'TAT', 'GTT', 'CAA', 'TTG', 'TTC', 'ATC', 'AAA', 'GGC', 'CTT', 'TAG', 'ATA', 'GTA', 'GTC', 'GCA', 'TGG', 'GCC', 'CCG', 'ACC', 'GTG', 'TCT', 'TTT', 'CGG', 'ATT', 'CTC', 'AAG', 'GAT', 'GAA', 'CCA', 'ATG', 'ACG', 'CAG', 'AGT', 'TCG', 'CAT', 'CCT', 'GAC', 'AAT', 'TAC']
+09/01/2018 11:54:32 Which is equivalent to: ['GCT', 'GAG', 'AGC', 'AAC', 'CTG', 'TGC', 'TAA', 'GGG', 'CGT', 'TGT', 'GGT', 'CAC', 'TCC', 'CCC', 'GCG', 'AGG', 'CGC', 'ACA', 'TAT', 'GTT', 'CAA', 'TTG', 'TTC', 'ATC', 'AAA', 'GGC', 'CTT', 'TAG', 'ATA', 'GTA', 'GTC', 'GCA', 'TGG', 'GCC', 'CCG', 'ACC', 'GTG', 'TCT', 'TTT', 'CGG', 'ATT', 'CTC', 'AAG', 'GAT', 'GAA', 'CCA', 'ATG', 'ACG', 'CAG', 'AGT', 'TCG', 'CAT', 'CCT', 'GAC', 'AAT', 'TAC']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CCA', 'ACA', 'ACT', 'TGA', 'AGA', 'GCT', 'CGA', 'GGA', 'GCA']
+09/01/2018 11:54:32 Which is equivalent to: ['CCA', 'ACA', 'ACT', 'TGA', 'AGA', 'GCT', 'CGA', 'GGA', 'GCA']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['GC', 'TA', 'GA', 'CA', 'AA']
+09/01/2018 11:54:32 Which is equivalent to: ['GC', 'TA', 'GA', 'CA', 'AA']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CGG', 'TCG', 'TCT', 'CCG', 'ACG', 'CCT', 'GCG']
+09/01/2018 11:54:32 Which is equivalent to: ['CGG', 'TCG', 'TCT', 'CCG', 'ACG', 'CCT', 'GCG']
+09/01/2018 11:54:32 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+09/01/2018 11:54:32 Variant seqs found: ['CCA', 'ACC', 'ACG', 'TCG', 'TCT', 'CCC', 'CCT', 'GCG', 'GCC', 'TCC', 'CCG']
+09/01/2018 11:54:32 Which is equivalent to: ['CCA', 'ACC', 'ACG', 'TCG', 'TCT', 'CCC', 'CCT', 'GCG', 'GCC', 'TCC', 'CCG']
+09/01/2018 11:54:32 Divide sequences into subgroups and define prg for each subgroup.
+09/01/2018 11:54:32 Get kmeans partition of interval [1777, 1784]
+09/01/2018 11:54:32 Add classes corresponding to 0 small sequences
+09/01/2018 11:54:32 Now add classes corresponding to 9 longer sequences
+09/01/2018 11:54:32 Transform sequences into kmer occurrence vectors
+09/01/2018 11:54:32 These vectors have length 36
+09/01/2018 11:54:32 Now cluster:
+09/01/2018 11:54:32 number of clusters: 1, inertia: 22.66666666666667
+09/01/2018 11:54:32 number of clusters: 2, inertia: 13.666666666666666
+09/01/2018 11:54:32 number of clusters: 3, inertia: 7.333333333333333
+09/01/2018 11:54:32 Extract equivalence classes from this partition
