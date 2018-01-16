@@ -1,0 +1,3 @@
+#!/bin/sh
+# script to re-webpack all javascript files for latest javascript release
+./node_modules/.bin/webpack src/*.js dist/bundle.js

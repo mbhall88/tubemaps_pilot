@@ -12,7 +12,7 @@ import * as tubeMap from '../src/tubemap.js';
 //     { id: 2, name: 'Track 3', sequence: ['A', 'C'] },
 // ];
 // let data = require('../data/testing/test.json');
-let data = require('../data/HIV1_ALL_2016_pol_DNA_5_samples.json');
+let data = require('../data/tb/embB/embB_msa.json');
 
 const nodes = data.nodes,
    paths = data.paths;

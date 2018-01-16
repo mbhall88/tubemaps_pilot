@@ -273,7 +273,15 @@ class AlignedSeq(object):
             logging.debug("Now add classes corresponding to {} longer sequences"
                           .format(len(interval_seq_dict.keys())))
 
-            interval_seqs = interval_seq_dict.keys()
+
+
+
+            # test ==========
+            interval_seqs = list(interval_seq_dict.keys())
+
+
+
+
             if len(interval_seqs) > 1:
                 logging.debug("Transform sequences into kmer "
                               "occurrence vectors")
@@ -705,7 +713,7 @@ class AlignedSeq(object):
 
             logging.debug(
                 "self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]]: %s",
-                self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]])
+                self.subAlignedSeqs[list(self.subAlignedSeqs.keys())[0]])
 
             for interval_start in self.subAlignedSeqs.keys():
                 logging.debug("interval start: %d", interval_start)

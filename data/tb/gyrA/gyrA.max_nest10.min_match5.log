@@ -40,3 +40,553 @@
 09/01/2018 11:54:18 number of clusters: 26, inertia: 2867.8830770854706
 09/01/2018 11:54:28 number of clusters: 27, inertia: 2829.547093757102
 09/01/2018 11:54:28 Extract equivalence classes from this partition
+16/01/2018 02:35:58 Using debug logging
+16/01/2018 02:35:58 Input parameters max_nesting: 10, min_match_length: 5
+16/01/2018 02:35:58 Read from MSA file /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/gyrA/gyrA_msa.fa
+16/01/2018 02:36:00 Non match intervals: [[319, 321], [352, 381]]
+16/01/2018 02:36:00 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:36:00 Variant seqs found: ['GCC', 'TCT', 'AGT', 'TCA', 'TCC', 'TCG', 'AGC']
+16/01/2018 02:36:00 Which is equivalent to: ['GCC', 'TCT', 'AGT', 'TCA', 'TCC', 'TCG', 'AGC']
+16/01/2018 02:36:00 Divide sequences into subgroups and define prg for each subgroup.
+16/01/2018 02:36:00 Get kmeans partition of interval [352, 381]
+16/01/2018 02:36:00 Add classes corresponding to 0 small sequences
+16/01/2018 02:36:00 Now add classes corresponding to 580 longer sequences
+16/01/2018 02:36:00 Transform sequences into kmer occurrence vectors
+16/01/2018 02:36:00 These vectors have length 15080
+16/01/2018 02:36:00 Now cluster:
+16/01/2018 02:36:01 number of clusters: 1, inertia: 5727.98620689655
+16/01/2018 02:36:03 number of clusters: 2, inertia: 5118.293181508089
+16/01/2018 02:36:06 number of clusters: 3, inertia: 4600.3269614738465
+16/01/2018 02:36:09 number of clusters: 4, inertia: 4230.23366520724
+16/01/2018 02:36:12 number of clusters: 5, inertia: 3946.6063635857563
+16/01/2018 02:36:16 number of clusters: 6, inertia: 3703.5623447433813
+16/01/2018 02:36:20 number of clusters: 7, inertia: 3525.9700344221233
+16/01/2018 02:36:24 number of clusters: 8, inertia: 3346.446317912846
+16/01/2018 02:36:28 number of clusters: 9, inertia: 3245.4142993501973
+16/01/2018 02:36:33 number of clusters: 10, inertia: 3153.324889556863
+16/01/2018 02:36:38 number of clusters: 11, inertia: 3199.5122599838987
+16/01/2018 02:36:43 number of clusters: 12, inertia: 3118.917316249194
+16/01/2018 02:36:48 number of clusters: 13, inertia: 3095.7894806173317
+16/01/2018 02:36:54 number of clusters: 14, inertia: 3076.6131015138512
+16/01/2018 02:37:00 number of clusters: 15, inertia: 3053.719319669564
+16/01/2018 02:37:07 number of clusters: 16, inertia: 3033.025847312176
+16/01/2018 02:37:14 number of clusters: 17, inertia: 3018.6320654271453
+16/01/2018 02:37:21 number of clusters: 18, inertia: 2998.1835292175915
+16/01/2018 02:37:28 number of clusters: 19, inertia: 2981.518297957622
+16/01/2018 02:37:36 number of clusters: 20, inertia: 2953.504621862049
+16/01/2018 02:37:45 number of clusters: 21, inertia: 2948.5655021718308
+16/01/2018 02:37:55 number of clusters: 22, inertia: 2938.6398665289253
+16/01/2018 02:38:05 number of clusters: 23, inertia: 2896.540219550194
+16/01/2018 02:38:15 number of clusters: 24, inertia: 2891.4890746622905
+16/01/2018 02:38:25 number of clusters: 25, inertia: 2874.372220438981
+16/01/2018 02:38:36 number of clusters: 26, inertia: 2867.8830770854706
+16/01/2018 02:38:47 number of clusters: 27, inertia: 2829.547093757102
+16/01/2018 02:38:47 Extract equivalence classes from this partition
+16/01/2018 02:38:47 Merge return id lists for the partitions
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_reference', 'gyrA_GCC7521TCT', 'gyrA_GCC7521AGT', 'gyrA_GCC7521TCA', 'gyrA_GCC7521TCC', 'gyrA_GCC7521TCG', 'gyrA_GCC7521AGC']
+16/01/2018 02:38:47 add (big) return ids 1: ['gyrA_reference', 'gyrA_GCC7521TCT', 'gyrA_GCC7521AGT', 'gyrA_GCC7521TCA', 'gyrA_GCC7521TCC', 'gyrA_GCC7521TCG', 'gyrA_GCC7521AGC', 'gyrA_GAC7581TAT', 'gyrA_GAC7581GGA', 'gyrA_GAC7581TGC', 'gyrA_GAC7581AGT', 'gyrA_GAC7581GTC', 'gyrA_GAC7581ATA', 'gyrA_GAC7581AAC', 'gyrA_GAC7581TGT', 'gyrA_GAC7581GGG', 'gyrA_GAC7581TCG', 'gyrA_TAC7578TCT', 'gyrA_TAC7578TGG', 'gyrA_GAC7581TTT', 'gyrA_GAC7581GGT', 'gyrA_TAC7578TTC', 'gyrA_TAC7578TCA', 'gyrA_GAC7581GAA', 'gyrA_GAC7581TTG', 'gyrA_GAC7581GCT', 'gyrA_GAC7581AGG', 'gyrA_GAC7581TCA', 'gyrA_GAC7581ATG', 'gyrA_GAC7581AGA', 'gyrA_GAC7581ATC', 'gyrA_GAC7581GCA', 'gyrA_GAC7581GTA', 'gyrA_TAC7578TGC', 'gyrA_TAC7578TCC', 'gyrA_TAC7578TGT', 'gyrA_TAC7578TCG', 'gyrA_TAC7578TTT', 'gyrA_TAC7578TTA', 'gyrA_GAC7581TTC', 'gyrA_GAC7581AGC', 'gyrA_GAC7581GTT', 'gyrA_GAC7581AAT', 'gyrA_GAC7581ACG', 'gyrA_GAC7581GCG', 'gyrA_GAC7581AAG', 'gyrA_GAC7581TGG', 'gyrA_GAC7581ACA', 'gyrA_GAC7581ACC', 'gyrA_GAC7581GAG', 'gyrA_GAC7581AAA', 'gyrA_GAC7581GTG', 'gyrA_GAC7581TAC', 'gyrA_GAC7581TCT', 'gyrA_GAC7581GGC', 'gyrA_GAC7581TCC', 'gyrA_GAC7581GCC', 'gyrA_GAC7581TTA', 'gyrA_TAC7578TTG', 'gyrA_GAC7581ACT', 'gyrA_GAC7581ATT']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_CAC7560TAC']
+16/01/2018 02:38:47 add (big) return ids 8: ['gyrA_CAC7560TAC', 'gyrA_CAC7560AAC', 'gyrA_CAC7560GGG', 'gyrA_CAC7560ATC', 'gyrA_CAC7560GCG', 'gyrA_CAC7560CCC', 'gyrA_CAC7560GTC', 'gyrA_CAC7560GGC', 'gyrA_CAC7560GTG', 'gyrA_CAC7560TTC', 'gyrA_CAC7560GTT', 'gyrA_CAC7560GCC', 'gyrA_CAC7560GAT', 'gyrA_CAC7560ACC', 'gyrA_CAC7560GAC', 'gyrA_CAC7560GAG', 'gyrA_CAC7560TGC', 'gyrA_CAC7560GCT', 'gyrA_CAC7560TCC']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GAC7566AAG']
+16/01/2018 02:38:47 add (big) return ids 5: ['gyrA_GAC7566AAG', 'gyrA_GAC7566GTA', 'gyrA_GAC7566GCG', 'gyrA_GAC7566GTT', 'gyrA_GAC7566GGG', 'gyrA_GAC7566TTG', 'gyrA_GAC7566CTG', 'gyrA_GAC7566TCG', 'gyrA_GAC7566GTG', 'gyrA_GAC7566CCG', 'gyrA_GAC7566AGG', 'gyrA_GAC7566CGG', 'gyrA_GAC7566ATG', 'gyrA_GAC7566GAG', 'gyrA_GAC7566GTC', 'gyrA_GAC7566TGG', 'gyrA_GAC7566ACG', 'gyrA_GAC7566GGC']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_TAC7578AGC']
+16/01/2018 02:38:47 add (big) return ids 14: ['gyrA_TAC7578AGC', 'gyrA_TAC7578AAA', 'gyrA_TAC7578ACG', 'gyrA_TAC7578AGA', 'gyrA_TAC7578ATG', 'gyrA_TAC7578ATC', 'gyrA_TAC7578AAG', 'gyrA_TAC7578AAC', 'gyrA_TAC7578ATT', 'gyrA_TAC7578ATA', 'gyrA_TAC7578ACT', 'gyrA_TAC7578AAT', 'gyrA_TAC7578ACC', 'gyrA_TAC7578ACA', 'gyrA_TAC7578AGG', 'gyrA_TAC7578AGT']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_TCG7572AAG']
+16/01/2018 02:38:47 add (big) return ids 1: ['gyrA_TCG7572AAG', 'gyrA_TCG7572ACA', 'gyrA_TCG7572ACT', 'gyrA_TCG7572AAA', 'gyrA_TCG7572AGA', 'gyrA_TCG7572TAC', 'gyrA_TCG7572AAC', 'gyrA_TCG7572TGC', 'gyrA_TCG7572GCC', 'gyrA_TCG7572ATC', 'gyrA_TCG7572AGG', 'gyrA_TCG7572ACC', 'gyrA_TCG7572GTC', 'gyrA_TCG7572GAC', 'gyrA_TCG7572ACG', 'gyrA_TCG7572ATT', 'gyrA_TCG7572AAT', 'gyrA_TCG7572TTC', 'gyrA_TCG7572ATG', 'gyrA_TCG7572ATA']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GGC7563ATG']
+16/01/2018 02:38:47 add (big) return ids 0: ['gyrA_GGC7563ATG', 'gyrA_GGC7563ATC', 'gyrA_GGC7563CTT', 'gyrA_GGC7563ATA', 'gyrA_GGC7563CAT', 'gyrA_GGC7563AAC', 'gyrA_GGC7563AAT', 'gyrA_GGC7563AGG', 'gyrA_GGC7563ACT', 'gyrA_GGC7563ACG', 'gyrA_GGC7563GCG', 'gyrA_GGC7563GAT', 'gyrA_GGC7563AGA', 'gyrA_GGC7563CCT', 'gyrA_GGC7563GTG', 'gyrA_GGC7563GTA', 'gyrA_GGC7563AAG', 'gyrA_GGC7563GCA', 'gyrA_GGC7563AAA', 'gyrA_GGC7563ATT', 'gyrA_GGC7563AGT', 'gyrA_GGC7563GCT', 'gyrA_GGC7563GAA', 'gyrA_GGC7563ACA', 'gyrA_GGC7563GTT', 'gyrA_GGC7563GAG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_ATC7575ACT']
+16/01/2018 02:38:47 add (big) return ids 10: ['gyrA_ATC7575ACT', 'gyrA_ATC7575AGA', 'gyrA_ATC7575ATG', 'gyrA_ATC7575ACA', 'gyrA_ATC7575AGG', 'gyrA_ATC7575ACC', 'gyrA_ATC7575AGC', 'gyrA_ATC7575AGT', 'gyrA_ATC7575AAA', 'gyrA_ATC7575AAT', 'gyrA_ATC7575AAC', 'gyrA_ATC7575AAG', 'gyrA_ATC7575ACG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_CCG7557GCT']
+16/01/2018 02:38:47 add (big) return ids 10: ['gyrA_CCG7557GCT', 'gyrA_CCG7557ATA', 'gyrA_CCG7557GTA', 'gyrA_CCG7557AAA', 'gyrA_CCG7557TCT', 'gyrA_CCG7557ACT', 'gyrA_CCG7557CAA', 'gyrA_CCG7557GCA', 'gyrA_CCG7557GAT', 'gyrA_CCG7557GTT', 'gyrA_CCG7557CAT', 'gyrA_CCG7557GAA', 'gyrA_CCG7557CGA', 'gyrA_CCG7557ATT', 'gyrA_CCG7557GGA', 'gyrA_CCG7557GGT', 'gyrA_CCG7557CTT', 'gyrA_CCG7557TTA', 'gyrA_CCG7557TAT', 'gyrA_CCG7557ACG', 'gyrA_CCG7557CTA', 'gyrA_CCG7557AGT', 'gyrA_CCG7557CGT', 'gyrA_CCG7557TGT', 'gyrA_CCG7557AGA', 'gyrA_CCG7557TTT', 'gyrA_CCG7557TCA', 'gyrA_CCG7557ACA', 'gyrA_CCG7557AAT']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_ATC7575TCT']
+16/01/2018 02:38:47 add (big) return ids 18: ['gyrA_ATC7575TCT', 'gyrA_ATC7575TAT', 'gyrA_ATC7575TTG', 'gyrA_ATC7575TGG', 'gyrA_ATC7575TCG', 'gyrA_ATC7575TGC', 'gyrA_ATC7575TCA', 'gyrA_ATC7575TCC', 'gyrA_ATC7575TAC', 'gyrA_ATC7575TTC', 'gyrA_ATC7575TGT', 'gyrA_ATC7575TTT', 'gyrA_ATC7575TTA']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_CAC7554GGA']
+16/01/2018 02:38:47 add (big) return ids 0: ['gyrA_CAC7554GGA', 'gyrA_CAC7554CCA', 'gyrA_CAC7554GTC', 'gyrA_CCG7557AAG', 'gyrA_CAC7554GCC', 'gyrA_CAC7554CTC', 'gyrA_CCG7557GAG', 'gyrA_CAC7554GCA', 'gyrA_CAC7554TAC', 'gyrA_CAC7554GGT', 'gyrA_CAC7554CTA', 'gyrA_CAC7554TCC', 'gyrA_CAC7554ATT', 'gyrA_CAC7554TTT', 'gyrA_CAC7554GGG', 'gyrA_CCG7557CTG', 'gyrA_CAC7554ACC', 'gyrA_CAC7554TCG', 'gyrA_CAC7554GAT', 'gyrA_CAC7554GAC', 'gyrA_CAC7554AAC', 'gyrA_CCG7557TGG', 'gyrA_CAC7554GTT', 'gyrA_CAC7554CGA', 'gyrA_CAC7554GAA', 'gyrA_CAC7554AGC', 'gyrA_CAC7554CCC', 'gyrA_CAC7554TTA', 'gyrA_CAC7554CGG', 'gyrA_CAC7554ATG', 'gyrA_CAC7554TAT', 'gyrA_CAC7554GTG', 'gyrA_CCG7557TTG', 'gyrA_CAC7554TGC', 'gyrA_CAC7554AAT', 'gyrA_CAC7554CGC', 'gyrA_CAC7554ATC', 'gyrA_CAC7554GCG', 'gyrA_CAC7554ACA', 'gyrA_CAC7554CTT', 'gyrA_CAC7554CTG', 'gyrA_CCG7557ATG', 'gyrA_CAC7554GGC', 'gyrA_CAC7554AGA', 'gyrA_CCG7557TCG', 'gyrA_CCG7557AGG', 'gyrA_CCG7557GTG', 'gyrA_CAC7554GAG', 'gyrA_CAC7554ACT', 'gyrA_CAC7554TGG', 'gyrA_CAC7554CCT', 'gyrA_CAC7554AAA', 'gyrA_CAC7554ACG', 'gyrA_CAC7554AGG', 'gyrA_CAC7554TCA', 'gyrA_CCG7557CGG', 'gyrA_CAC7554CCG', 'gyrA_CAC7554TTG', 'gyrA_CAC7554GTA', 'gyrA_CCG7557CAG', 'gyrA_CAC7554TCT', 'gyrA_CCG7557GCG', 'gyrA_CAC7554TTC', 'gyrA_CAC7554ATA', 'gyrA_CAC7554CGT', 'gyrA_CAC7554CAG', 'gyrA_CAC7554AAG', 'gyrA_CAC7554TGT', 'gyrA_CCG7557GGG', 'gyrA_CAC7554CAA', 'gyrA_CAC7554GCT', 'gyrA_CAC7554AGT']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GAC7566TTC']
+16/01/2018 02:38:47 add (big) return ids 2: ['gyrA_GAC7566TTC', 'gyrA_GAC7566AGA', 'gyrA_GAC7566AAA', 'gyrA_GAC7566ACT', 'gyrA_GAC7566GCC', 'gyrA_GAC7566ACA', 'gyrA_GAC7566ATT', 'gyrA_GAC7566TCC', 'gyrA_GAC7566CTA', 'gyrA_GAC7566CCA', 'gyrA_GAC7566CGA', 'gyrA_GAC7566TTA', 'gyrA_GAC7566TCA', 'gyrA_GAC7566ATA', 'gyrA_GAC7566GCA', 'gyrA_GAC7566GAA', 'gyrA_GAC7566AGC', 'gyrA_GAC7566GGA', 'gyrA_GAC7566AAC', 'gyrA_GAC7566ATC', 'gyrA_GAC7566TGC', 'gyrA_GAC7566ACC', 'gyrA_GAC7566AGT', 'gyrA_GAC7566TAC']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GGC7563CGT']
+16/01/2018 02:38:47 add (big) return ids 7: ['gyrA_GGC7563CGT', 'gyrA_GGC7563CCC', 'gyrA_GGC7563CTA', 'gyrA_GGC7563GCC', 'gyrA_GGC7563CGA', 'gyrA_GGC7563AGC', 'gyrA_GGC7563CAC', 'gyrA_GGC7563CCA', 'gyrA_GGC7563CCG', 'gyrA_GGC7563CGC', 'gyrA_GGC7563CGG', 'gyrA_GGC7563GAC', 'gyrA_GGC7563GTC', 'gyrA_GGC7563CTC', 'gyrA_GGC7563ACC', 'gyrA_GGC7563CAG', 'gyrA_GGC7563CTG', 'gyrA_GGC7563CAA']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GAC7581CCC']
+16/01/2018 02:38:47 add (big) return ids 13: ['gyrA_GAC7581CCC', 'gyrA_GAC7581CGC', 'gyrA_GAC7581CTA', 'gyrA_GAC7581CTC', 'gyrA_GAC7581CAA', 'gyrA_GAC7581CAG', 'gyrA_GAC7581CGT', 'gyrA_GAC7581CAT', 'gyrA_GAC7581CGG', 'gyrA_GAC7581CCT', 'gyrA_GAC7581CGA', 'gyrA_GAC7581CCG', 'gyrA_GAC7581CCA', 'gyrA_GAC7581CAC', 'gyrA_GAC7581CTT', 'gyrA_GAC7581CTG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_CAC7560CAA']
+16/01/2018 02:38:47 add (big) return ids 2: ['gyrA_CAC7560CAA', 'gyrA_CAC7560CTT', 'gyrA_CAC7560TCG', 'gyrA_CAC7560CGG', 'gyrA_CAC7560CGA', 'gyrA_CAC7560TTA', 'gyrA_CAC7560CCT', 'gyrA_CAC7560CAG', 'gyrA_CAC7560CTA', 'gyrA_CAC7560CGC', 'gyrA_CAC7560TCA', 'gyrA_CAC7560GGA', 'gyrA_CAC7560CCG', 'gyrA_CAC7560CTC', 'gyrA_CAC7560GAA', 'gyrA_CAC7560AAA', 'gyrA_CAC7560GCA', 'gyrA_CAC7560CCA', 'gyrA_CAC7560TTG', 'gyrA_CAC7560CTG', 'gyrA_CAC7560TGG', 'gyrA_CAC7560GTA', 'gyrA_CAC7560ATA', 'gyrA_CAC7560ACA']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_TAC7578GTA']
+16/01/2018 02:38:47 add (big) return ids 6: ['gyrA_TAC7578GTA', 'gyrA_TAC7578GAG', 'gyrA_TAC7578GTG', 'gyrA_TAC7578GCT', 'gyrA_TAC7578GCA', 'gyrA_TAC7578GGT', 'gyrA_TAC7578GGA', 'gyrA_TAC7578GGG', 'gyrA_TAC7578GGC', 'gyrA_TAC7578GTC', 'gyrA_TAC7578GAT', 'gyrA_TAC7578GTT', 'gyrA_TAC7578GCG', 'gyrA_TAC7578GCC', 'gyrA_TAC7578GAC', 'gyrA_TAC7578GAA']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GCG7569TGG']
+16/01/2018 02:38:47 add (big) return ids 8: ['gyrA_GCG7569TGG', 'gyrA_GCG7569TCA', 'gyrA_GCG7569TTA', 'gyrA_GCG7569TGT', 'gyrA_GCG7569TTG', 'gyrA_GCG7569TCG', 'gyrA_GCG7569TCC', 'gyrA_GCG7569TAT', 'gyrA_GCG7569TGC', 'gyrA_GCG7569TTT', 'gyrA_GCG7569TAC', 'gyrA_GCG7569TTC', 'gyrA_GCG7569TCT', 'gyrA_GCG7569GAC']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_CAC7560AAG']
+16/01/2018 02:38:47 add (big) return ids 9: ['gyrA_CAC7560AAG', 'gyrA_CAC7560ACG', 'gyrA_CAC7560AAT', 'gyrA_CAC7560CGT', 'gyrA_CAC7560TAT', 'gyrA_CAC7560AGA', 'gyrA_CAC7560AGG', 'gyrA_CAC7560TTT', 'gyrA_CAC7560AGC', 'gyrA_CAC7560ACT', 'gyrA_CAC7560TGT', 'gyrA_CAC7560TCT', 'gyrA_CAC7560ATT', 'gyrA_CAC7560GGT', 'gyrA_CAC7560AGT', 'gyrA_CAC7560ATG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GCG7569GTC']
+16/01/2018 02:38:47 add (big) return ids 0: ['gyrA_GCG7569GTC', 'gyrA_GCG7569GTG', 'gyrA_GCG7569ACC', 'gyrA_GCG7569ACG', 'gyrA_GCG7569ACA', 'gyrA_GCG7569GTA', 'gyrA_GCG7569ATG', 'gyrA_GCG7569GAA', 'gyrA_GCG7569AAA', 'gyrA_GCG7569AGC', 'gyrA_GCG7569ATA', 'gyrA_GCG7569AGT', 'gyrA_GCG7569GAG', 'gyrA_GCG7569ACT', 'gyrA_GCG7569ATC', 'gyrA_GCG7569GGA', 'gyrA_GCG7569AAT', 'gyrA_GCG7569AAC', 'gyrA_GCG7569GGG', 'gyrA_GCG7569ATT', 'gyrA_GCG7569GGC', 'gyrA_GCG7569AGA', 'gyrA_GCG7569AGG', 'gyrA_GCG7569AAG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_TCG7572CGC']
+16/01/2018 02:38:47 add (big) return ids 4: ['gyrA_TCG7572CGC', 'gyrA_TCG7572CTC', 'gyrA_TCG7572CCA', 'gyrA_TCG7572CTT', 'gyrA_TCG7572CTA', 'gyrA_TCG7572CAC', 'gyrA_TCG7572CCT', 'gyrA_TCG7572CCC', 'gyrA_TCG7572CAA', 'gyrA_TCG7572CAG', 'gyrA_TCG7572CAT', 'gyrA_TCG7572CCG', 'gyrA_TCG7572CGA', 'gyrA_TCG7572CTG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_TCG7572GTA']
+16/01/2018 02:38:47 add (big) return ids 1: ['gyrA_TCG7572GTA', 'gyrA_TCG7572TTT', 'gyrA_TCG7572TGT', 'gyrA_TCG7572GGG', 'gyrA_TCG7572GAT', 'gyrA_TCG7572TAT', 'gyrA_TCG7572GCT', 'gyrA_TCG7572CGG', 'gyrA_TCG7572GGA', 'gyrA_TCG7572TTA', 'gyrA_TCG7572GTT', 'gyrA_TCG7572TGG', 'gyrA_TCG7572GGC', 'gyrA_TCG7572GAA', 'gyrA_TCG7572GAG', 'gyrA_TCG7572CGT', 'gyrA_TCG7572GGT', 'gyrA_TCG7572GTG', 'gyrA_TCG7572GCG', 'gyrA_TCG7572TTG', 'gyrA_TCG7572GCA']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_CCG7557AGC']
+16/01/2018 02:38:47 add (big) return ids 5: ['gyrA_CCG7557AGC', 'gyrA_CCG7557GCC', 'gyrA_CCG7557AAC', 'gyrA_CCG7557TTC', 'gyrA_CCG7557TAC', 'gyrA_CCG7557GAC', 'gyrA_CCG7557CTC', 'gyrA_CCG7557TCC', 'gyrA_CCG7557ACC', 'gyrA_CCG7557CGC', 'gyrA_CCG7557GGC', 'gyrA_CCG7557ATC', 'gyrA_CCG7557GTC', 'gyrA_CCG7557TGC', 'gyrA_CCG7557CAC']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GCG7569CCA']
+16/01/2018 02:38:47 add (big) return ids 4: ['gyrA_GCG7569CCA', 'gyrA_GCG7569GGT', 'gyrA_GCG7569CTC', 'gyrA_GCG7569CAA', 'gyrA_GCG7569CAG', 'gyrA_GCG7569CGC', 'gyrA_GCG7569CTG', 'gyrA_GCG7569GAT', 'gyrA_GCG7569CGG', 'gyrA_GCG7569CGT', 'gyrA_GCG7569CAT', 'gyrA_GCG7569CCG', 'gyrA_GCG7569GTT', 'gyrA_GCG7569CTA', 'gyrA_GCG7569CAC', 'gyrA_GCG7569CCC', 'gyrA_GCG7569CGA', 'gyrA_GCG7569CCT', 'gyrA_GCG7569CTT']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_TAC7578CCA']
+16/01/2018 02:38:47 add (big) return ids 3: ['gyrA_TAC7578CCA', 'gyrA_TAC7578CGC', 'gyrA_TAC7578CGT', 'gyrA_TAC7578CCT', 'gyrA_TAC7578CGA', 'gyrA_TAC7578CGG', 'gyrA_TAC7578CTA', 'gyrA_TAC7578CAT', 'gyrA_TAC7578CTG', 'gyrA_TAC7578CAA', 'gyrA_TAC7578CAC', 'gyrA_TAC7578CTC', 'gyrA_TAC7578CAG', 'gyrA_TAC7578CTT', 'gyrA_TAC7578CCC', 'gyrA_TAC7578CCG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GGC7563TCC']
+16/01/2018 02:38:47 add (big) return ids 3: ['gyrA_GGC7563TCC', 'gyrA_GGC7563TGT', 'gyrA_GGC7563TGG', 'gyrA_GGC7563TGC', 'gyrA_GGC7563TAC', 'gyrA_GGC7563TTA', 'gyrA_GGC7563TAT', 'gyrA_GGC7563TTC', 'gyrA_GGC7563TCT', 'gyrA_GGC7563TCA', 'gyrA_GGC7563TTT', 'gyrA_GGC7563TCG', 'gyrA_GGC7563TTG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_ATC7575CTG']
+16/01/2018 02:38:47 add (big) return ids 1: ['gyrA_ATC7575CTG', 'gyrA_ATC7575CCG', 'gyrA_ATC7575CTT', 'gyrA_ATC7575CGA', 'gyrA_ATC7575CGT', 'gyrA_ATC7575CAT', 'gyrA_ATC7575CAG', 'gyrA_ATC7575CCC', 'gyrA_ATC7575CGC', 'gyrA_ATC7575CTC', 'gyrA_ATC7575CTA', 'gyrA_ATC7575CAC', 'gyrA_ATC7575CAA', 'gyrA_ATC7575CCA', 'gyrA_ATC7575CCT', 'gyrA_ATC7575CGG']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_GAC7566CAG']
+16/01/2018 02:38:47 add (big) return ids 1: ['gyrA_GAC7566CAG', 'gyrA_GAC7566CTC', 'gyrA_GAC7566TCT', 'gyrA_GAC7566CGC', 'gyrA_GAC7566CTT', 'gyrA_GAC7566GCT', 'gyrA_GAC7566CAC', 'gyrA_GAC7566CGT', 'gyrA_GAC7566CCC', 'gyrA_GAC7566CAA', 'gyrA_GAC7566TTT', 'gyrA_GAC7566CAT', 'gyrA_GAC7566TGT', 'gyrA_GAC7566TAT', 'gyrA_GAC7566AAT', 'gyrA_GAC7566CCT', 'gyrA_GAC7566GGT']
+16/01/2018 02:38:47 want to add (big) return ids: ['gyrA_ATC7575GCG']
+16/01/2018 02:38:47 add (big) return ids 0: ['gyrA_ATC7575GCG', 'gyrA_ATC7575GCT', 'gyrA_ATC7575GAC', 'gyrA_ATC7575GTT', 'gyrA_ATC7575GAG', 'gyrA_ATC7575GGC', 'gyrA_ATC7575GAA', 'gyrA_ATC7575GCC', 'gyrA_ATC7575GGG', 'gyrA_ATC7575GGA', 'gyrA_ATC7575GAT', 'gyrA_ATC7575GTG', 'gyrA_ATC7575GTA', 'gyrA_ATC7575GTC', 'gyrA_ATC7575GGT', 'gyrA_ATC7575GCA']
+16/01/2018 02:38:47 [['gyrA_reference', 'gyrA_GCC7521TCT', 'gyrA_GCC7521AGT', 'gyrA_GCC7521TCA', 'gyrA_GCC7521TCC', 'gyrA_GCC7521TCG', 'gyrA_GCC7521AGC', 'gyrA_GAC7581TAT', 'gyrA_GAC7581GGA', 'gyrA_GAC7581TGC', 'gyrA_GAC7581AGT', 'gyrA_GAC7581GTC', 'gyrA_GAC7581ATA', 'gyrA_GAC7581AAC', 'gyrA_GAC7581TGT', 'gyrA_GAC7581GGG', 'gyrA_GAC7581TCG', 'gyrA_TAC7578TCT', 'gyrA_TAC7578TGG', 'gyrA_GAC7581TTT', 'gyrA_GAC7581GGT', 'gyrA_TAC7578TTC', 'gyrA_TAC7578TCA', 'gyrA_GAC7581GAA', 'gyrA_GAC7581TTG', 'gyrA_GAC7581GCT', 'gyrA_GAC7581AGG', 'gyrA_GAC7581TCA', 'gyrA_GAC7581ATG', 'gyrA_GAC7581AGA', 'gyrA_GAC7581ATC', 'gyrA_GAC7581GCA', 'gyrA_GAC7581GTA', 'gyrA_TAC7578TGC', 'gyrA_TAC7578TCC', 'gyrA_TAC7578TGT', 'gyrA_TAC7578TCG', 'gyrA_TAC7578TTT', 'gyrA_TAC7578TTA', 'gyrA_GAC7581TTC', 'gyrA_GAC7581AGC', 'gyrA_GAC7581GTT', 'gyrA_GAC7581AAT', 'gyrA_GAC7581ACG', 'gyrA_GAC7581GCG', 'gyrA_GAC7581AAG', 'gyrA_GAC7581TGG', 'gyrA_GAC7581ACA', 'gyrA_GAC7581ACC', 'gyrA_GAC7581GAG', 'gyrA_GAC7581AAA', 'gyrA_GAC7581GTG', 'gyrA_GAC7581TAC', 'gyrA_GAC7581TCT', 'gyrA_GAC7581GGC', 'gyrA_GAC7581TCC', 'gyrA_GAC7581GCC', 'gyrA_GAC7581TTA', 'gyrA_TAC7578TTG', 'gyrA_GAC7581ACT', 'gyrA_GAC7581ATT'], ['gyrA_CAC7560TAC', 'gyrA_CAC7560AAC', 'gyrA_CAC7560GGG', 'gyrA_CAC7560ATC', 'gyrA_CAC7560GCG', 'gyrA_CAC7560CCC', 'gyrA_CAC7560GTC', 'gyrA_CAC7560GGC', 'gyrA_CAC7560GTG', 'gyrA_CAC7560TTC', 'gyrA_CAC7560GTT', 'gyrA_CAC7560GCC', 'gyrA_CAC7560GAT', 'gyrA_CAC7560ACC', 'gyrA_CAC7560GAC', 'gyrA_CAC7560GAG', 'gyrA_CAC7560TGC', 'gyrA_CAC7560GCT', 'gyrA_CAC7560TCC'], ['gyrA_GAC7566AAG', 'gyrA_GAC7566GTA', 'gyrA_GAC7566GCG', 'gyrA_GAC7566GTT', 'gyrA_GAC7566GGG', 'gyrA_GAC7566TTG', 'gyrA_GAC7566CTG', 'gyrA_GAC7566TCG', 'gyrA_GAC7566GTG', 'gyrA_GAC7566CCG', 'gyrA_GAC7566AGG', 'gyrA_GAC7566CGG', 'gyrA_GAC7566ATG', 'gyrA_GAC7566GAG', 'gyrA_GAC7566GTC', 'gyrA_GAC7566TGG', 'gyrA_GAC7566ACG', 'gyrA_GAC7566GGC'], ['gyrA_TAC7578AGC', 'gyrA_TAC7578AAA', 'gyrA_TAC7578ACG', 'gyrA_TAC7578AGA', 'gyrA_TAC7578ATG', 'gyrA_TAC7578ATC', 'gyrA_TAC7578AAG', 'gyrA_TAC7578AAC', 'gyrA_TAC7578ATT', 'gyrA_TAC7578ATA', 'gyrA_TAC7578ACT', 'gyrA_TAC7578AAT', 'gyrA_TAC7578ACC', 'gyrA_TAC7578ACA', 'gyrA_TAC7578AGG', 'gyrA_TAC7578AGT'], ['gyrA_TCG7572AAG', 'gyrA_TCG7572ACA', 'gyrA_TCG7572ACT', 'gyrA_TCG7572AAA', 'gyrA_TCG7572AGA', 'gyrA_TCG7572TAC', 'gyrA_TCG7572AAC', 'gyrA_TCG7572TGC', 'gyrA_TCG7572GCC', 'gyrA_TCG7572ATC', 'gyrA_TCG7572AGG', 'gyrA_TCG7572ACC', 'gyrA_TCG7572GTC', 'gyrA_TCG7572GAC', 'gyrA_TCG7572ACG', 'gyrA_TCG7572ATT', 'gyrA_TCG7572AAT', 'gyrA_TCG7572TTC', 'gyrA_TCG7572ATG', 'gyrA_TCG7572ATA'], ['gyrA_GGC7563ATG', 'gyrA_GGC7563ATC', 'gyrA_GGC7563CTT', 'gyrA_GGC7563ATA', 'gyrA_GGC7563CAT', 'gyrA_GGC7563AAC', 'gyrA_GGC7563AAT', 'gyrA_GGC7563AGG', 'gyrA_GGC7563ACT', 'gyrA_GGC7563ACG', 'gyrA_GGC7563GCG', 'gyrA_GGC7563GAT', 'gyrA_GGC7563AGA', 'gyrA_GGC7563CCT', 'gyrA_GGC7563GTG', 'gyrA_GGC7563GTA', 'gyrA_GGC7563AAG', 'gyrA_GGC7563GCA', 'gyrA_GGC7563AAA', 'gyrA_GGC7563ATT', 'gyrA_GGC7563AGT', 'gyrA_GGC7563GCT', 'gyrA_GGC7563GAA', 'gyrA_GGC7563ACA', 'gyrA_GGC7563GTT', 'gyrA_GGC7563GAG'], ['gyrA_ATC7575ACT', 'gyrA_ATC7575AGA', 'gyrA_ATC7575ATG', 'gyrA_ATC7575ACA', 'gyrA_ATC7575AGG', 'gyrA_ATC7575ACC', 'gyrA_ATC7575AGC', 'gyrA_ATC7575AGT', 'gyrA_ATC7575AAA', 'gyrA_ATC7575AAT', 'gyrA_ATC7575AAC', 'gyrA_ATC7575AAG', 'gyrA_ATC7575ACG'], ['gyrA_CCG7557GCT', 'gyrA_CCG7557ATA', 'gyrA_CCG7557GTA', 'gyrA_CCG7557AAA', 'gyrA_CCG7557TCT', 'gyrA_CCG7557ACT', 'gyrA_CCG7557CAA', 'gyrA_CCG7557GCA', 'gyrA_CCG7557GAT', 'gyrA_CCG7557GTT', 'gyrA_CCG7557CAT', 'gyrA_CCG7557GAA', 'gyrA_CCG7557CGA', 'gyrA_CCG7557ATT', 'gyrA_CCG7557GGA', 'gyrA_CCG7557GGT', 'gyrA_CCG7557CTT', 'gyrA_CCG7557TTA', 'gyrA_CCG7557TAT', 'gyrA_CCG7557ACG', 'gyrA_CCG7557CTA', 'gyrA_CCG7557AGT', 'gyrA_CCG7557CGT', 'gyrA_CCG7557TGT', 'gyrA_CCG7557AGA', 'gyrA_CCG7557TTT', 'gyrA_CCG7557TCA', 'gyrA_CCG7557ACA', 'gyrA_CCG7557AAT'], ['gyrA_ATC7575TCT', 'gyrA_ATC7575TAT', 'gyrA_ATC7575TTG', 'gyrA_ATC7575TGG', 'gyrA_ATC7575TCG', 'gyrA_ATC7575TGC', 'gyrA_ATC7575TCA', 'gyrA_ATC7575TCC', 'gyrA_ATC7575TAC', 'gyrA_ATC7575TTC', 'gyrA_ATC7575TGT', 'gyrA_ATC7575TTT', 'gyrA_ATC7575TTA'], ['gyrA_CAC7554GGA', 'gyrA_CAC7554CCA', 'gyrA_CAC7554GTC', 'gyrA_CCG7557AAG', 'gyrA_CAC7554GCC', 'gyrA_CAC7554CTC', 'gyrA_CCG7557GAG', 'gyrA_CAC7554GCA', 'gyrA_CAC7554TAC', 'gyrA_CAC7554GGT', 'gyrA_CAC7554CTA', 'gyrA_CAC7554TCC', 'gyrA_CAC7554ATT', 'gyrA_CAC7554TTT', 'gyrA_CAC7554GGG', 'gyrA_CCG7557CTG', 'gyrA_CAC7554ACC', 'gyrA_CAC7554TCG', 'gyrA_CAC7554GAT', 'gyrA_CAC7554GAC', 'gyrA_CAC7554AAC', 'gyrA_CCG7557TGG', 'gyrA_CAC7554GTT', 'gyrA_CAC7554CGA', 'gyrA_CAC7554GAA', 'gyrA_CAC7554AGC', 'gyrA_CAC7554CCC', 'gyrA_CAC7554TTA', 'gyrA_CAC7554CGG', 'gyrA_CAC7554ATG', 'gyrA_CAC7554TAT', 'gyrA_CAC7554GTG', 'gyrA_CCG7557TTG', 'gyrA_CAC7554TGC', 'gyrA_CAC7554AAT', 'gyrA_CAC7554CGC', 'gyrA_CAC7554ATC', 'gyrA_CAC7554GCG', 'gyrA_CAC7554ACA', 'gyrA_CAC7554CTT', 'gyrA_CAC7554CTG', 'gyrA_CCG7557ATG', 'gyrA_CAC7554GGC', 'gyrA_CAC7554AGA', 'gyrA_CCG7557TCG', 'gyrA_CCG7557AGG', 'gyrA_CCG7557GTG', 'gyrA_CAC7554GAG', 'gyrA_CAC7554ACT', 'gyrA_CAC7554TGG', 'gyrA_CAC7554CCT', 'gyrA_CAC7554AAA', 'gyrA_CAC7554ACG', 'gyrA_CAC7554AGG', 'gyrA_CAC7554TCA', 'gyrA_CCG7557CGG', 'gyrA_CAC7554CCG', 'gyrA_CAC7554TTG', 'gyrA_CAC7554GTA', 'gyrA_CCG7557CAG', 'gyrA_CAC7554TCT', 'gyrA_CCG7557GCG', 'gyrA_CAC7554TTC', 'gyrA_CAC7554ATA', 'gyrA_CAC7554CGT', 'gyrA_CAC7554CAG', 'gyrA_CAC7554AAG', 'gyrA_CAC7554TGT', 'gyrA_CCG7557GGG', 'gyrA_CAC7554CAA', 'gyrA_CAC7554GCT', 'gyrA_CAC7554AGT'], ['gyrA_GAC7566TTC', 'gyrA_GAC7566AGA', 'gyrA_GAC7566AAA', 'gyrA_GAC7566ACT', 'gyrA_GAC7566GCC', 'gyrA_GAC7566ACA', 'gyrA_GAC7566ATT', 'gyrA_GAC7566TCC', 'gyrA_GAC7566CTA', 'gyrA_GAC7566CCA', 'gyrA_GAC7566CGA', 'gyrA_GAC7566TTA', 'gyrA_GAC7566TCA', 'gyrA_GAC7566ATA', 'gyrA_GAC7566GCA', 'gyrA_GAC7566GAA', 'gyrA_GAC7566AGC', 'gyrA_GAC7566GGA', 'gyrA_GAC7566AAC', 'gyrA_GAC7566ATC', 'gyrA_GAC7566TGC', 'gyrA_GAC7566ACC', 'gyrA_GAC7566AGT', 'gyrA_GAC7566TAC'], ['gyrA_GGC7563CGT', 'gyrA_GGC7563CCC', 'gyrA_GGC7563CTA', 'gyrA_GGC7563GCC', 'gyrA_GGC7563CGA', 'gyrA_GGC7563AGC', 'gyrA_GGC7563CAC', 'gyrA_GGC7563CCA', 'gyrA_GGC7563CCG', 'gyrA_GGC7563CGC', 'gyrA_GGC7563CGG', 'gyrA_GGC7563GAC', 'gyrA_GGC7563GTC', 'gyrA_GGC7563CTC', 'gyrA_GGC7563ACC', 'gyrA_GGC7563CAG', 'gyrA_GGC7563CTG', 'gyrA_GGC7563CAA'], ['gyrA_GAC7581CCC', 'gyrA_GAC7581CGC', 'gyrA_GAC7581CTA', 'gyrA_GAC7581CTC', 'gyrA_GAC7581CAA', 'gyrA_GAC7581CAG', 'gyrA_GAC7581CGT', 'gyrA_GAC7581CAT', 'gyrA_GAC7581CGG', 'gyrA_GAC7581CCT', 'gyrA_GAC7581CGA', 'gyrA_GAC7581CCG', 'gyrA_GAC7581CCA', 'gyrA_GAC7581CAC', 'gyrA_GAC7581CTT', 'gyrA_GAC7581CTG'], ['gyrA_CAC7560CAA', 'gyrA_CAC7560CTT', 'gyrA_CAC7560TCG', 'gyrA_CAC7560CGG', 'gyrA_CAC7560CGA', 'gyrA_CAC7560TTA', 'gyrA_CAC7560CCT', 'gyrA_CAC7560CAG', 'gyrA_CAC7560CTA', 'gyrA_CAC7560CGC', 'gyrA_CAC7560TCA', 'gyrA_CAC7560GGA', 'gyrA_CAC7560CCG', 'gyrA_CAC7560CTC', 'gyrA_CAC7560GAA', 'gyrA_CAC7560AAA', 'gyrA_CAC7560GCA', 'gyrA_CAC7560CCA', 'gyrA_CAC7560TTG', 'gyrA_CAC7560CTG', 'gyrA_CAC7560TGG', 'gyrA_CAC7560GTA', 'gyrA_CAC7560ATA', 'gyrA_CAC7560ACA'], ['gyrA_TAC7578GTA', 'gyrA_TAC7578GAG', 'gyrA_TAC7578GTG', 'gyrA_TAC7578GCT', 'gyrA_TAC7578GCA', 'gyrA_TAC7578GGT', 'gyrA_TAC7578GGA', 'gyrA_TAC7578GGG', 'gyrA_TAC7578GGC', 'gyrA_TAC7578GTC', 'gyrA_TAC7578GAT', 'gyrA_TAC7578GTT', 'gyrA_TAC7578GCG', 'gyrA_TAC7578GCC', 'gyrA_TAC7578GAC', 'gyrA_TAC7578GAA'], ['gyrA_GCG7569TGG', 'gyrA_GCG7569TCA', 'gyrA_GCG7569TTA', 'gyrA_GCG7569TGT', 'gyrA_GCG7569TTG', 'gyrA_GCG7569TCG', 'gyrA_GCG7569TCC', 'gyrA_GCG7569TAT', 'gyrA_GCG7569TGC', 'gyrA_GCG7569TTT', 'gyrA_GCG7569TAC', 'gyrA_GCG7569TTC', 'gyrA_GCG7569TCT', 'gyrA_GCG7569GAC'], ['gyrA_CAC7560AAG', 'gyrA_CAC7560ACG', 'gyrA_CAC7560AAT', 'gyrA_CAC7560CGT', 'gyrA_CAC7560TAT', 'gyrA_CAC7560AGA', 'gyrA_CAC7560AGG', 'gyrA_CAC7560TTT', 'gyrA_CAC7560AGC', 'gyrA_CAC7560ACT', 'gyrA_CAC7560TGT', 'gyrA_CAC7560TCT', 'gyrA_CAC7560ATT', 'gyrA_CAC7560GGT', 'gyrA_CAC7560AGT', 'gyrA_CAC7560ATG'], ['gyrA_GCG7569GTC', 'gyrA_GCG7569GTG', 'gyrA_GCG7569ACC', 'gyrA_GCG7569ACG', 'gyrA_GCG7569ACA', 'gyrA_GCG7569GTA', 'gyrA_GCG7569ATG', 'gyrA_GCG7569GAA', 'gyrA_GCG7569AAA', 'gyrA_GCG7569AGC', 'gyrA_GCG7569ATA', 'gyrA_GCG7569AGT', 'gyrA_GCG7569GAG', 'gyrA_GCG7569ACT', 'gyrA_GCG7569ATC', 'gyrA_GCG7569GGA', 'gyrA_GCG7569AAT', 'gyrA_GCG7569AAC', 'gyrA_GCG7569GGG', 'gyrA_GCG7569ATT', 'gyrA_GCG7569GGC', 'gyrA_GCG7569AGA', 'gyrA_GCG7569AGG', 'gyrA_GCG7569AAG'], ['gyrA_TCG7572CGC', 'gyrA_TCG7572CTC', 'gyrA_TCG7572CCA', 'gyrA_TCG7572CTT', 'gyrA_TCG7572CTA', 'gyrA_TCG7572CAC', 'gyrA_TCG7572CCT', 'gyrA_TCG7572CCC', 'gyrA_TCG7572CAA', 'gyrA_TCG7572CAG', 'gyrA_TCG7572CAT', 'gyrA_TCG7572CCG', 'gyrA_TCG7572CGA', 'gyrA_TCG7572CTG'], ['gyrA_TCG7572GTA', 'gyrA_TCG7572TTT', 'gyrA_TCG7572TGT', 'gyrA_TCG7572GGG', 'gyrA_TCG7572GAT', 'gyrA_TCG7572TAT', 'gyrA_TCG7572GCT', 'gyrA_TCG7572CGG', 'gyrA_TCG7572GGA', 'gyrA_TCG7572TTA', 'gyrA_TCG7572GTT', 'gyrA_TCG7572TGG', 'gyrA_TCG7572GGC', 'gyrA_TCG7572GAA', 'gyrA_TCG7572GAG', 'gyrA_TCG7572CGT', 'gyrA_TCG7572GGT', 'gyrA_TCG7572GTG', 'gyrA_TCG7572GCG', 'gyrA_TCG7572TTG', 'gyrA_TCG7572GCA'], ['gyrA_CCG7557AGC', 'gyrA_CCG7557GCC', 'gyrA_CCG7557AAC', 'gyrA_CCG7557TTC', 'gyrA_CCG7557TAC', 'gyrA_CCG7557GAC', 'gyrA_CCG7557CTC', 'gyrA_CCG7557TCC', 'gyrA_CCG7557ACC', 'gyrA_CCG7557CGC', 'gyrA_CCG7557GGC', 'gyrA_CCG7557ATC', 'gyrA_CCG7557GTC', 'gyrA_CCG7557TGC', 'gyrA_CCG7557CAC'], ['gyrA_GCG7569CCA', 'gyrA_GCG7569GGT', 'gyrA_GCG7569CTC', 'gyrA_GCG7569CAA', 'gyrA_GCG7569CAG', 'gyrA_GCG7569CGC', 'gyrA_GCG7569CTG', 'gyrA_GCG7569GAT', 'gyrA_GCG7569CGG', 'gyrA_GCG7569CGT', 'gyrA_GCG7569CAT', 'gyrA_GCG7569CCG', 'gyrA_GCG7569GTT', 'gyrA_GCG7569CTA', 'gyrA_GCG7569CAC', 'gyrA_GCG7569CCC', 'gyrA_GCG7569CGA', 'gyrA_GCG7569CCT', 'gyrA_GCG7569CTT'], ['gyrA_TAC7578CCA', 'gyrA_TAC7578CGC', 'gyrA_TAC7578CGT', 'gyrA_TAC7578CCT', 'gyrA_TAC7578CGA', 'gyrA_TAC7578CGG', 'gyrA_TAC7578CTA', 'gyrA_TAC7578CAT', 'gyrA_TAC7578CTG', 'gyrA_TAC7578CAA', 'gyrA_TAC7578CAC', 'gyrA_TAC7578CTC', 'gyrA_TAC7578CAG', 'gyrA_TAC7578CTT', 'gyrA_TAC7578CCC', 'gyrA_TAC7578CCG'], ['gyrA_GGC7563TCC', 'gyrA_GGC7563TGT', 'gyrA_GGC7563TGG', 'gyrA_GGC7563TGC', 'gyrA_GGC7563TAC', 'gyrA_GGC7563TTA', 'gyrA_GGC7563TAT', 'gyrA_GGC7563TTC', 'gyrA_GGC7563TCT', 'gyrA_GGC7563TCA', 'gyrA_GGC7563TTT', 'gyrA_GGC7563TCG', 'gyrA_GGC7563TTG'], ['gyrA_ATC7575CTG', 'gyrA_ATC7575CCG', 'gyrA_ATC7575CTT', 'gyrA_ATC7575CGA', 'gyrA_ATC7575CGT', 'gyrA_ATC7575CAT', 'gyrA_ATC7575CAG', 'gyrA_ATC7575CCC', 'gyrA_ATC7575CGC', 'gyrA_ATC7575CTC', 'gyrA_ATC7575CTA', 'gyrA_ATC7575CAC', 'gyrA_ATC7575CAA', 'gyrA_ATC7575CCA', 'gyrA_ATC7575CCT', 'gyrA_ATC7575CGG'], ['gyrA_GAC7566CAG', 'gyrA_GAC7566CTC', 'gyrA_GAC7566TCT', 'gyrA_GAC7566CGC', 'gyrA_GAC7566CTT', 'gyrA_GAC7566GCT', 'gyrA_GAC7566CAC', 'gyrA_GAC7566CGT', 'gyrA_GAC7566CCC', 'gyrA_GAC7566CAA', 'gyrA_GAC7566TTT', 'gyrA_GAC7566CAT', 'gyrA_GAC7566TGT', 'gyrA_GAC7566TAT', 'gyrA_GAC7566AAT', 'gyrA_GAC7566CCT', 'gyrA_GAC7566GGT'], ['gyrA_ATC7575GCG', 'gyrA_ATC7575GCT', 'gyrA_ATC7575GAC', 'gyrA_ATC7575GTT', 'gyrA_ATC7575GAG', 'gyrA_ATC7575GGC', 'gyrA_ATC7575GAA', 'gyrA_ATC7575GCC', 'gyrA_ATC7575GGG', 'gyrA_ATC7575GGA', 'gyrA_ATC7575GAT', 'gyrA_ATC7575GTG', 'gyrA_ATC7575GTA', 'gyrA_ATC7575GTC', 'gyrA_ATC7575GGT', 'gyrA_ATC7575GCA']]
+16/01/2018 02:38:47 subAlignedSeqs now has keys: dict_keys([352])
+16/01/2018 02:38:47 Non match intervals: [[25, 29]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['ACGAC', 'ACTAT', 'ACGGA', 'ACTGC', 'ACAGT', 'ACGTC', 'ACATA', 'ACAAC', 'ACTGT', 'ACGGG', 'ACTCG', 'CTGAC', 'GGGAC', 'ACTTT', 'ACGGT', 'TCGAC', 'CAGAC', 'ACGAA', 'ACTTG', 'ACGCT', 'ACAGG', 'ACTCA', 'ACATG', 'ACAGA', 'ACATC', 'ACGCA', 'ACGTA', 'GCGAC', 'CCGAC', 'GTGAC', 'CGGAC', 'TTGAC', 'TAGAC', 'ACTTC', 'ACAGC', 'ACGTT', 'ACAAT', 'ACACG', 'ACGCG', 'ACAAG', 'ACTGG', 'ACACA', 'ACACC', 'ACGAG', 'ACAAA', 'ACGTG', 'ACTAC', 'ACTCT', 'ACGGC', 'ACTCC', 'ACGCC', 'ACTTA', 'TGGAC', 'ACACT', 'ACATT']
+16/01/2018 02:38:47 Which is equivalent to: ['ACGAC', 'ACTAT', 'ACGGA', 'ACTGC', 'ACAGT', 'ACGTC', 'ACATA', 'ACAAC', 'ACTGT', 'ACGGG', 'ACTCG', 'CTGAC', 'GGGAC', 'ACTTT', 'ACGGT', 'TCGAC', 'CAGAC', 'ACGAA', 'ACTTG', 'ACGCT', 'ACAGG', 'ACTCA', 'ACATG', 'ACAGA', 'ACATC', 'ACGCA', 'ACGTA', 'GCGAC', 'CCGAC', 'GTGAC', 'CGGAC', 'TTGAC', 'TAGAC', 'ACTTC', 'ACAGC', 'ACGTT', 'ACAAT', 'ACACG', 'ACGCG', 'ACAAG', 'ACTGG', 'ACACA', 'ACACC', 'ACGAG', 'ACAAA', 'ACGTG', 'ACTAC', 'ACTCT', 'ACGGC', 'ACTCC', 'ACGCC', 'ACTTA', 'TGGAC', 'ACACT', 'ACATT']
+16/01/2018 02:38:47 Non match intervals: [[6, 8]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['TAC', 'AAC', 'GGG', 'ATC', 'GCG', 'CCC', 'GTC', 'GGC', 'GTG', 'TTC', 'GTT', 'GCC', 'GAT', 'ACC', 'GAC', 'GAG', 'TGC', 'GCT', 'TCC']
+16/01/2018 02:38:47 Which is equivalent to: ['TAC', 'AAC', 'GGG', 'ATC', 'GCG', 'CCC', 'GTC', 'GGC', 'GTG', 'TTC', 'GTT', 'GCC', 'GAT', 'ACC', 'GAC', 'GAG', 'TGC', 'GCT', 'TCC']
+16/01/2018 02:38:47 Non match intervals: [[12, 14]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['AAG', 'GTA', 'GCG', 'GTT', 'GGG', 'TTG', 'CTG', 'TCG', 'GTG', 'CCG', 'AGG', 'CGG', 'ATG', 'GAG', 'GTC', 'TGG', 'ACG', 'GGC']
+16/01/2018 02:38:47 Which is equivalent to: ['AAG', 'GTA', 'GCG', 'GTT', 'GGG', 'TTG', 'CTG', 'TCG', 'GTG', 'CCG', 'AGG', 'CGG', 'ATG', 'GAG', 'GTC', 'TGG', 'ACG', 'GGC']
+16/01/2018 02:38:47 Non match intervals: [[25, 29]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['GCGAC', 'AAGAC', 'CGGAC', 'GAGAC', 'TGGAC', 'TCGAC', 'AGGAC', 'ACGAC', 'TTGAC', 'TAGAC', 'CTGAC', 'ATGAC', 'CCGAC', 'CAGAC', 'GGGAC', 'GTGAC']
+16/01/2018 02:38:47 Which is equivalent to: ['GCGAC', 'AAGAC', 'CGGAC', 'GAGAC', 'TGGAC', 'TCGAC', 'AGGAC', 'ACGAC', 'TTGAC', 'TAGAC', 'CTGAC', 'ATGAC', 'CCGAC', 'CAGAC', 'GGGAC', 'GTGAC']
+16/01/2018 02:38:47 Non match intervals: [[18, 20]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['AAG', 'ACA', 'ACT', 'AAA', 'AGA', 'TAC', 'AAC', 'TGC', 'GCC', 'ATC', 'AGG', 'ACC', 'GTC', 'GAC', 'ACG', 'ATT', 'AAT', 'TTC', 'ATG', 'ATA']
+16/01/2018 02:38:47 Which is equivalent to: ['AAG', 'ACA', 'ACT', 'AAA', 'AGA', 'TAC', 'AAC', 'TGC', 'GCC', 'ATC', 'AGG', 'ACC', 'GTC', 'GAC', 'ACG', 'ATT', 'AAT', 'TTC', 'ATG', 'ATA']
+16/01/2018 02:38:47 Non match intervals: [[9, 11]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['ATG', 'ATC', 'CTT', 'ATA', 'CAT', 'AAC', 'AAT', 'AGG', 'ACT', 'ACG', 'GCG', 'GAT', 'AGA', 'CCT', 'GTG', 'GTA', 'AAG', 'GCA', 'AAA', 'ATT', 'AGT', 'GCT', 'GAA', 'ACA', 'GTT', 'GAG']
+16/01/2018 02:38:47 Which is equivalent to: ['ATG', 'ATC', 'CTT', 'ATA', 'CAT', 'AAC', 'AAT', 'AGG', 'ACT', 'ACG', 'GCG', 'GAT', 'AGA', 'CCT', 'GTG', 'GTA', 'AAG', 'GCA', 'AAA', 'ATT', 'AGT', 'GCT', 'GAA', 'ACA', 'GTT', 'GAG']
+16/01/2018 02:38:47 Non match intervals: [[22, 23]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CT', 'GA', 'TG', 'CA', 'GG', 'CC', 'GC', 'GT', 'AA', 'AT', 'AC', 'AG', 'CG']
+16/01/2018 02:38:47 Which is equivalent to: ['CT', 'GA', 'TG', 'CA', 'GG', 'CC', 'GC', 'GT', 'AA', 'AT', 'AC', 'AG', 'CG']
+16/01/2018 02:38:47 Non match intervals: [[0, 5]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CACGCT', 'CACATA', 'CACGTA', 'CACAAA', 'CACTCT', 'CACACT', 'CACCAA', 'CACGCA', 'CACGAT', 'CACGTT', 'CACCAT', 'CACGAA', 'CACCGA', 'CACATT', 'CACGGA', 'CACGGT', 'CACCTT', 'CACTTA', 'CACTAT', 'CACACG', 'CACCTA', 'CACAGT', 'CACCGT', 'CACTGT', 'CACAGA', 'CACTTT', 'CACTCA', 'CACACA', 'CACAAT']
+16/01/2018 02:38:47 Which is equivalent to: ['CACGCT', 'CACATA', 'CACGTA', 'CACAAA', 'CACTCT', 'CACACT', 'CACCAA', 'CACGCA', 'CACGAT', 'CACGTT', 'CACCAT', 'CACGAA', 'CACCGA', 'CACATT', 'CACGGA', 'CACGGT', 'CACCTT', 'CACTTA', 'CACTAT', 'CACACG', 'CACCTA', 'CACAGT', 'CACCGT', 'CACTGT', 'CACAGA', 'CACTTT', 'CACTCA', 'CACACA', 'CACAAT']
+16/01/2018 02:38:47 Non match intervals: [[22, 23]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CT', 'AT', 'TG', 'GG', 'CG', 'GC', 'CA', 'CC', 'AC', 'TC', 'GT', 'TT', 'TA']
+16/01/2018 02:38:47 Which is equivalent to: ['CT', 'AT', 'TG', 'GG', 'CG', 'GC', 'CA', 'CC', 'AC', 'TC', 'GT', 'TT', 'TA']
+16/01/2018 02:38:47 Non match intervals: [[0, 4]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['GGACC', 'CCACC', 'GTCCC', 'CACAA', 'GCCCC', 'CTCCC', 'CACGA', 'GCACC', 'TACCC', 'GGTCC', 'CTACC', 'TCCCC', 'ATTCC', 'TTTCC', 'GGGCC', 'CACCT', 'ACCCC', 'TCGCC', 'GATCC', 'GACCC', 'AACCC', 'CACTG', 'GTTCC', 'CGACC', 'GAACC', 'AGCCC', 'CCCCC', 'TTACC', 'CGGCC', 'ATGCC', 'TATCC', 'GTGCC', 'CACTT', 'TGCCC', 'AATCC', 'CGCCC', 'ATCCC', 'GCGCC', 'ACACC', 'CTTCC', 'CTGCC', 'CACAT', 'GGCCC', 'AGACC', 'CACTC', 'CACAG', 'CACGT', 'GAGCC', 'ACTCC', 'TGGCC', 'CCTCC', 'AAACC', 'ACGCC', 'AGGCC', 'TCACC', 'CACCG', 'CCGCC', 'TTGCC', 'GTACC', 'CACCA', 'TCTCC', 'CACGC', 'TTCCC', 'ATACC', 'CGTCC', 'CAGCC', 'AAGCC', 'TGTCC', 'CACGG', 'CAACC', 'GCTCC', 'AGTCC']
+16/01/2018 02:38:47 Which is equivalent to: ['GGACC', 'CCACC', 'GTCCC', 'CACAA', 'GCCCC', 'CTCCC', 'CACGA', 'GCACC', 'TACCC', 'GGTCC', 'CTACC', 'TCCCC', 'ATTCC', 'TTTCC', 'GGGCC', 'CACCT', 'ACCCC', 'TCGCC', 'GATCC', 'GACCC', 'AACCC', 'CACTG', 'GTTCC', 'CGACC', 'GAACC', 'AGCCC', 'CCCCC', 'TTACC', 'CGGCC', 'ATGCC', 'TATCC', 'GTGCC', 'CACTT', 'TGCCC', 'AATCC', 'CGCCC', 'ATCCC', 'GCGCC', 'ACACC', 'CTTCC', 'CTGCC', 'CACAT', 'GGCCC', 'AGACC', 'CACTC', 'CACAG', 'CACGT', 'GAGCC', 'ACTCC', 'TGGCC', 'CCTCC', 'AAACC', 'ACGCC', 'AGGCC', 'TCACC', 'CACCG', 'CCGCC', 'TTGCC', 'GTACC', 'CACCA', 'TCTCC', 'CACGC', 'TTCCC', 'ATACC', 'CGTCC', 'CAGCC', 'AAGCC', 'TGTCC', 'CACGG', 'CAACC', 'GCTCC', 'AGTCC']
+16/01/2018 02:38:47 Non match intervals: [[12, 14]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['TTC', 'AGA', 'AAA', 'ACT', 'GCC', 'ACA', 'ATT', 'TCC', 'CTA', 'CCA', 'CGA', 'TTA', 'TCA', 'ATA', 'GCA', 'GAA', 'AGC', 'GGA', 'AAC', 'ATC', 'TGC', 'ACC', 'AGT', 'TAC']
+16/01/2018 02:38:47 Which is equivalent to: ['TTC', 'AGA', 'AAA', 'ACT', 'GCC', 'ACA', 'ATT', 'TCC', 'CTA', 'CCA', 'CGA', 'TTA', 'TCA', 'ATA', 'GCA', 'GAA', 'AGC', 'GGA', 'AAC', 'ATC', 'TGC', 'ACC', 'AGT', 'TAC']
+16/01/2018 02:38:47 Non match intervals: [[9, 11]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CGT', 'CCC', 'CTA', 'GCC', 'CGA', 'AGC', 'CAC', 'CCA', 'CCG', 'CGC', 'CGG', 'GAC', 'GTC', 'CTC', 'ACC', 'CAG', 'CTG', 'CAA']
+16/01/2018 02:38:47 Which is equivalent to: ['CGT', 'CCC', 'CTA', 'GCC', 'CGA', 'AGC', 'CAC', 'CCA', 'CCG', 'CGC', 'CGG', 'GAC', 'GTC', 'CTC', 'ACC', 'CAG', 'CTG', 'CAA']
+16/01/2018 02:38:47 Non match intervals: [[28, 29]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CC', 'GC', 'TA', 'TC', 'AA', 'AG', 'GT', 'AT', 'GG', 'CT', 'GA', 'CG', 'CA', 'AC', 'TT', 'TG']
+16/01/2018 02:38:47 Which is equivalent to: ['CC', 'GC', 'TA', 'TC', 'AA', 'AG', 'GT', 'AT', 'GG', 'CT', 'GA', 'CG', 'CA', 'AC', 'TT', 'TG']
+16/01/2018 02:38:47 Non match intervals: [[6, 8]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CAA', 'CTT', 'TCG', 'CGG', 'CGA', 'TTA', 'CCT', 'CAG', 'CTA', 'CGC', 'TCA', 'GGA', 'CCG', 'CTC', 'GAA', 'AAA', 'GCA', 'CCA', 'TTG', 'CTG', 'TGG', 'GTA', 'ATA', 'ACA']
+16/01/2018 02:38:47 Which is equivalent to: ['CAA', 'CTT', 'TCG', 'CGG', 'CGA', 'TTA', 'CCT', 'CAG', 'CTA', 'CGC', 'TCA', 'GGA', 'CCG', 'CTC', 'GAA', 'AAA', 'GCA', 'CCA', 'TTG', 'CTG', 'TGG', 'GTA', 'ATA', 'ACA']
+16/01/2018 02:38:47 Non match intervals: [[25, 29]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['TAGAC', 'AGGAC', 'TGGAC', 'CTGAC', 'CAGAC', 'GTGAC', 'GAGAC', 'GGGAC', 'GCGAC', 'TCGAC', 'ATGAC', 'TTGAC', 'CGGAC', 'CCGAC', 'ACGAC', 'AAGAC']
+16/01/2018 02:38:47 Which is equivalent to: ['TAGAC', 'AGGAC', 'TGGAC', 'CTGAC', 'CAGAC', 'GTGAC', 'GAGAC', 'GGGAC', 'GCGAC', 'TCGAC', 'ATGAC', 'TTGAC', 'CGGAC', 'CCGAC', 'ACGAC', 'AAGAC']
+16/01/2018 02:38:47 Non match intervals: [[15, 17]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['TGG', 'TCA', 'TTA', 'TGT', 'TTG', 'TCG', 'TCC', 'TAT', 'TGC', 'TTT', 'TAC', 'TTC', 'TCT', 'GAC']
+16/01/2018 02:38:47 Which is equivalent to: ['TGG', 'TCA', 'TTA', 'TGT', 'TTG', 'TCG', 'TCC', 'TAT', 'TGC', 'TTT', 'TAC', 'TTC', 'TCT', 'GAC']
+16/01/2018 02:38:47 Non match intervals: [[6, 8]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['AAG', 'ACG', 'AAT', 'CGT', 'TAT', 'AGA', 'AGG', 'TTT', 'AGC', 'ACT', 'TGT', 'TCT', 'ATT', 'GGT', 'AGT', 'ATG']
+16/01/2018 02:38:47 Which is equivalent to: ['AAG', 'ACG', 'AAT', 'CGT', 'TAT', 'AGA', 'AGG', 'TTT', 'AGC', 'ACT', 'TGT', 'TCT', 'ATT', 'GGT', 'AGT', 'ATG']
+16/01/2018 02:38:47 Non match intervals: [[15, 17]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['GTC', 'GTG', 'ACC', 'ACG', 'ACA', 'GTA', 'ATG', 'GAA', 'AAA', 'AGC', 'ATA', 'AGT', 'GAG', 'ACT', 'ATC', 'GGA', 'AAT', 'AAC', 'GGG', 'ATT', 'GGC', 'AGA', 'AGG', 'AAG']
+16/01/2018 02:38:47 Which is equivalent to: ['GTC', 'GTG', 'ACC', 'ACG', 'ACA', 'GTA', 'ATG', 'GAA', 'AAA', 'AGC', 'ATA', 'AGT', 'GAG', 'ACT', 'ATC', 'GGA', 'AAT', 'AAC', 'GGG', 'ATT', 'GGC', 'AGA', 'AGG', 'AAG']
+16/01/2018 02:38:47 Non match intervals: [[19, 20]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['GC', 'TC', 'CA', 'TT', 'TA', 'AC', 'CT', 'CC', 'AA', 'AG', 'AT', 'CG', 'GA', 'TG']
+16/01/2018 02:38:47 Which is equivalent to: ['GC', 'TC', 'CA', 'TT', 'TA', 'AC', 'CT', 'CC', 'AA', 'AG', 'AT', 'CG', 'GA', 'TG']
+16/01/2018 02:38:47 Non match intervals: [[18, 20]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['GTA', 'TTT', 'TGT', 'GGG', 'GAT', 'TAT', 'GCT', 'CGG', 'GGA', 'TTA', 'GTT', 'TGG', 'GGC', 'GAA', 'GAG', 'CGT', 'GGT', 'GTG', 'GCG', 'TTG', 'GCA']
+16/01/2018 02:38:47 Which is equivalent to: ['GTA', 'TTT', 'TGT', 'GGG', 'GAT', 'TAT', 'GCT', 'CGG', 'GGA', 'TTA', 'GTT', 'TGG', 'GGC', 'GAA', 'GAG', 'CGT', 'GGT', 'GTG', 'GCG', 'TTG', 'GCA']
+16/01/2018 02:38:47 Non match intervals: [[0, 4]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CACAG', 'CACGC', 'CACAA', 'CACTT', 'CACTA', 'CACGA', 'CACCT', 'CACTC', 'CACAC', 'CACCG', 'CACGG', 'CACAT', 'CACGT', 'CACTG', 'CACCA']
+16/01/2018 02:38:47 Which is equivalent to: ['CACAG', 'CACGC', 'CACAA', 'CACTT', 'CACTA', 'CACGA', 'CACCT', 'CACTC', 'CACAC', 'CACCG', 'CACGG', 'CACAT', 'CACGT', 'CACTG', 'CACCA']
+16/01/2018 02:38:47 Non match intervals: [[15, 17]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CCA', 'GGT', 'CTC', 'CAA', 'CAG', 'CGC', 'CTG', 'GAT', 'CGG', 'CGT', 'CAT', 'CCG', 'GTT', 'CTA', 'CAC', 'CCC', 'CGA', 'CCT', 'CTT']
+16/01/2018 02:38:47 Which is equivalent to: ['CCA', 'GGT', 'CTC', 'CAA', 'CAG', 'CGC', 'CTG', 'GAT', 'CGG', 'CGT', 'CAT', 'CCG', 'GTT', 'CTA', 'CAC', 'CCC', 'CGA', 'CCT', 'CTT']
+16/01/2018 02:38:47 Non match intervals: [[25, 29]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CAGAC', 'GCGAC', 'GTGAC', 'CTGAC', 'GAGAC', 'GGGAC', 'TAGAC', 'ATGAC', 'TGGAC', 'AAGAC', 'ACGAC', 'TCGAC', 'AGGAC', 'TTGAC', 'CCGAC', 'CGGAC']
+16/01/2018 02:38:47 Which is equivalent to: ['CAGAC', 'GCGAC', 'GTGAC', 'CTGAC', 'GAGAC', 'GGGAC', 'TAGAC', 'ATGAC', 'TGGAC', 'AAGAC', 'ACGAC', 'TCGAC', 'AGGAC', 'TTGAC', 'CCGAC', 'CGGAC']
+16/01/2018 02:38:47 Non match intervals: [[10, 11]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CC', 'GT', 'GG', 'GC', 'AC', 'TA', 'AT', 'TC', 'CT', 'CA', 'TT', 'CG', 'TG']
+16/01/2018 02:38:47 Which is equivalent to: ['CC', 'GT', 'GG', 'GC', 'AC', 'TA', 'AT', 'TC', 'CT', 'CA', 'TT', 'CG', 'TG']
+16/01/2018 02:38:47 Non match intervals: [[22, 23]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['TG', 'CG', 'TT', 'GA', 'GT', 'AT', 'AG', 'CC', 'GC', 'TC', 'TA', 'AC', 'AA', 'CA', 'CT', 'GG']
+16/01/2018 02:38:47 Which is equivalent to: ['TG', 'CG', 'TT', 'GA', 'GT', 'AT', 'AG', 'CC', 'GC', 'TC', 'TA', 'AC', 'AA', 'CA', 'CT', 'GG']
+16/01/2018 02:38:47 Non match intervals: [[12, 14]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CAG', 'CTC', 'TCT', 'CGC', 'CTT', 'GCT', 'CAC', 'CGT', 'CCC', 'CAA', 'TTT', 'CAT', 'TGT', 'TAT', 'AAT', 'CCT', 'GGT']
+16/01/2018 02:38:47 Which is equivalent to: ['CAG', 'CTC', 'TCT', 'CGC', 'CTT', 'GCT', 'CAC', 'CGT', 'CCC', 'CAA', 'TTT', 'CAT', 'TGT', 'TAT', 'AAT', 'CCT', 'GGT']
+16/01/2018 02:38:47 Non match intervals: [[22, 23]]
+16/01/2018 02:38:47 Have reached max nesting level or have a small variant site, so add all variant sequences in interval.
+16/01/2018 02:38:47 Variant seqs found: ['CG', 'CT', 'AC', 'TT', 'AG', 'GC', 'AA', 'CC', 'GG', 'GA', 'AT', 'TG', 'TA', 'TC', 'GT', 'CA']
+16/01/2018 02:38:47 Which is equivalent to: ['CG', 'CT', 'AC', 'TT', 'AG', 'GC', 'AA', 'CC', 'GG', 'GA', 'AT', 'TG', 'TA', 'TC', 'GT', 'CA']
+16/01/2018 02:38:47 Write PRG file to /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/gyrA/gyrA.max_nest10.min_match5.prg
+16/01/2018 02:38:47 self.subAlignedSeqs.keys(): dict_keys([352])
+16/01/2018 02:38:47 self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]]: [<__main__.AlignedSeq object at 0x10214ef60>, <__main__.AlignedSeq object at 0x10207da90>, <__main__.AlignedSeq object at 0x1026a0da0>, <__main__.AlignedSeq object at 0x10299b128>, <__main__.AlignedSeq object at 0x1060f5198>, <__main__.AlignedSeq object at 0x1060ec358>, <__main__.AlignedSeq object at 0x1026a0e80>, <__main__.AlignedSeq object at 0x102c45a90>, <__main__.AlignedSeq object at 0x102c45908>, <__main__.AlignedSeq object at 0x1067196d8>, <__main__.AlignedSeq object at 0x10673c2e8>, <__main__.AlignedSeq object at 0x106719d30>, <__main__.AlignedSeq object at 0x1026a0f60>, <__main__.AlignedSeq object at 0x1026a0ef0>, <__main__.AlignedSeq object at 0x1060ec400>, <__main__.AlignedSeq object at 0x10673c208>, <__main__.AlignedSeq object at 0x1060ec438>, <__main__.AlignedSeq object at 0x1060ec3c8>, <__main__.AlignedSeq object at 0x106719940>, <__main__.AlignedSeq object at 0x1026a0e10>, <__main__.AlignedSeq object at 0x10673c240>, <__main__.AlignedSeq object at 0x10673c780>, <__main__.AlignedSeq object at 0x1026a0f28>, <__main__.AlignedSeq object at 0x106719d68>, <__main__.AlignedSeq object at 0x1026a0d68>, <__main__.AlignedSeq object at 0x1026a0f98>, <__main__.AlignedSeq object at 0x1026a0fd0>]
+16/01/2018 02:38:47 interval start: 352
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 found the max of [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] is 2
+16/01/2018 02:38:47 Max_nesting_reached	2
+16/01/2018 02:38:47 Write GFA file to /Users/mbhall88/Dropbox/PhD/prg_tubemaps/data/tb/gyrA/gyrA.max_nest10.min_match5.gfa
+16/01/2018 02:38:47 gfa_site: 5
+16/01/2018 02:38:47 prgs: ['GACGTCGACGCGCGGCGCAGCTTTATCACCCGCAACGCCAAGGATGTTCGGTTCCTGGATGTCTAACGCAACCCTGCGTTCGATTGCAAACGAGGAATAGATGACAGACACGACGTTGCCGCCTGACGACTCGCTCGACCGGATCGAACCGGTTGACATCGAGCAGGAGATGCAGCGCAGCTACATCGACTATGCGATGAGCGTGATCGTCGGCCGCGCGCTGCCGGAGGTGCGCGACGGGCTCAAGCCCGTGCATCGCCGGGTGCTCTATGCAATGTTCGATTCCGGCTTCCGCCCGGACCGCAGCCACGCCAAGTCG', 'GCC 6 TCT 6 AGT 6 TCA 6 TCC 6 TCG 6 AGC', 'CGGTCGGTTGCCGAGACCATGGGCAACTAC 7 CACCCGCACGGCGACGCGTCGATCT 9 ACGAC 10 ACTAT 10 ACGGA 10 ACTGC 10 ACAGT 10 ACGTC 10 ACATA 10 ACAAC 10 ACTGT 10 ACGGG 10 ACTCG 10 CTGAC 10 GGGAC 10 ACTTT 10 ACGGT 10 TCGAC 10 CAGAC 10 ACGAA 10 ACTTG 10 ACGCT 10 ACAGG 10 ACTCA 10 ACATG 10 ACAGA 10 ACATC 10 ACGCA 10 ACGTA 10 GCGAC 10 CCGAC 10 GTGAC 10 CGGAC 10 TTGAC 10 TAGAC 10 ACTTC 10 ACAGC 10 ACGTT 10 ACAAT 10 ACACG 10 ACGCG 10 ACAAG 10 ACTGG 10 ACACA 10 ACACC 10 ACGAG 10 ACAAA 10 ACGTG 10 ACTAC 10 ACTCT 10 ACGGC 10 ACTCC 10 ACGCC 10 ACTTA 10 TGGAC 10 ACACT 10 ACATT 9  8 CACCCG 11 TAC 12 AAC 12 GGG 12 ATC 12 GCG 12 CCC 12 GTC 12 GGC 12 GTG 12 TTC 12 GTT 12 GCC 12 GAT 12 ACC 12 GAC 12 GAG 12 TGC 12 GCT 12 TCC 11 GGCGACGCGTCGATCTACGAC 8 CACCCGCACGGC 13 AAG 14 GTA 14 GCG 14 GTT 14 GGG 14 TTG 14 CTG 14 TCG 14 GTG 14 CCG 14 AGG 14 CGG 14 ATG 14 GAG 14 GTC 14 TGG 14 ACG 14 GGC 13 GCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCA 15 GCGAC 16 AAGAC 16 CGGAC 16 GAGAC 16 TGGAC 16 TCGAC 16 AGGAC 16 ACGAC 16 TTGAC 16 TAGAC 16 CTGAC 16 ATGAC 16 CCGAC 16 CAGAC 16 GGGAC 16 GTGAC 15  8 CACCCGCACGGCGACGCG 17 AAG 18 ACA 18 ACT 18 AAA 18 AGA 18 TAC 18 AAC 18 TGC 18 GCC 18 ATC 18 AGG 18 ACC 18 GTC 18 GAC 18 ACG 18 ATT 18 AAT 18 TTC 18 ATG 18 ATA 17 ATCTACGAC 8 CACCCGCAC 19 ATG 20 ATC 20 CTT 20 ATA 20 CAT 20 AAC 20 AAT 20 AGG 20 ACT 20 ACG 20 GCG 20 GAT 20 AGA 20 CCT 20 GTG 20 GTA 20 AAG 20 GCA 20 AAA 20 ATT 20 AGT 20 GCT 20 GAA 20 ACA 20 GTT 20 GAG 19 GACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGA 21 CT 22 GA 22 TG 22 CA 22 GG 22 CC 22 GC 22 GT 22 AA 22 AT 22 AC 22 AG 22 CG 21 TACGAC 8  23 CACGCT 24 CACATA 24 CACGTA 24 CACAAA 24 CACTCT 24 CACACT 24 CACCAA 24 CACGCA 24 CACGAT 24 CACGTT 24 CACCAT 24 CACGAA 24 CACCGA 24 CACATT 24 CACGGA 24 CACGGT 24 CACCTT 24 CACTTA 24 CACTAT 24 CACACG 24 CACCTA 24 CACAGT 24 CACCGT 24 CACTGT 24 CACAGA 24 CACTTT 24 CACTCA 24 CACACA 24 CACAAT 23 CACGGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGT 25 CT 26 AT 26 TG 26 GG 26 CG 26 GC 26 CA 26 CC 26 AC 26 TC 26 GT 26 TT 26 TA 25 TACGAC 8  27 GGACC 28 CCACC 28 GTCCC 28 CACAA 28 GCCCC 28 CTCCC 28 CACGA 28 GCACC 28 TACCC 28 GGTCC 28 CTACC 28 TCCCC 28 ATTCC 28 TTTCC 28 GGGCC 28 CACCT 28 ACCCC 28 TCGCC 28 GATCC 28 GACCC 28 AACCC 28 CACTG 28 GTTCC 28 CGACC 28 GAACC 28 AGCCC 28 CCCCC 28 TTACC 28 CGGCC 28 ATGCC 28 TATCC 28 GTGCC 28 CACTT 28 TGCCC 28 AATCC 28 CGCCC 28 ATCCC 28 GCGCC 28 ACACC 28 CTTCC 28 CTGCC 28 CACAT 28 GGCCC 28 AGACC 28 CACTC 28 CACAG 28 CACGT 28 GAGCC 28 ACTCC 28 TGGCC 28 CCTCC 28 AAACC 28 ACGCC 28 AGGCC 28 TCACC 28 CACCG 28 CCGCC 28 TTGCC 28 GTACC 28 CACCA 28 TCTCC 28 CACGC 28 TTCCC 28 ATACC 28 CGTCC 28 CAGCC 28 AAGCC 28 TGTCC 28 CACGG 28 CAACC 28 GCTCC 28 AGTCC 27 GCACGGCGACGCGTCGATCTACGAC 8 CACCCGCACGGC 29 TTC 30 AGA 30 AAA 30 ACT 30 GCC 30 ACA 30 ATT 30 TCC 30 CTA 30 CCA 30 CGA 30 TTA 30 TCA 30 ATA 30 GCA 30 GAA 30 AGC 30 GGA 30 AAC 30 ATC 30 TGC 30 ACC 30 AGT 30 TAC 29 GCGTCGATCTACGAC 8 CACCCGCAC 31 CGT 32 CCC 32 CTA 32 GCC 32 CGA 32 AGC 32 CAC 32 CCA 32 CCG 32 CGC 32 CGG 32 GAC 32 GTC 32 CTC 32 ACC 32 CAG 32 CTG 32 CAA 31 GACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCTACC 33 CC 34 GC 34 TA 34 TC 34 AA 34 AG 34 GT 34 AT 34 GG 34 CT 34 GA 34 CG 34 CA 34 AC 34 TT 34 TG 33  8 CACCCG 35 CAA 36 CTT 36 TCG 36 CGG 36 CGA 36 TTA 36 CCT 36 CAG 36 CTA 36 CGC 36 TCA 36 GGA 36 CCG 36 CTC 36 GAA 36 AAA 36 GCA 36 CCA 36 TTG 36 CTG 36 TGG 36 GTA 36 ATA 36 ACA 35 GGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCG 37 TAGAC 38 AGGAC 38 TGGAC 38 CTGAC 38 CAGAC 38 GTGAC 38 GAGAC 38 GGGAC 38 GCGAC 38 TCGAC 38 ATGAC 38 TTGAC 38 CGGAC 38 CCGAC 38 ACGAC 38 AAGAC 37  8 CACCCGCACGGCGAC 39 TGG 40 TCA 40 TTA 40 TGT 40 TTG 40 TCG 40 TCC 40 TAT 40 TGC 40 TTT 40 TAC 40 TTC 40 TCT 40 GAC 39 TCGATCTACGAC 8 CACCCG 41 AAG 42 ACG 42 AAT 42 CGT 42 TAT 42 AGA 42 AGG 42 TTT 42 AGC 42 ACT 42 TGT 42 TCT 42 ATT 42 GGT 42 AGT 42 ATG 41 GGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGAC 43 GTC 44 GTG 44 ACC 44 ACG 44 ACA 44 GTA 44 ATG 44 GAA 44 AAA 44 AGC 44 ATA 44 AGT 44 GAG 44 ACT 44 ATC 44 GGA 44 AAT 44 AAC 44 GGG 44 ATT 44 GGC 44 AGA 44 AGG 44 AAG 43 TCGATCTACGAC 8 CACCCGCACGGCGACGCGC 45 GC 46 TC 46 CA 46 TT 46 TA 46 AC 46 CT 46 CC 46 AA 46 AG 46 AT 46 CG 46 GA 46 TG 45 ATCTACGAC 8 CACCCGCACGGCGACGCG 47 GTA 48 TTT 48 TGT 48 GGG 48 GAT 48 TAT 48 GCT 48 CGG 48 GGA 48 TTA 48 GTT 48 TGG 48 GGC 48 GAA 48 GAG 48 CGT 48 GGT 48 GTG 48 GCG 48 TTG 48 GCA 47 ATCTACGAC 8  49 CACAG 50 CACGC 50 CACAA 50 CACTT 50 CACTA 50 CACGA 50 CACCT 50 CACTC 50 CACAC 50 CACCG 50 CACGG 50 CACAT 50 CACGT 50 CACTG 50 CACCA 49 CCACGGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGAC 51 CCA 52 GGT 52 CTC 52 CAA 52 CAG 52 CGC 52 CTG 52 GAT 52 CGG 52 CGT 52 CAT 52 CCG 52 GTT 52 CTA 52 CAC 52 CCC 52 CGA 52 CCT 52 CTT 51 TCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCC 53 CAGAC 54 GCGAC 54 GTGAC 54 CTGAC 54 GAGAC 54 GGGAC 54 TAGAC 54 ATGAC 54 TGGAC 54 AAGAC 54 ACGAC 54 TCGAC 54 AGGAC 54 TTGAC 54 CCGAC 54 CGGAC 53  8 CACCCGCACT 55 CC 56 GT 56 GG 56 GC 56 AC 56 TA 56 AT 56 TC 56 CT 56 CA 56 TT 56 CG 56 TG 55 GACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGC 57 TG 58 CG 58 TT 58 GA 58 GT 58 AT 58 AG 58 CC 58 GC 58 TC 58 TA 58 AC 58 AA 58 CA 58 CT 58 GG 57 TACGAC 8 CACCCGCACGGC 59 CAG 60 CTC 60 TCT 60 CGC 60 CTT 60 GCT 60 CAC 60 CGT 60 CCC 60 CAA 60 TTT 60 CAT 60 TGT 60 TAT 60 AAT 60 CCT 60 GGT 59 GCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGG 61 CG 62 CT 62 AC 62 TT 62 AG 62 GC 62 AA 62 CC 62 GG 62 GA 62 AT 62 TG 62 TA 62 TC 62 GT 62 CA 61 TACGAC 7 AGCCTGGTGCGCATGGCCCAGCCCTGGTCGCTGCGCTACCCGCTGGTGGACGGCCAGGGCAACTTCGGCTCGCCAGGCAATGACCCACCGGCGGCGATGAGGTACACCGAAGCCCGGCTGACCCCGTTGGCGATGGAGATGCTGAGGGAAATCGACGAGGAGACAGTCGATTTCATCCCTAACTACGACGGCCGGGTGCAAGAGCCGACGGTGCTACCCAGCCGGTTCCCCAACCTGCTGGCCAACGGGTCAGGCGGCATCGCGGTCGGCATGGCAACCAATATCCCGCCGCACAACCTGCGTGAGCTGGCCGACGCGGTGTTCTGGGCGCTGGAGAATCACGACGCCGACGAAGAGGAGACCCTGGCCGCGGTCATGGGGCGGGTTAAAGGCCCGGACTTCCCGACCGCCGGACTGATCGTCGGATCCCAGGGCACCGCTGATGCCTACAAAACTGGCCGCGGCTCCATTCGAATGCGCGGAGTTGTTGAGGTAGAAGAGGATTCCCGCGGTCGTACCTCGCTGGTGATCACCGAGTTGCCGTATCAGGTCAACCACGACAACTTCATCACTTCGATCGCCGAACAGGTCCGAGACGGCAAGCTGGCCGGCATTTCCAACATTGAGGACCAGTCTAGCGATCGGGTCGGTTTACGCATCGTCATCGAGATCAAGCGCGATGCGGTGGCCAAGGTGGTGATCAATAACCTTTACAAGCACACCCAGCTGCAGACCAGCTTTGGCGCCAACATGCTAGCGATCGTCGACGGGGTGCCGCGCACGCTGCGGCTGGACCAGCTGATCCGCTATTACGTTGACCACCAACTCGACGTCATTGTGCGGCGCACCACCTACCGGCTGCGCAAGGCAAACGAGCGAGCCCACATTCTGCGCGGCCTGGTTAAAGCGCTCGACGCGCTGGACGAGGTCATTGCACTGATCCGGGCGTCGGAGACCGTCGATATCGCCCGGGCCGGACTGATCGAGCTGCTCGACATCGACGAGATCCAGGCCCAGGCAATCCTGGACATGCAGTTGCGGCGCCTGGCCGCACTGGAACGCCAGCGCATCATCGACGACCTGGCCAAAATCGAGGCCGAGATCGCCGATCTGGAAGACATCCTGGCAAAACCCGAGCGGCAGCGTGGGATCGTGCGCGACGAACTCGCCGAAATCGTGGACAGGCACGGCGACGACCGGCGTACCCGGATCATCGCGGCCGACGGAGACGTCAGCGACGAGGATTTGATCGCCCGCGAGGACGTCGTTGTCACTATCACCGAAACGGGATACGCCAAGCGCACCAAGACCGATCTGTATCGCAGCCAGAAACGCGGCGGCAAGGGCGTGCAGGGTGCGGGGTTGAAGCAGGACGACATCGTCGCGCACTTCTTCGTGTGCTCCACCCACGATTTGATCCTGTTCTTCACCACCCAGGGACGGGTTTATCGGGCCAAGGCCTACGACTTGCCCGAGGCCTCCCGGACGGCGCGCGGGCAGCACGTGGCCAACCTGTTAGCCTTCCAGCCCGAGGAACGCATCGCCCAGGTCATCCAGATTCGCGGCTACACCGACGCCCCGTACCTGGTGCTGGCCACTCGCAACGGGCTGGTGAAAAAGTCCAAGCTGACCGACTTCGACTCCAATCGCTCGGGCGGAATCGTGGCGGTCAACCTGCGCGACAACGACGAGCTGGTCGGTGCGGTGCTGTGTTCGGCCGGCGACGACCTGCTGCTGGTCTCGGCCAACGGGCAGTCCATCAGGTTCTCGGCGACCGACGAGGCGCTGCGGCCAATGGGTCGTGCCACCTCGGGTGTGCAGGGCATGCGGTTCAATATCGACGACCGGCTGCTGTCGCTGAACGTCGTGCGTGAAGGCACCTATCTGCTGGTGGCGACGTCAGGGGGCTATGCGAAACGTACCGCGATCGAGGAATACCCGGTACAGGGCCGCGGCGGTAAAGGTGTGCTGACGGTCATGTACGACCGCCGGCGCGGCAGGTTGGTTGGGGCGTTGATTGTCGACGACGACAGCGAGCTGTATGCCGTCACTTCCGGCGGTGGCGTGATCCGCACCGCGGCACGCCAGGTTCGCAAGGCGGGACGGCAGACCAAGGGTGTTCGGTTGATGAATCTGGGCGAGGGCGACACACTGTTGGCCATCGCGCGCAACGCCGAAGAAAGTGGCGACGATAATGCCGTGGACGCCAACGGCGCAGACCAGACGGGCAATTAATCAGGCTCGCCCGACGACGATGCGGATCGCGTAGCGATCTGAGGAGGAATCGGGCAGCTAGGCTCGGCAGCCGGGTACGAGTGTTAGGAGTCGGGGTGAC']
+16/01/2018 02:38:47 vars: ['GCC', 'TCT', 'AGT', 'TCA', 'TCC', 'TCG', 'AGC']
+16/01/2018 02:38:47 gfa_site: 7
+16/01/2018 02:38:47 gfa_site: 7
+16/01/2018 02:38:47 prgs: ['CGGTCGGTTGCCGAGACCATGGGCAACTAC', 'CACCCGCACGGCGACGCGTCGATCT 9 ACGAC 10 ACTAT 10 ACGGA 10 ACTGC 10 ACAGT 10 ACGTC 10 ACATA 10 ACAAC 10 ACTGT 10 ACGGG 10 ACTCG 10 CTGAC 10 GGGAC 10 ACTTT 10 ACGGT 10 TCGAC 10 CAGAC 10 ACGAA 10 ACTTG 10 ACGCT 10 ACAGG 10 ACTCA 10 ACATG 10 ACAGA 10 ACATC 10 ACGCA 10 ACGTA 10 GCGAC 10 CCGAC 10 GTGAC 10 CGGAC 10 TTGAC 10 TAGAC 10 ACTTC 10 ACAGC 10 ACGTT 10 ACAAT 10 ACACG 10 ACGCG 10 ACAAG 10 ACTGG 10 ACACA 10 ACACC 10 ACGAG 10 ACAAA 10 ACGTG 10 ACTAC 10 ACTCT 10 ACGGC 10 ACTCC 10 ACGCC 10 ACTTA 10 TGGAC 10 ACACT 10 ACATT 9  8 CACCCG 11 TAC 12 AAC 12 GGG 12 ATC 12 GCG 12 CCC 12 GTC 12 GGC 12 GTG 12 TTC 12 GTT 12 GCC 12 GAT 12 ACC 12 GAC 12 GAG 12 TGC 12 GCT 12 TCC 11 GGCGACGCGTCGATCTACGAC 8 CACCCGCACGGC 13 AAG 14 GTA 14 GCG 14 GTT 14 GGG 14 TTG 14 CTG 14 TCG 14 GTG 14 CCG 14 AGG 14 CGG 14 ATG 14 GAG 14 GTC 14 TGG 14 ACG 14 GGC 13 GCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCA 15 GCGAC 16 AAGAC 16 CGGAC 16 GAGAC 16 TGGAC 16 TCGAC 16 AGGAC 16 ACGAC 16 TTGAC 16 TAGAC 16 CTGAC 16 ATGAC 16 CCGAC 16 CAGAC 16 GGGAC 16 GTGAC 15  8 CACCCGCACGGCGACGCG 17 AAG 18 ACA 18 ACT 18 AAA 18 AGA 18 TAC 18 AAC 18 TGC 18 GCC 18 ATC 18 AGG 18 ACC 18 GTC 18 GAC 18 ACG 18 ATT 18 AAT 18 TTC 18 ATG 18 ATA 17 ATCTACGAC 8 CACCCGCAC 19 ATG 20 ATC 20 CTT 20 ATA 20 CAT 20 AAC 20 AAT 20 AGG 20 ACT 20 ACG 20 GCG 20 GAT 20 AGA 20 CCT 20 GTG 20 GTA 20 AAG 20 GCA 20 AAA 20 ATT 20 AGT 20 GCT 20 GAA 20 ACA 20 GTT 20 GAG 19 GACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGA 21 CT 22 GA 22 TG 22 CA 22 GG 22 CC 22 GC 22 GT 22 AA 22 AT 22 AC 22 AG 22 CG 21 TACGAC 8  23 CACGCT 24 CACATA 24 CACGTA 24 CACAAA 24 CACTCT 24 CACACT 24 CACCAA 24 CACGCA 24 CACGAT 24 CACGTT 24 CACCAT 24 CACGAA 24 CACCGA 24 CACATT 24 CACGGA 24 CACGGT 24 CACCTT 24 CACTTA 24 CACTAT 24 CACACG 24 CACCTA 24 CACAGT 24 CACCGT 24 CACTGT 24 CACAGA 24 CACTTT 24 CACTCA 24 CACACA 24 CACAAT 23 CACGGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGT 25 CT 26 AT 26 TG 26 GG 26 CG 26 GC 26 CA 26 CC 26 AC 26 TC 26 GT 26 TT 26 TA 25 TACGAC 8  27 GGACC 28 CCACC 28 GTCCC 28 CACAA 28 GCCCC 28 CTCCC 28 CACGA 28 GCACC 28 TACCC 28 GGTCC 28 CTACC 28 TCCCC 28 ATTCC 28 TTTCC 28 GGGCC 28 CACCT 28 ACCCC 28 TCGCC 28 GATCC 28 GACCC 28 AACCC 28 CACTG 28 GTTCC 28 CGACC 28 GAACC 28 AGCCC 28 CCCCC 28 TTACC 28 CGGCC 28 ATGCC 28 TATCC 28 GTGCC 28 CACTT 28 TGCCC 28 AATCC 28 CGCCC 28 ATCCC 28 GCGCC 28 ACACC 28 CTTCC 28 CTGCC 28 CACAT 28 GGCCC 28 AGACC 28 CACTC 28 CACAG 28 CACGT 28 GAGCC 28 ACTCC 28 TGGCC 28 CCTCC 28 AAACC 28 ACGCC 28 AGGCC 28 TCACC 28 CACCG 28 CCGCC 28 TTGCC 28 GTACC 28 CACCA 28 TCTCC 28 CACGC 28 TTCCC 28 ATACC 28 CGTCC 28 CAGCC 28 AAGCC 28 TGTCC 28 CACGG 28 CAACC 28 GCTCC 28 AGTCC 27 GCACGGCGACGCGTCGATCTACGAC 8 CACCCGCACGGC 29 TTC 30 AGA 30 AAA 30 ACT 30 GCC 30 ACA 30 ATT 30 TCC 30 CTA 30 CCA 30 CGA 30 TTA 30 TCA 30 ATA 30 GCA 30 GAA 30 AGC 30 GGA 30 AAC 30 ATC 30 TGC 30 ACC 30 AGT 30 TAC 29 GCGTCGATCTACGAC 8 CACCCGCAC 31 CGT 32 CCC 32 CTA 32 GCC 32 CGA 32 AGC 32 CAC 32 CCA 32 CCG 32 CGC 32 CGG 32 GAC 32 GTC 32 CTC 32 ACC 32 CAG 32 CTG 32 CAA 31 GACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCTACC 33 CC 34 GC 34 TA 34 TC 34 AA 34 AG 34 GT 34 AT 34 GG 34 CT 34 GA 34 CG 34 CA 34 AC 34 TT 34 TG 33  8 CACCCG 35 CAA 36 CTT 36 TCG 36 CGG 36 CGA 36 TTA 36 CCT 36 CAG 36 CTA 36 CGC 36 TCA 36 GGA 36 CCG 36 CTC 36 GAA 36 AAA 36 GCA 36 CCA 36 TTG 36 CTG 36 TGG 36 GTA 36 ATA 36 ACA 35 GGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCG 37 TAGAC 38 AGGAC 38 TGGAC 38 CTGAC 38 CAGAC 38 GTGAC 38 GAGAC 38 GGGAC 38 GCGAC 38 TCGAC 38 ATGAC 38 TTGAC 38 CGGAC 38 CCGAC 38 ACGAC 38 AAGAC 37  8 CACCCGCACGGCGAC 39 TGG 40 TCA 40 TTA 40 TGT 40 TTG 40 TCG 40 TCC 40 TAT 40 TGC 40 TTT 40 TAC 40 TTC 40 TCT 40 GAC 39 TCGATCTACGAC 8 CACCCG 41 AAG 42 ACG 42 AAT 42 CGT 42 TAT 42 AGA 42 AGG 42 TTT 42 AGC 42 ACT 42 TGT 42 TCT 42 ATT 42 GGT 42 AGT 42 ATG 41 GGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGAC 43 GTC 44 GTG 44 ACC 44 ACG 44 ACA 44 GTA 44 ATG 44 GAA 44 AAA 44 AGC 44 ATA 44 AGT 44 GAG 44 ACT 44 ATC 44 GGA 44 AAT 44 AAC 44 GGG 44 ATT 44 GGC 44 AGA 44 AGG 44 AAG 43 TCGATCTACGAC 8 CACCCGCACGGCGACGCGC 45 GC 46 TC 46 CA 46 TT 46 TA 46 AC 46 CT 46 CC 46 AA 46 AG 46 AT 46 CG 46 GA 46 TG 45 ATCTACGAC 8 CACCCGCACGGCGACGCG 47 GTA 48 TTT 48 TGT 48 GGG 48 GAT 48 TAT 48 GCT 48 CGG 48 GGA 48 TTA 48 GTT 48 TGG 48 GGC 48 GAA 48 GAG 48 CGT 48 GGT 48 GTG 48 GCG 48 TTG 48 GCA 47 ATCTACGAC 8  49 CACAG 50 CACGC 50 CACAA 50 CACTT 50 CACTA 50 CACGA 50 CACCT 50 CACTC 50 CACAC 50 CACCG 50 CACGG 50 CACAT 50 CACGT 50 CACTG 50 CACCA 49 CCACGGCGACGCGTCGATCTACGAC 8 CACCCGCACGGCGAC 51 CCA 52 GGT 52 CTC 52 CAA 52 CAG 52 CGC 52 CTG 52 GAT 52 CGG 52 CGT 52 CAT 52 CCG 52 GTT 52 CTA 52 CAC 52 CCC 52 CGA 52 CCT 52 CTT 51 TCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGATCC 53 CAGAC 54 GCGAC 54 GTGAC 54 CTGAC 54 GAGAC 54 GGGAC 54 TAGAC 54 ATGAC 54 TGGAC 54 AAGAC 54 ACGAC 54 TCGAC 54 AGGAC 54 TTGAC 54 CCGAC 54 CGGAC 53  8 CACCCGCACT 55 CC 56 GT 56 GG 56 GC 56 AC 56 TA 56 AT 56 TC 56 CT 56 CA 56 TT 56 CG 56 TG 55 GACGCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGC 57 TG 58 CG 58 TT 58 GA 58 GT 58 AT 58 AG 58 CC 58 GC 58 TC 58 TA 58 AC 58 AA 58 CA 58 CT 58 GG 57 TACGAC 8 CACCCGCACGGC 59 CAG 60 CTC 60 TCT 60 CGC 60 CTT 60 GCT 60 CAC 60 CGT 60 CCC 60 CAA 60 TTT 60 CAT 60 TGT 60 TAT 60 AAT 60 CCT 60 GGT 59 GCGTCGATCTACGAC 8 CACCCGCACGGCGACGCGTCGG 61 CG 62 CT 62 AC 62 TT 62 AG 62 GC 62 AA 62 CC 62 GG 62 GA 62 AT 62 TG 62 TA 62 TC 62 GT 62 CA 61 TACGAC', 'AGCCTGGTGCGCATGGCCCAGCCCTGGTCGCTGCGCTACCCGCTGGTGGACGGCCAGGGCAACTTCGGCTCGCCAGGCAATGACCCACCGGCGGCGATGAGGTACACCGAAGCCCGGCTGACCCCGTTGGCGATGGAGATGCTGAGGGAAATCGACGAGGAGACAGTCGATTTCATCCCTAACTACGACGGCCGGGTGCAAGAGCCGACGGTGCTACCCAGCCGGTTCCCCAACCTGCTGGCCAACGGGTCAGGCGGCATCGCGGTCGGCATGGCAACCAATATCCCGCCGCACAACCTGCGTGAGCTGGCCGACGCGGTGTTCTGGGCGCTGGAGAATCACGACGCCGACGAAGAGGAGACCCTGGCCGCGGTCATGGGGCGGGTTAAAGGCCCGGACTTCCCGACCGCCGGACTGATCGTCGGATCCCAGGGCACCGCTGATGCCTACAAAACTGGCCGCGGCTCCATTCGAATGCGCGGAGTTGTTGAGGTAGAAGAGGATTCCCGCGGTCGTACCTCGCTGGTGATCACCGAGTTGCCGTATCAGGTCAACCACGACAACTTCATCACTTCGATCGCCGAACAGGTCCGAGACGGCAAGCTGGCCGGCATTTCCAACATTGAGGACCAGTCTAGCGATCGGGTCGGTTTACGCATCGTCATCGAGATCAAGCGCGATGCGGTGGCCAAGGTGGTGATCAATAACCTTTACAAGCACACCCAGCTGCAGACCAGCTTTGGCGCCAACATGCTAGCGATCGTCGACGGGGTGCCGCGCACGCTGCGGCTGGACCAGCTGATCCGCTATTACGTTGACCACCAACTCGACGTCATTGTGCGGCGCACCACCTACCGGCTGCGCAAGGCAAACGAGCGAGCCCACATTCTGCGCGGCCTGGTTAAAGCGCTCGACGCGCTGGACGAGGTCATTGCACTGATCCGGGCGTCGGAGACCGTCGATATCGCCCGGGCCGGACTGATCGAGCTGCTCGACATCGACGAGATCCAGGCCCAGGCAATCCTGGACATGCAGTTGCGGCGCCTGGCCGCACTGGAACGCCAGCGCATCATCGACGACCTGGCCAAAATCGAGGCCGAGATCGCCGATCTGGAAGACATCCTGGCAAAACCCGAGCGGCAGCGTGGGATCGTGCGCGACGAACTCGCCGAAATCGTGGACAGGCACGGCGACGACCGGCGTACCCGGATCATCGCGGCCGACGGAGACGTCAGCGACGAGGATTTGATCGCCCGCGAGGACGTCGTTGTCACTATCACCGAAACGGGATACGCCAAGCGCACCAAGACCGATCTGTATCGCAGCCAGAAACGCGGCGGCAAGGGCGTGCAGGGTGCGGGGTTGAAGCAGGACGACATCGTCGCGCACTTCTTCGTGTGCTCCACCCACGATTTGATCCTGTTCTTCACCACCCAGGGACGGGTTTATCGGGCCAAGGCCTACGACTTGCCCGAGGCCTCCCGGACGGCGCGCGGGCAGCACGTGGCCAACCTGTTAGCCTTCCAGCCCGAGGAACGCATCGCCCAGGTCATCCAGATTCGCGGCTACACCGACGCCCCGTACCTGGTGCTGGCCACTCGCAACGGGCTGGTGAAAAAGTCCAAGCTGACCGACTTCGACTCCAATCGCTCGGGCGGAATCGTGGCGGTCAACCTGCGCGACAACGACGAGCTGGTCGGTGCGGTGCTGTGTTCGGCCGGCGACGACCTGCTGCTGGTCTCGGCCAACGGGCAGTCCATCAGGTTCTCGGCGACCGACGAGGCGCTGCGGCCAATGGGTCGTGCCACCTCGGGTGTGCAGGGCATGCGGTTCAATATCGACGACCGGCTGCTGTCGCTGAACGTCGTGCGTGAAGGCACCTATCTGCTGGTGGCGACGTCAGGGGGCTATGCGAAACGTACCGCGATCGAGGAATACCCGGTACAGGGCCGCGGCGGTAAAGGTGTGCTGACGGTCATGTACGACCGCCGGCGCGGCAGGTTGGTTGGGGCGTTGATTGTCGACGACGACAGCGAGCTGTATGCCGTCACTTCCGGCGGTGGCGTGATCCGCACCGCGGCACGCCAGGTTCGCAAGGCGGGACGGCAGACCAAGGGTGTTCGGTTGATGAATCTGGGCGAGGGCGACACACTGTTGGCCATCGCGCGCAACGCCGAAGAAAGTGGCGACGATAATGCCGTGGACGCCAACGGCGCAGACCAGACGGGCAATTAATCAGGCTCGCCCGACGACGATGCGGATCGCGTAGCGATCTGAGGAGGAATCGGGCAGCTAGGCTCGGCAGCCGGGTACGAGTGTTAGGAGTCGGGGTGAC']
+16/01/2018 02:38:47 vars: ['CACCCGCACGGCGACGCGTCGATCT 9 ACGAC 10 ACTAT 10 ACGGA 10 ACTGC 10 ACAGT 10 ACGTC 10 ACATA 10 ACAAC 10 ACTGT 10 ACGGG 10 ACTCG 10 CTGAC 10 GGGAC 10 ACTTT 10 ACGGT 10 TCGAC 10 CAGAC 10 ACGAA 10 ACTTG 10 ACGCT 10 ACAGG 10 ACTCA 10 ACATG 10 ACAGA 10 ACATC 10 ACGCA 10 ACGTA 10 GCGAC 10 CCGAC 10 GTGAC 10 CGGAC 10 TTGAC 10 TAGAC 10 ACTTC 10 ACAGC 10 ACGTT 10 ACAAT 10 ACACG 10 ACGCG 10 ACAAG 10 ACTGG 10 ACACA 10 ACACC 10 ACGAG 10 ACAAA 10 ACGTG 10 ACTAC 10 ACTCT 10 ACGGC 10 ACTCC 10 ACGCC 10 ACTTA 10 TGGAC 10 ACACT 10 ACATT 9 ', 'CACCCG 11 TAC 12 AAC 12 GGG 12 ATC 12 GCG 12 CCC 12 GTC 12 GGC 12 GTG 12 TTC 12 GTT 12 GCC 12 GAT 12 ACC 12 GAC 12 GAG 12 TGC 12 GCT 12 TCC 11 GGCGACGCGTCGATCTACGAC', 'CACCCGCACGGC 13 AAG 14 GTA 14 GCG 14 GTT 14 GGG 14 TTG 14 CTG 14 TCG 14 GTG 14 CCG 14 AGG 14 CGG 14 ATG 14 GAG 14 GTC 14 TGG 14 ACG 14 GGC 13 GCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGATCA 15 GCGAC 16 AAGAC 16 CGGAC 16 GAGAC 16 TGGAC 16 TCGAC 16 AGGAC 16 ACGAC 16 TTGAC 16 TAGAC 16 CTGAC 16 ATGAC 16 CCGAC 16 CAGAC 16 GGGAC 16 GTGAC 15 ', 'CACCCGCACGGCGACGCG 17 AAG 18 ACA 18 ACT 18 AAA 18 AGA 18 TAC 18 AAC 18 TGC 18 GCC 18 ATC 18 AGG 18 ACC 18 GTC 18 GAC 18 ACG 18 ATT 18 AAT 18 TTC 18 ATG 18 ATA 17 ATCTACGAC', 'CACCCGCAC 19 ATG 20 ATC 20 CTT 20 ATA 20 CAT 20 AAC 20 AAT 20 AGG 20 ACT 20 ACG 20 GCG 20 GAT 20 AGA 20 CCT 20 GTG 20 GTA 20 AAG 20 GCA 20 AAA 20 ATT 20 AGT 20 GCT 20 GAA 20 ACA 20 GTT 20 GAG 19 GACGCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGA 21 CT 22 GA 22 TG 22 CA 22 GG 22 CC 22 GC 22 GT 22 AA 22 AT 22 AC 22 AG 22 CG 21 TACGAC', ' 23 CACGCT 24 CACATA 24 CACGTA 24 CACAAA 24 CACTCT 24 CACACT 24 CACCAA 24 CACGCA 24 CACGAT 24 CACGTT 24 CACCAT 24 CACGAA 24 CACCGA 24 CACATT 24 CACGGA 24 CACGGT 24 CACCTT 24 CACTTA 24 CACTAT 24 CACACG 24 CACCTA 24 CACAGT 24 CACCGT 24 CACTGT 24 CACAGA 24 CACTTT 24 CACTCA 24 CACACA 24 CACAAT 23 CACGGCGACGCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGT 25 CT 26 AT 26 TG 26 GG 26 CG 26 GC 26 CA 26 CC 26 AC 26 TC 26 GT 26 TT 26 TA 25 TACGAC', ' 27 GGACC 28 CCACC 28 GTCCC 28 CACAA 28 GCCCC 28 CTCCC 28 CACGA 28 GCACC 28 TACCC 28 GGTCC 28 CTACC 28 TCCCC 28 ATTCC 28 TTTCC 28 GGGCC 28 CACCT 28 ACCCC 28 TCGCC 28 GATCC 28 GACCC 28 AACCC 28 CACTG 28 GTTCC 28 CGACC 28 GAACC 28 AGCCC 28 CCCCC 28 TTACC 28 CGGCC 28 ATGCC 28 TATCC 28 GTGCC 28 CACTT 28 TGCCC 28 AATCC 28 CGCCC 28 ATCCC 28 GCGCC 28 ACACC 28 CTTCC 28 CTGCC 28 CACAT 28 GGCCC 28 AGACC 28 CACTC 28 CACAG 28 CACGT 28 GAGCC 28 ACTCC 28 TGGCC 28 CCTCC 28 AAACC 28 ACGCC 28 AGGCC 28 TCACC 28 CACCG 28 CCGCC 28 TTGCC 28 GTACC 28 CACCA 28 TCTCC 28 CACGC 28 TTCCC 28 ATACC 28 CGTCC 28 CAGCC 28 AAGCC 28 TGTCC 28 CACGG 28 CAACC 28 GCTCC 28 AGTCC 27 GCACGGCGACGCGTCGATCTACGAC', 'CACCCGCACGGC 29 TTC 30 AGA 30 AAA 30 ACT 30 GCC 30 ACA 30 ATT 30 TCC 30 CTA 30 CCA 30 CGA 30 TTA 30 TCA 30 ATA 30 GCA 30 GAA 30 AGC 30 GGA 30 AAC 30 ATC 30 TGC 30 ACC 30 AGT 30 TAC 29 GCGTCGATCTACGAC', 'CACCCGCAC 31 CGT 32 CCC 32 CTA 32 GCC 32 CGA 32 AGC 32 CAC 32 CCA 32 CCG 32 CGC 32 CGG 32 GAC 32 GTC 32 CTC 32 ACC 32 CAG 32 CTG 32 CAA 31 GACGCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGATCTACC 33 CC 34 GC 34 TA 34 TC 34 AA 34 AG 34 GT 34 AT 34 GG 34 CT 34 GA 34 CG 34 CA 34 AC 34 TT 34 TG 33 ', 'CACCCG 35 CAA 36 CTT 36 TCG 36 CGG 36 CGA 36 TTA 36 CCT 36 CAG 36 CTA 36 CGC 36 TCA 36 GGA 36 CCG 36 CTC 36 GAA 36 AAA 36 GCA 36 CCA 36 TTG 36 CTG 36 TGG 36 GTA 36 ATA 36 ACA 35 GGCGACGCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGATCG 37 TAGAC 38 AGGAC 38 TGGAC 38 CTGAC 38 CAGAC 38 GTGAC 38 GAGAC 38 GGGAC 38 GCGAC 38 TCGAC 38 ATGAC 38 TTGAC 38 CGGAC 38 CCGAC 38 ACGAC 38 AAGAC 37 ', 'CACCCGCACGGCGAC 39 TGG 40 TCA 40 TTA 40 TGT 40 TTG 40 TCG 40 TCC 40 TAT 40 TGC 40 TTT 40 TAC 40 TTC 40 TCT 40 GAC 39 TCGATCTACGAC', 'CACCCG 41 AAG 42 ACG 42 AAT 42 CGT 42 TAT 42 AGA 42 AGG 42 TTT 42 AGC 42 ACT 42 TGT 42 TCT 42 ATT 42 GGT 42 AGT 42 ATG 41 GGCGACGCGTCGATCTACGAC', 'CACCCGCACGGCGAC 43 GTC 44 GTG 44 ACC 44 ACG 44 ACA 44 GTA 44 ATG 44 GAA 44 AAA 44 AGC 44 ATA 44 AGT 44 GAG 44 ACT 44 ATC 44 GGA 44 AAT 44 AAC 44 GGG 44 ATT 44 GGC 44 AGA 44 AGG 44 AAG 43 TCGATCTACGAC', 'CACCCGCACGGCGACGCGC 45 GC 46 TC 46 CA 46 TT 46 TA 46 AC 46 CT 46 CC 46 AA 46 AG 46 AT 46 CG 46 GA 46 TG 45 ATCTACGAC', 'CACCCGCACGGCGACGCG 47 GTA 48 TTT 48 TGT 48 GGG 48 GAT 48 TAT 48 GCT 48 CGG 48 GGA 48 TTA 48 GTT 48 TGG 48 GGC 48 GAA 48 GAG 48 CGT 48 GGT 48 GTG 48 GCG 48 TTG 48 GCA 47 ATCTACGAC', ' 49 CACAG 50 CACGC 50 CACAA 50 CACTT 50 CACTA 50 CACGA 50 CACCT 50 CACTC 50 CACAC 50 CACCG 50 CACGG 50 CACAT 50 CACGT 50 CACTG 50 CACCA 49 CCACGGCGACGCGTCGATCTACGAC', 'CACCCGCACGGCGAC 51 CCA 52 GGT 52 CTC 52 CAA 52 CAG 52 CGC 52 CTG 52 GAT 52 CGG 52 CGT 52 CAT 52 CCG 52 GTT 52 CTA 52 CAC 52 CCC 52 CGA 52 CCT 52 CTT 51 TCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGATCC 53 CAGAC 54 GCGAC 54 GTGAC 54 CTGAC 54 GAGAC 54 GGGAC 54 TAGAC 54 ATGAC 54 TGGAC 54 AAGAC 54 ACGAC 54 TCGAC 54 AGGAC 54 TTGAC 54 CCGAC 54 CGGAC 53 ', 'CACCCGCACT 55 CC 56 GT 56 GG 56 GC 56 AC 56 TA 56 AT 56 TC 56 CT 56 CA 56 TT 56 CG 56 TG 55 GACGCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGC 57 TG 58 CG 58 TT 58 GA 58 GT 58 AT 58 AG 58 CC 58 GC 58 TC 58 TA 58 AC 58 AA 58 CA 58 CT 58 GG 57 TACGAC', 'CACCCGCACGGC 59 CAG 60 CTC 60 TCT 60 CGC 60 CTT 60 GCT 60 CAC 60 CGT 60 CCC 60 CAA 60 TTT 60 CAT 60 TGT 60 TAT 60 AAT 60 CCT 60 GGT 59 GCGTCGATCTACGAC', 'CACCCGCACGGCGACGCGTCGG 61 CG 62 CT 62 AC 62 TT 62 AG 62 GC 62 AA 62 CC 62 GG 62 GA 62 AT 62 TG 62 TA 62 TC 62 GT 62 CA 61 TACGAC']
+16/01/2018 02:38:47 gfa_site: 9
+16/01/2018 02:38:47 gfa_site: 9
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGATCT', 'ACGAC 10 ACTAT 10 ACGGA 10 ACTGC 10 ACAGT 10 ACGTC 10 ACATA 10 ACAAC 10 ACTGT 10 ACGGG 10 ACTCG 10 CTGAC 10 GGGAC 10 ACTTT 10 ACGGT 10 TCGAC 10 CAGAC 10 ACGAA 10 ACTTG 10 ACGCT 10 ACAGG 10 ACTCA 10 ACATG 10 ACAGA 10 ACATC 10 ACGCA 10 ACGTA 10 GCGAC 10 CCGAC 10 GTGAC 10 CGGAC 10 TTGAC 10 TAGAC 10 ACTTC 10 ACAGC 10 ACGTT 10 ACAAT 10 ACACG 10 ACGCG 10 ACAAG 10 ACTGG 10 ACACA 10 ACACC 10 ACGAG 10 ACAAA 10 ACGTG 10 ACTAC 10 ACTCT 10 ACGGC 10 ACTCC 10 ACGCC 10 ACTTA 10 TGGAC 10 ACACT 10 ACATT', '']
+16/01/2018 02:38:47 vars: ['ACGAC', 'ACTAT', 'ACGGA', 'ACTGC', 'ACAGT', 'ACGTC', 'ACATA', 'ACAAC', 'ACTGT', 'ACGGG', 'ACTCG', 'CTGAC', 'GGGAC', 'ACTTT', 'ACGGT', 'TCGAC', 'CAGAC', 'ACGAA', 'ACTTG', 'ACGCT', 'ACAGG', 'ACTCA', 'ACATG', 'ACAGA', 'ACATC', 'ACGCA', 'ACGTA', 'GCGAC', 'CCGAC', 'GTGAC', 'CGGAC', 'TTGAC', 'TAGAC', 'ACTTC', 'ACAGC', 'ACGTT', 'ACAAT', 'ACACG', 'ACGCG', 'ACAAG', 'ACTGG', 'ACACA', 'ACACC', 'ACGAG', 'ACAAA', 'ACGTG', 'ACTAC', 'ACTCT', 'ACGGC', 'ACTCC', 'ACGCC', 'ACTTA', 'TGGAC', 'ACACT', 'ACATT']
+16/01/2018 02:38:47 gfa_site: 11
+16/01/2018 02:38:47 gfa_site: 11
+16/01/2018 02:38:47 prgs: ['CACCCG', 'TAC 12 AAC 12 GGG 12 ATC 12 GCG 12 CCC 12 GTC 12 GGC 12 GTG 12 TTC 12 GTT 12 GCC 12 GAT 12 ACC 12 GAC 12 GAG 12 TGC 12 GCT 12 TCC', 'GGCGACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['TAC', 'AAC', 'GGG', 'ATC', 'GCG', 'CCC', 'GTC', 'GGC', 'GTG', 'TTC', 'GTT', 'GCC', 'GAT', 'ACC', 'GAC', 'GAG', 'TGC', 'GCT', 'TCC']
+16/01/2018 02:38:47 gfa_site: 13
+16/01/2018 02:38:47 gfa_site: 13
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGC', 'AAG 14 GTA 14 GCG 14 GTT 14 GGG 14 TTG 14 CTG 14 TCG 14 GTG 14 CCG 14 AGG 14 CGG 14 ATG 14 GAG 14 GTC 14 TGG 14 ACG 14 GGC', 'GCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['AAG', 'GTA', 'GCG', 'GTT', 'GGG', 'TTG', 'CTG', 'TCG', 'GTG', 'CCG', 'AGG', 'CGG', 'ATG', 'GAG', 'GTC', 'TGG', 'ACG', 'GGC']
+16/01/2018 02:38:47 gfa_site: 15
+16/01/2018 02:38:47 gfa_site: 15
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGATCA', 'GCGAC 16 AAGAC 16 CGGAC 16 GAGAC 16 TGGAC 16 TCGAC 16 AGGAC 16 ACGAC 16 TTGAC 16 TAGAC 16 CTGAC 16 ATGAC 16 CCGAC 16 CAGAC 16 GGGAC 16 GTGAC', '']
+16/01/2018 02:38:47 vars: ['GCGAC', 'AAGAC', 'CGGAC', 'GAGAC', 'TGGAC', 'TCGAC', 'AGGAC', 'ACGAC', 'TTGAC', 'TAGAC', 'CTGAC', 'ATGAC', 'CCGAC', 'CAGAC', 'GGGAC', 'GTGAC']
+16/01/2018 02:38:47 gfa_site: 17
+16/01/2018 02:38:47 gfa_site: 17
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCG', 'AAG 18 ACA 18 ACT 18 AAA 18 AGA 18 TAC 18 AAC 18 TGC 18 GCC 18 ATC 18 AGG 18 ACC 18 GTC 18 GAC 18 ACG 18 ATT 18 AAT 18 TTC 18 ATG 18 ATA', 'ATCTACGAC']
+16/01/2018 02:38:47 vars: ['AAG', 'ACA', 'ACT', 'AAA', 'AGA', 'TAC', 'AAC', 'TGC', 'GCC', 'ATC', 'AGG', 'ACC', 'GTC', 'GAC', 'ACG', 'ATT', 'AAT', 'TTC', 'ATG', 'ATA']
+16/01/2018 02:38:47 gfa_site: 19
+16/01/2018 02:38:47 gfa_site: 19
+16/01/2018 02:38:47 prgs: ['CACCCGCAC', 'ATG 20 ATC 20 CTT 20 ATA 20 CAT 20 AAC 20 AAT 20 AGG 20 ACT 20 ACG 20 GCG 20 GAT 20 AGA 20 CCT 20 GTG 20 GTA 20 AAG 20 GCA 20 AAA 20 ATT 20 AGT 20 GCT 20 GAA 20 ACA 20 GTT 20 GAG', 'GACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['ATG', 'ATC', 'CTT', 'ATA', 'CAT', 'AAC', 'AAT', 'AGG', 'ACT', 'ACG', 'GCG', 'GAT', 'AGA', 'CCT', 'GTG', 'GTA', 'AAG', 'GCA', 'AAA', 'ATT', 'AGT', 'GCT', 'GAA', 'ACA', 'GTT', 'GAG']
+16/01/2018 02:38:47 gfa_site: 21
+16/01/2018 02:38:47 gfa_site: 21
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGA', 'CT 22 GA 22 TG 22 CA 22 GG 22 CC 22 GC 22 GT 22 AA 22 AT 22 AC 22 AG 22 CG', 'TACGAC']
+16/01/2018 02:38:47 vars: ['CT', 'GA', 'TG', 'CA', 'GG', 'CC', 'GC', 'GT', 'AA', 'AT', 'AC', 'AG', 'CG']
+16/01/2018 02:38:47 gfa_site: 23
+16/01/2018 02:38:47 gfa_site: 23
+16/01/2018 02:38:47 prgs: ['', 'CACGCT 24 CACATA 24 CACGTA 24 CACAAA 24 CACTCT 24 CACACT 24 CACCAA 24 CACGCA 24 CACGAT 24 CACGTT 24 CACCAT 24 CACGAA 24 CACCGA 24 CACATT 24 CACGGA 24 CACGGT 24 CACCTT 24 CACTTA 24 CACTAT 24 CACACG 24 CACCTA 24 CACAGT 24 CACCGT 24 CACTGT 24 CACAGA 24 CACTTT 24 CACTCA 24 CACACA 24 CACAAT', 'CACGGCGACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CACGCT', 'CACATA', 'CACGTA', 'CACAAA', 'CACTCT', 'CACACT', 'CACCAA', 'CACGCA', 'CACGAT', 'CACGTT', 'CACCAT', 'CACGAA', 'CACCGA', 'CACATT', 'CACGGA', 'CACGGT', 'CACCTT', 'CACTTA', 'CACTAT', 'CACACG', 'CACCTA', 'CACAGT', 'CACCGT', 'CACTGT', 'CACAGA', 'CACTTT', 'CACTCA', 'CACACA', 'CACAAT']
+16/01/2018 02:38:47 gfa_site: 25
+16/01/2018 02:38:47 gfa_site: 25
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGT', 'CT 26 AT 26 TG 26 GG 26 CG 26 GC 26 CA 26 CC 26 AC 26 TC 26 GT 26 TT 26 TA', 'TACGAC']
+16/01/2018 02:38:47 vars: ['CT', 'AT', 'TG', 'GG', 'CG', 'GC', 'CA', 'CC', 'AC', 'TC', 'GT', 'TT', 'TA']
+16/01/2018 02:38:47 gfa_site: 27
+16/01/2018 02:38:47 gfa_site: 27
+16/01/2018 02:38:47 prgs: ['', 'GGACC 28 CCACC 28 GTCCC 28 CACAA 28 GCCCC 28 CTCCC 28 CACGA 28 GCACC 28 TACCC 28 GGTCC 28 CTACC 28 TCCCC 28 ATTCC 28 TTTCC 28 GGGCC 28 CACCT 28 ACCCC 28 TCGCC 28 GATCC 28 GACCC 28 AACCC 28 CACTG 28 GTTCC 28 CGACC 28 GAACC 28 AGCCC 28 CCCCC 28 TTACC 28 CGGCC 28 ATGCC 28 TATCC 28 GTGCC 28 CACTT 28 TGCCC 28 AATCC 28 CGCCC 28 ATCCC 28 GCGCC 28 ACACC 28 CTTCC 28 CTGCC 28 CACAT 28 GGCCC 28 AGACC 28 CACTC 28 CACAG 28 CACGT 28 GAGCC 28 ACTCC 28 TGGCC 28 CCTCC 28 AAACC 28 ACGCC 28 AGGCC 28 TCACC 28 CACCG 28 CCGCC 28 TTGCC 28 GTACC 28 CACCA 28 TCTCC 28 CACGC 28 TTCCC 28 ATACC 28 CGTCC 28 CAGCC 28 AAGCC 28 TGTCC 28 CACGG 28 CAACC 28 GCTCC 28 AGTCC', 'GCACGGCGACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['GGACC', 'CCACC', 'GTCCC', 'CACAA', 'GCCCC', 'CTCCC', 'CACGA', 'GCACC', 'TACCC', 'GGTCC', 'CTACC', 'TCCCC', 'ATTCC', 'TTTCC', 'GGGCC', 'CACCT', 'ACCCC', 'TCGCC', 'GATCC', 'GACCC', 'AACCC', 'CACTG', 'GTTCC', 'CGACC', 'GAACC', 'AGCCC', 'CCCCC', 'TTACC', 'CGGCC', 'ATGCC', 'TATCC', 'GTGCC', 'CACTT', 'TGCCC', 'AATCC', 'CGCCC', 'ATCCC', 'GCGCC', 'ACACC', 'CTTCC', 'CTGCC', 'CACAT', 'GGCCC', 'AGACC', 'CACTC', 'CACAG', 'CACGT', 'GAGCC', 'ACTCC', 'TGGCC', 'CCTCC', 'AAACC', 'ACGCC', 'AGGCC', 'TCACC', 'CACCG', 'CCGCC', 'TTGCC', 'GTACC', 'CACCA', 'TCTCC', 'CACGC', 'TTCCC', 'ATACC', 'CGTCC', 'CAGCC', 'AAGCC', 'TGTCC', 'CACGG', 'CAACC', 'GCTCC', 'AGTCC']
+16/01/2018 02:38:47 gfa_site: 29
+16/01/2018 02:38:47 gfa_site: 29
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGC', 'TTC 30 AGA 30 AAA 30 ACT 30 GCC 30 ACA 30 ATT 30 TCC 30 CTA 30 CCA 30 CGA 30 TTA 30 TCA 30 ATA 30 GCA 30 GAA 30 AGC 30 GGA 30 AAC 30 ATC 30 TGC 30 ACC 30 AGT 30 TAC', 'GCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['TTC', 'AGA', 'AAA', 'ACT', 'GCC', 'ACA', 'ATT', 'TCC', 'CTA', 'CCA', 'CGA', 'TTA', 'TCA', 'ATA', 'GCA', 'GAA', 'AGC', 'GGA', 'AAC', 'ATC', 'TGC', 'ACC', 'AGT', 'TAC']
+16/01/2018 02:38:47 gfa_site: 31
+16/01/2018 02:38:47 gfa_site: 31
+16/01/2018 02:38:47 prgs: ['CACCCGCAC', 'CGT 32 CCC 32 CTA 32 GCC 32 CGA 32 AGC 32 CAC 32 CCA 32 CCG 32 CGC 32 CGG 32 GAC 32 GTC 32 CTC 32 ACC 32 CAG 32 CTG 32 CAA', 'GACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CGT', 'CCC', 'CTA', 'GCC', 'CGA', 'AGC', 'CAC', 'CCA', 'CCG', 'CGC', 'CGG', 'GAC', 'GTC', 'CTC', 'ACC', 'CAG', 'CTG', 'CAA']
+16/01/2018 02:38:47 gfa_site: 33
+16/01/2018 02:38:47 gfa_site: 33
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGATCTACC', 'CC 34 GC 34 TA 34 TC 34 AA 34 AG 34 GT 34 AT 34 GG 34 CT 34 GA 34 CG 34 CA 34 AC 34 TT 34 TG', '']
+16/01/2018 02:38:47 vars: ['CC', 'GC', 'TA', 'TC', 'AA', 'AG', 'GT', 'AT', 'GG', 'CT', 'GA', 'CG', 'CA', 'AC', 'TT', 'TG']
+16/01/2018 02:38:47 gfa_site: 35
+16/01/2018 02:38:47 gfa_site: 35
+16/01/2018 02:38:47 prgs: ['CACCCG', 'CAA 36 CTT 36 TCG 36 CGG 36 CGA 36 TTA 36 CCT 36 CAG 36 CTA 36 CGC 36 TCA 36 GGA 36 CCG 36 CTC 36 GAA 36 AAA 36 GCA 36 CCA 36 TTG 36 CTG 36 TGG 36 GTA 36 ATA 36 ACA', 'GGCGACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CAA', 'CTT', 'TCG', 'CGG', 'CGA', 'TTA', 'CCT', 'CAG', 'CTA', 'CGC', 'TCA', 'GGA', 'CCG', 'CTC', 'GAA', 'AAA', 'GCA', 'CCA', 'TTG', 'CTG', 'TGG', 'GTA', 'ATA', 'ACA']
+16/01/2018 02:38:47 gfa_site: 37
+16/01/2018 02:38:47 gfa_site: 37
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGATCG', 'TAGAC 38 AGGAC 38 TGGAC 38 CTGAC 38 CAGAC 38 GTGAC 38 GAGAC 38 GGGAC 38 GCGAC 38 TCGAC 38 ATGAC 38 TTGAC 38 CGGAC 38 CCGAC 38 ACGAC 38 AAGAC', '']
+16/01/2018 02:38:47 vars: ['TAGAC', 'AGGAC', 'TGGAC', 'CTGAC', 'CAGAC', 'GTGAC', 'GAGAC', 'GGGAC', 'GCGAC', 'TCGAC', 'ATGAC', 'TTGAC', 'CGGAC', 'CCGAC', 'ACGAC', 'AAGAC']
+16/01/2018 02:38:47 gfa_site: 39
+16/01/2018 02:38:47 gfa_site: 39
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGAC', 'TGG 40 TCA 40 TTA 40 TGT 40 TTG 40 TCG 40 TCC 40 TAT 40 TGC 40 TTT 40 TAC 40 TTC 40 TCT 40 GAC', 'TCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['TGG', 'TCA', 'TTA', 'TGT', 'TTG', 'TCG', 'TCC', 'TAT', 'TGC', 'TTT', 'TAC', 'TTC', 'TCT', 'GAC']
+16/01/2018 02:38:47 gfa_site: 41
+16/01/2018 02:38:47 gfa_site: 41
+16/01/2018 02:38:47 prgs: ['CACCCG', 'AAG 42 ACG 42 AAT 42 CGT 42 TAT 42 AGA 42 AGG 42 TTT 42 AGC 42 ACT 42 TGT 42 TCT 42 ATT 42 GGT 42 AGT 42 ATG', 'GGCGACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['AAG', 'ACG', 'AAT', 'CGT', 'TAT', 'AGA', 'AGG', 'TTT', 'AGC', 'ACT', 'TGT', 'TCT', 'ATT', 'GGT', 'AGT', 'ATG']
+16/01/2018 02:38:47 gfa_site: 43
+16/01/2018 02:38:47 gfa_site: 43
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGAC', 'GTC 44 GTG 44 ACC 44 ACG 44 ACA 44 GTA 44 ATG 44 GAA 44 AAA 44 AGC 44 ATA 44 AGT 44 GAG 44 ACT 44 ATC 44 GGA 44 AAT 44 AAC 44 GGG 44 ATT 44 GGC 44 AGA 44 AGG 44 AAG', 'TCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['GTC', 'GTG', 'ACC', 'ACG', 'ACA', 'GTA', 'ATG', 'GAA', 'AAA', 'AGC', 'ATA', 'AGT', 'GAG', 'ACT', 'ATC', 'GGA', 'AAT', 'AAC', 'GGG', 'ATT', 'GGC', 'AGA', 'AGG', 'AAG']
+16/01/2018 02:38:47 gfa_site: 45
+16/01/2018 02:38:47 gfa_site: 45
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGC', 'GC 46 TC 46 CA 46 TT 46 TA 46 AC 46 CT 46 CC 46 AA 46 AG 46 AT 46 CG 46 GA 46 TG', 'ATCTACGAC']
+16/01/2018 02:38:47 vars: ['GC', 'TC', 'CA', 'TT', 'TA', 'AC', 'CT', 'CC', 'AA', 'AG', 'AT', 'CG', 'GA', 'TG']
+16/01/2018 02:38:47 gfa_site: 47
+16/01/2018 02:38:47 gfa_site: 47
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCG', 'GTA 48 TTT 48 TGT 48 GGG 48 GAT 48 TAT 48 GCT 48 CGG 48 GGA 48 TTA 48 GTT 48 TGG 48 GGC 48 GAA 48 GAG 48 CGT 48 GGT 48 GTG 48 GCG 48 TTG 48 GCA', 'ATCTACGAC']
+16/01/2018 02:38:47 vars: ['GTA', 'TTT', 'TGT', 'GGG', 'GAT', 'TAT', 'GCT', 'CGG', 'GGA', 'TTA', 'GTT', 'TGG', 'GGC', 'GAA', 'GAG', 'CGT', 'GGT', 'GTG', 'GCG', 'TTG', 'GCA']
+16/01/2018 02:38:47 gfa_site: 49
+16/01/2018 02:38:47 gfa_site: 49
+16/01/2018 02:38:47 prgs: ['', 'CACAG 50 CACGC 50 CACAA 50 CACTT 50 CACTA 50 CACGA 50 CACCT 50 CACTC 50 CACAC 50 CACCG 50 CACGG 50 CACAT 50 CACGT 50 CACTG 50 CACCA', 'CCACGGCGACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CACAG', 'CACGC', 'CACAA', 'CACTT', 'CACTA', 'CACGA', 'CACCT', 'CACTC', 'CACAC', 'CACCG', 'CACGG', 'CACAT', 'CACGT', 'CACTG', 'CACCA']
+16/01/2018 02:38:47 gfa_site: 51
+16/01/2018 02:38:47 gfa_site: 51
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGAC', 'CCA 52 GGT 52 CTC 52 CAA 52 CAG 52 CGC 52 CTG 52 GAT 52 CGG 52 CGT 52 CAT 52 CCG 52 GTT 52 CTA 52 CAC 52 CCC 52 CGA 52 CCT 52 CTT', 'TCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CCA', 'GGT', 'CTC', 'CAA', 'CAG', 'CGC', 'CTG', 'GAT', 'CGG', 'CGT', 'CAT', 'CCG', 'GTT', 'CTA', 'CAC', 'CCC', 'CGA', 'CCT', 'CTT']
+16/01/2018 02:38:47 gfa_site: 53
+16/01/2018 02:38:47 gfa_site: 53
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGATCC', 'CAGAC 54 GCGAC 54 GTGAC 54 CTGAC 54 GAGAC 54 GGGAC 54 TAGAC 54 ATGAC 54 TGGAC 54 AAGAC 54 ACGAC 54 TCGAC 54 AGGAC 54 TTGAC 54 CCGAC 54 CGGAC', '']
+16/01/2018 02:38:47 vars: ['CAGAC', 'GCGAC', 'GTGAC', 'CTGAC', 'GAGAC', 'GGGAC', 'TAGAC', 'ATGAC', 'TGGAC', 'AAGAC', 'ACGAC', 'TCGAC', 'AGGAC', 'TTGAC', 'CCGAC', 'CGGAC']
+16/01/2018 02:38:47 gfa_site: 55
+16/01/2018 02:38:47 gfa_site: 55
+16/01/2018 02:38:47 prgs: ['CACCCGCACT', 'CC 56 GT 56 GG 56 GC 56 AC 56 TA 56 AT 56 TC 56 CT 56 CA 56 TT 56 CG 56 TG', 'GACGCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CC', 'GT', 'GG', 'GC', 'AC', 'TA', 'AT', 'TC', 'CT', 'CA', 'TT', 'CG', 'TG']
+16/01/2018 02:38:47 gfa_site: 57
+16/01/2018 02:38:47 gfa_site: 57
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGC', 'TG 58 CG 58 TT 58 GA 58 GT 58 AT 58 AG 58 CC 58 GC 58 TC 58 TA 58 AC 58 AA 58 CA 58 CT 58 GG', 'TACGAC']
+16/01/2018 02:38:47 vars: ['TG', 'CG', 'TT', 'GA', 'GT', 'AT', 'AG', 'CC', 'GC', 'TC', 'TA', 'AC', 'AA', 'CA', 'CT', 'GG']
+16/01/2018 02:38:47 gfa_site: 59
+16/01/2018 02:38:47 gfa_site: 59
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGC', 'CAG 60 CTC 60 TCT 60 CGC 60 CTT 60 GCT 60 CAC 60 CGT 60 CCC 60 CAA 60 TTT 60 CAT 60 TGT 60 TAT 60 AAT 60 CCT 60 GGT', 'GCGTCGATCTACGAC']
+16/01/2018 02:38:47 vars: ['CAG', 'CTC', 'TCT', 'CGC', 'CTT', 'GCT', 'CAC', 'CGT', 'CCC', 'CAA', 'TTT', 'CAT', 'TGT', 'TAT', 'AAT', 'CCT', 'GGT']
+16/01/2018 02:38:47 gfa_site: 61
+16/01/2018 02:38:47 gfa_site: 61
+16/01/2018 02:38:47 prgs: ['CACCCGCACGGCGACGCGTCGG', 'CG 62 CT 62 AC 62 TT 62 AG 62 GC 62 AA 62 CC 62 GG 62 GA 62 AT 62 TG 62 TA 62 TC 62 GT 62 CA', 'TACGAC']
+16/01/2018 02:38:47 vars: ['CG', 'CT', 'AC', 'TT', 'AG', 'GC', 'AA', 'CC', 'GG', 'GA', 'AT', 'TG', 'TA', 'TC', 'GT', 'CA']
+16/01/2018 02:38:47 gfa_site: 63
+16/01/2018 02:38:47 self.subAlignedSeqs.keys(): dict_keys([352])
+16/01/2018 02:38:47 self.subAlignedSeqs[self.subAlignedSeqs.keys()[0]]: [<__main__.AlignedSeq object at 0x10214ef60>, <__main__.AlignedSeq object at 0x10207da90>, <__main__.AlignedSeq object at 0x1026a0da0>, <__main__.AlignedSeq object at 0x10299b128>, <__main__.AlignedSeq object at 0x1060f5198>, <__main__.AlignedSeq object at 0x1060ec358>, <__main__.AlignedSeq object at 0x1026a0e80>, <__main__.AlignedSeq object at 0x102c45a90>, <__main__.AlignedSeq object at 0x102c45908>, <__main__.AlignedSeq object at 0x1067196d8>, <__main__.AlignedSeq object at 0x10673c2e8>, <__main__.AlignedSeq object at 0x106719d30>, <__main__.AlignedSeq object at 0x1026a0f60>, <__main__.AlignedSeq object at 0x1026a0ef0>, <__main__.AlignedSeq object at 0x1060ec400>, <__main__.AlignedSeq object at 0x10673c208>, <__main__.AlignedSeq object at 0x1060ec438>, <__main__.AlignedSeq object at 0x1060ec3c8>, <__main__.AlignedSeq object at 0x106719940>, <__main__.AlignedSeq object at 0x1026a0e10>, <__main__.AlignedSeq object at 0x10673c240>, <__main__.AlignedSeq object at 0x10673c780>, <__main__.AlignedSeq object at 0x1026a0f28>, <__main__.AlignedSeq object at 0x106719d68>, <__main__.AlignedSeq object at 0x1026a0d68>, <__main__.AlignedSeq object at 0x1026a0f98>, <__main__.AlignedSeq object at 0x1026a0fd0>]
+16/01/2018 02:38:47 interval start: 352
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 type of subAlignedSeqs object in list: <class '__main__.AlignedSeq'>
+16/01/2018 02:38:47 self.subAlignedSeqs == {} at nesting level 2 for interval [352, 381]
+16/01/2018 02:38:47 found the max of [2] is 2
+16/01/2018 02:38:47 recur max level nesting returned: 2, which has type <class 'int'>
+16/01/2018 02:38:47 found the max of [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] is 2
